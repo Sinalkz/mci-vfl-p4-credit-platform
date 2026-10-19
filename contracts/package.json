@@ -1,0 +1,31 @@
+{
+  "name": "thesis-poc-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Solidity contracts and Hardhat tests for the thesis PoC spike",
+  "scripts": {
+    "build": "hardhat build",
+    "test": "hardhat test mocha"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "4.1.0",
+    "@nomicfoundation/hardhat-ethers-chai-matchers": "3.0.11",
+    "@nomicfoundation/hardhat-mocha": "3.1.0",
+    "@nomicfoundation/hardhat-network-helpers": "3.0.11",
+    "@openzeppelin/contracts": "5.6.1",
+    "@types/chai": "5.2.3",
+    "@types/mocha": "10.0.10",
+    "@types/node": "24.13.6",
+    "chai": "5.3.3",
+    "ethers": "6.17.0",
+    "hardhat": "3.17.0",
+    "mocha": "11.8.0",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "@noble/ciphers": "2.4.0",
+    "@noble/curves": "2.4.0",
+    "@noble/hashes": "2.4.0"
+  }
+}

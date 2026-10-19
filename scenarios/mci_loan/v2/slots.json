@@ -1,0 +1,10 @@
+{
+  "what": "MCI loan instance v2: the thesis code's member slots (validator node, process, proposal order), the party rule's data-owner keys and the user-facing names. MCI is the lender, so it is the active member (the student's correction, 2026-10-19). Code keeps the slot names and the owner keys; docs, dashboard and figures use only the names below, and no real company's name except MCI's (the naming rule, 2026-10-19).",
+  "simulated": "Every partner organisation is a generic simulated role over one public dataset (Kaggle Home Credit Default Risk); no real company's data is used, MCI's included.",
+  "members": [
+    { "slot": "power", "role": "active", "index": 0, "process": "A", "owner": "mci", "name": "MCI", "nameFa": "همراه اول" },
+    { "slot": "mci", "role": "passive", "index": 1, "process": "p1", "owner": "bank", "name": "Bank", "nameFa": "بانک" },
+    { "slot": "digikala", "role": "passive", "index": 2, "process": "p2", "owner": "ecommerce", "name": "E-commerce company", "nameFa": "شرکت تجارت الکترونیک" },
+    { "slot": "maker", "role": "passive", "index": 3, "process": "p3", "owner": "bureau", "name": "Credit bureau", "nameFa": "شرکت اعتبارسنجی" }
+  ]
+}

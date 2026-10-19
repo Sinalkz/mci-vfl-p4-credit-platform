@@ -1,0 +1,61 @@
+run,event,block,party,detail
+1,Settled,126,,"path 1; E 208; estate 200; awards 0,87,112"
+1,Acknowledged,126,p2,
+1,Acknowledged,126,p3,
+1,Acknowledged,126,p1,
+1,Credited,,p1,1001
+1,Credited,,p2,436001
+1,Credited,,p3,561001
+1,Credited,,A,5003
+1,Withdrawn,127,p3,561001
+1,Withdrawn,127,p2,436001
+1,Withdrawn,127,p1,1001
+1,Withdrawn,127,A,5003
+2,Settled,126,,"path 1; E 298; estate 200; awards 74,0,125"
+2,Acknowledged,126,p2,
+2,Acknowledged,126,p1,
+2,Acknowledged,126,p3,
+2,Credited,,p1,371001
+2,Credited,,p2,1001
+2,Credited,,p3,626001
+2,Credited,,A,5003
+2,Withdrawn,127,p3,626001
+2,Withdrawn,127,p1,371001
+2,Withdrawn,127,p2,1001
+2,Withdrawn,127,A,5003
+3,Settled,124,,"path 1; E 974; estate 200; awards 0,0,200"
+3,Acknowledged,124,p2,
+3,Acknowledged,124,p1,
+3,Acknowledged,124,p3,
+3,Credited,,p1,1001
+3,Credited,,p2,1001
+3,Credited,,p3,1001001
+3,Credited,,A,3
+3,Withdrawn,125,p1,1001
+3,Withdrawn,125,p2,1001
+3,Withdrawn,125,p3,1001001
+3,Withdrawn,125,A,3
+4,Settled,126,,"path 1; E 1104; estate 200; awards 66,66,66"
+4,Acknowledged,126,p2,
+4,Acknowledged,126,p1,
+4,Acknowledged,126,p3,
+4,Credited,,p1,331001
+4,Credited,,p2,331001
+4,Credited,,p3,331001
+4,Credited,,A,10003
+4,Withdrawn,127,p3,331001
+4,Withdrawn,127,p2,331001
+4,Withdrawn,127,p1,331001
+4,Withdrawn,127,A,10003
+5,Settled,128,,"path 1; E 876; estate 200; awards 66,66,66"
+5,Acknowledged,128,p1,
+5,Acknowledged,128,p3,
+5,Acknowledged,128,p2,
+5,Credited,,p1,331001
+5,Credited,,p2,331001
+5,Credited,,p3,331001
+5,Credited,,A,10003
+5,Withdrawn,129,p1,331001
+5,Withdrawn,129,p2,331001
+5,Withdrawn,129,p3,331001
+5,Withdrawn,129,A,10003

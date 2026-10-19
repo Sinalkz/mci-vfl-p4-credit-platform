@@ -1,0 +1,41 @@
+run,phase,transactions,gas,in_run_total
+1,setup,13,6556350,yes
+1,alignment,1,120500,yes
+1,training,5,409627,yes
+1,scoring,6,2445476,yes
+1,settlement,7,594314,yes
+1,test token,8,407452,no (outside the run's total)
+1,infrastructure,3,9169460,no (outside the run's total)
+1,total (the five phases),32,10126267,yes
+2,setup,13,6556350,yes
+2,alignment,1,120500,yes
+2,training,5,409627,yes
+2,scoring,6,2445452,yes
+2,settlement,7,594810,yes
+2,test token,8,407452,no (outside the run's total)
+2,infrastructure,3,9169460,no (outside the run's total)
+2,total (the five phases),32,10126739,yes
+3,setup,13,6556302,yes
+3,alignment,1,120500,yes
+3,training,5,409627,yes
+3,scoring,6,2445488,yes
+3,settlement,7,594122,yes
+3,test token,8,407452,no (outside the run's total)
+3,infrastructure,3,9169460,no (outside the run's total)
+3,total (the five phases),32,10126039,yes
+4,setup,13,6556350,yes
+4,alignment,1,120500,yes
+4,training,5,409639,yes
+4,scoring,6,2445512,yes
+4,settlement,7,594176,yes
+4,test token,8,407452,no (outside the run's total)
+4,infrastructure,3,9169460,no (outside the run's total)
+4,total (the five phases),32,10126177,yes
+5,setup,13,6556338,yes
+5,alignment,1,120500,yes
+5,training,5,409627,yes
+5,scoring,6,2445476,yes
+5,settlement,7,594363,yes
+5,test token,8,407452,no (outside the run's total)
+5,infrastructure,3,9169460,no (outside the run's total)
+5,total (the five phases),32,10126304,yes

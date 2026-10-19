@@ -1,0 +1,32 @@
+[A] create (mint B, approve, factory.create) 5882 ms
+[A] commitSeed 1956 ms
+[A] wait for the start (all members ready) 6291 ms
+[A] PSI with 3 passives (in parallel) 87890 ms
+[A] build I (intersection of pairwise results, sorted) 7 ms
+[A] gamma_A (Poseidon Merkle, depth maxDepth) 947 ms
+[A] send I and its AlignedSet signature to each passive 37 ms
+[A] commitAlignment 591 ms
+[A] revealSeed 2208 ms
+[A] wait for s (state Training) 2093 ms
+[A] evaluation rows from on-chain s and sizeI 45 ms
+[A] training: T rounds, then the final messages 8271 ms
+[A] wait for every passive's commitFinal (at most finalWait = 15 blocks) 29 ms
+[A] commitFA (C_fA and gammaG) 1402 ms
+[A] wait for the end of reconciliation (window passed, no objection open) 62202 ms
+[A] finalizeReconciliation 1666 ms
+[A] retrain the fusion model for each figure 1739 ms
+[A] prove FULL (own process) 4458 ms
+[A] submitScore FULL 607 ms
+[A] prove FULL_J (own process) 4526 ms
+[A] submitJointScore FULL_J 349 ms
+[A] prove LOO_1 (own process) 4492 ms
+[A] submitScore LOO_1 1941 ms
+[A] prove LOO_2 (own process) 4479 ms
+[A] submitScore LOO_2 329 ms
+[A] prove LOO_3 (own process) 4502 ms
+[A] submitScore LOO_3 2208 ms
+[A] prove BASELINE (own process) 4467 ms
+[A] submitScore BASELINE 2213 ms
+[A] wait for Scored 14 ms
+[A] wait for Settled (settleBackup after the response window) 2155 ms
+[A] withdraw 1664 ms

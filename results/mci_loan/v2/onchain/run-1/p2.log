@@ -1,0 +1,17 @@
+[p2] discover the run on-chain (FederationCreated listing this passive) 5801 ms
+[p2] register (mint Dp, approve, register, commitSeed) 7791 ms
+[p2] wait for the start 20 ms
+[p2] connect to A 540 ms
+[p2] PSI with A, then receive I 89187 ms
+[p2] wait for commitAlignment 2093 ms
+[p2] gamma_I check PASS: local 0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f, on-chain 0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f
+[p2] gamma_I check against the chain 27 ms
+[p2] wait for A's reveal 2107 ms
+[p2] revealSeed 1935 ms
+[p2] wait for s (state Training) 17 ms
+[p2] evaluation rows from on-chain s and sizeI 200 ms
+[p2] training, commitFinal, then the final message 7464 ms
+[p2] reconciliation and scoring: wait for the end, answering requests 124606 ms
+[p2] acknowledge 1643 ms
+[p2] wait for Settled (settleBackup after the response window) 12 ms
+[p2] withdraw 1917 ms

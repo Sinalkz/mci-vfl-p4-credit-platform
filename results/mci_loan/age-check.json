@@ -1,0 +1,49 @@
+{
+ "what": "default rate per age band (scenarios/mci_loan/age_check.py)",
+ "ageYears": "-DAYS_BIRTH / 365.25",
+ "bands": [
+  {
+   "band": "20-25",
+   "populationRows": 12233,
+   "populationDefaultRate": 0.12294612932232486,
+   "cohortTrainRows": 641,
+   "cohortTrainDefaultRateReweighted": 0.11939098858264466
+  },
+  {
+   "band": "25-35",
+   "populationRows": 72429,
+   "populationDefaultRate": 0.1066009471344351,
+   "cohortTrainRows": 3432,
+   "cohortTrainDefaultRateReweighted": 0.1069572405834002
+  },
+  {
+   "band": "35-45",
+   "populationRows": 84261,
+   "populationDefaultRate": 0.08408397716618601,
+   "cohortTrainRows": 3563,
+   "cohortTrainDefaultRateReweighted": 0.08779978753046844
+  },
+  {
+   "band": "45-55",
+   "populationRows": 70190,
+   "populationDefaultRate": 0.07046587833024648,
+   "cohortTrainRows": 2751,
+   "cohortTrainDefaultRateReweighted": 0.0685304760432202
+  },
+  {
+   "band": "55-65",
+   "populationRows": 60522,
+   "populationDefaultRate": 0.05421169161627177,
+   "cohortTrainRows": 2144,
+   "cohortTrainDefaultRateReweighted": 0.0525621154825445
+  },
+  {
+   "band": "65-70",
+   "populationRows": 7876,
+   "populationDefaultRate": 0.036566785170137124,
+   "cohortTrainRows": 241,
+   "cohortTrainDefaultRateReweighted": 0.034705717382055974
+  }
+ ],
+ "populationRateFallsWithEveryBand": true
+}

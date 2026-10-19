@@ -1,0 +1,39 @@
+{
+ "configPath": "results/mci_loan/v2/configs/loan2-s3-wait10s.json",
+ "configHash": "0x237856ce6b5a07cf5a1af65b3f2e643bd77ba9a284410dabfe3376ef3d6df76b",
+ "scenario": {
+  "name": "mci-loan",
+  "seed": 20267005
+ },
+ "sizeI": 15965,
+ "sizeItr": 15901,
+ "evalPositions": 64,
+ "replayEqualsChain": true,
+ "figures": {
+  "FULL": 6847,
+  "FULL_J": 6847,
+  "LOO_1": 7162,
+  "LOO_2": 7013,
+  "LOO_3": 5755,
+  "BASELINE": 5873
+ },
+ "uFed": 6847,
+ "jointBinds": false,
+ "l": [
+  -315,
+  -166,
+  1092
+ ],
+ "E": 974,
+ "machine": {
+  "cpu": "Apple M4",
+  "cores": 10,
+  "totalRamMB": 16384,
+  "freeRamMB": 3820,
+  "node": "v24.16.0",
+  "platform": "darwin 27.0.0",
+  "hostname": "macbook-air"
+ },
+ "wallMs": 3208.341959,
+ "peakRssMB": 339
+}

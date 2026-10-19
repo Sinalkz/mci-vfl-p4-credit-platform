@@ -1,0 +1,38 @@
+{
+  "party": "arbiter",
+  "address": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+  "rpc": "http://127.0.0.1:8546",
+  "steps": [
+    {
+      "step": "wait for A's run",
+      "startMs": 0,
+      "ms": 6027
+    },
+    {
+      "step": "acceptArbiter",
+      "startMs": 6031,
+      "ms": 1972
+    },
+    {
+      "step": "serve the relay until the run ends",
+      "startMs": 8028,
+      "ms": 231865
+    }
+  ],
+  "txs": [
+    {
+      "step": "acceptArbiter",
+      "from": "arbiter",
+      "hash": "0xbb85a208506664050021a422dd175646ed333d183534cfd8b4b4d164509224a9",
+      "block": 8,
+      "gasUsed": 76914,
+      "status": 1,
+      "wallMs": 1953
+    }
+  ],
+  "relays": [],
+  "owed": "0",
+  "state": 11,
+  "rpcErrorsRetried": 0,
+  "totalMs": 239920
+}

@@ -1,0 +1,126 @@
+{
+ "ok": true,
+ "problems": [],
+ "path": "normal",
+ "finalState": "Settled",
+ "exitCodes": {
+  "A": 0,
+  "p1": 0,
+  "p2": 0,
+  "p3": 0,
+  "arbiter": 0
+ },
+ "inputs": {
+  "B": 1000003,
+  "rho": 5000,
+  "Dp": 1001,
+  "Dc": 501,
+  "F_r": 7437,
+  "F_j": 7555,
+  "uFed": 7555,
+  "U_A": 6679,
+  "loo": [
+   7262,
+   6903,
+   7142
+  ],
+  "left": [
+   false,
+   false,
+   false
+  ],
+  "equivocated": [
+   false,
+   false,
+   false
+  ],
+  "acknowledged": [
+   "p1",
+   "p2",
+   "p3"
+  ]
+ },
+ "division": {
+  "E": 876,
+  "Eprime": 200,
+  "estate": 200,
+  "l": [
+   293,
+   652,
+   413
+  ],
+  "awards": [
+   66,
+   66,
+   66
+  ]
+ },
+ "expected": {
+  "A": 10003,
+  "p1": 331001,
+  "p2": 331001,
+  "p3": 331001,
+  "arbiter": 0
+ },
+ "credited": {
+  "A": 10003,
+  "p1": 331001,
+  "p2": 331001,
+  "p3": 331001,
+  "arbiter": 0
+ },
+ "withdrawn": {
+  "A": 10003,
+  "p1": 331001,
+  "p2": 331001,
+  "p3": 331001,
+  "arbiter": 0
+ },
+ "deposits": 1003006,
+ "withdrawnTotal": 1003006,
+ "lockedForever": 0,
+ "contractBalance": 0,
+ "machine": {
+  "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+  "cpus": 10,
+  "totalRamMB": 16384,
+  "freeRamMBAtStart": 1506
+ },
+ "chain": {
+  "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+  "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+  "genesisFileSha256": "abec639c5c0d6653683eeed20bb414e97d01d9608f4c973a2f07cebd1518a9a1",
+  "nodes": [
+   {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb"
+   },
+   {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb"
+   },
+   {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb"
+   },
+   {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb"
+   }
+  ],
+  "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ",
+  "validators": [
+   "0x31b0b5ff5c27f512ae1839dd7122c1e5b4786fb1",
+   "0x63bdbc2a07614dc88231c178e1729ff7271dce8e",
+   "0xa26595e5189ad18610d00a3643645e368c45b102",
+   "0xd59fec9d0696c19e421805754e75c2e9011f648d"
+  ],
+  "peersPerNode": [
+   3,
+   3,
+   3,
+   3
+  ],
+  "chainId": 2026
+ }
+}

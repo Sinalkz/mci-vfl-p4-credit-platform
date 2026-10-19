@@ -1,0 +1,1236 @@
+{
+"kept": [
+{
+"name": "INS_HAS_RECORD",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "ind",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "any instalment row",
+"train_share_one": 0.9538834951456311,
+"col": 0
+},
+{
+"name": "INS_N",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "instalment rows",
+"train_mean": 3.2504664716381115,
+"train_sd": 0.9182067294831722,
+"present_train": 12183,
+"clipped_train": 0,
+"col": 1
+},
+{
+"name": "INS_N_PREV",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"SK_ID_PREV"
+],
+"meaning": "distinct plans paid",
+"train_mean": 1.2275077028663428,
+"train_sd": 0.46006324813292343,
+"present_train": 12183,
+"clipped_train": 0,
+"col": 2
+},
+{
+"name": "INS_LATE_SHARE",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "num",
+"cols": [
+"DAYS_INSTALMENT",
+"DAYS_ENTRY_PAYMENT"
+],
+"meaning": "share paid after the due day",
+"train_mean": 0.08770227828219314,
+"train_sd": 0.12650833870146427,
+"present_train": 12182,
+"clipped_train": 18,
+"col": 3
+},
+{
+"name": "INS_DPD_MEAN",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"DAYS_INSTALMENT",
+"DAYS_ENTRY_PAYMENT"
+],
+"meaning": "mean days late (0 if on time)",
+"train_mean": 0.37952446762727027,
+"train_sd": 0.6371564236211791,
+"present_train": 12182,
+"clipped_train": 48,
+"col": 4
+},
+{
+"name": "INS_DPD_MAX",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"DAYS_INSTALMENT",
+"DAYS_ENTRY_PAYMENT"
+],
+"meaning": "max days late",
+"train_mean": 1.3534414522220668,
+"train_sd": 1.495283159637023,
+"present_train": 12182,
+"clipped_train": 0,
+"col": 5
+},
+{
+"name": "INS_EARLY_MEAN",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"DAYS_INSTALMENT",
+"DAYS_ENTRY_PAYMENT"
+],
+"meaning": "mean days early",
+"train_mean": 2.375229755928807,
+"train_sd": 0.5962543420666689,
+"present_train": 12182,
+"clipped_train": 0,
+"col": 6
+},
+{
+"name": "INS_UNPAID_SHARE",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "num",
+"cols": [
+"DAYS_ENTRY_PAYMENT"
+],
+"meaning": "share with no payment day",
+"train_mean": 0.0003685580766211786,
+"train_sd": 0.010410057252805449,
+"present_train": 12183,
+"clipped_train": 24,
+"col": 7
+},
+{
+"name": "INS_UNDERPAID_SHARE",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "num",
+"cols": [
+"AMT_INSTALMENT",
+"AMT_PAYMENT"
+],
+"meaning": "share paid below the amount due",
+"train_mean": 0.09812087105837086,
+"train_sd": 0.16472640165185237,
+"present_train": 12182,
+"clipped_train": 9,
+"col": 8
+},
+{
+"name": "INS_PAY_RATIO_MEAN",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "num",
+"cols": [
+"AMT_INSTALMENT",
+"AMT_PAYMENT"
+],
+"meaning": "mean paid / due, clipped to [0, 2]",
+"train_mean": 0.9596825255254482,
+"train_sd": 0.0954541756541923,
+"present_train": 12182,
+"clipped_train": 19,
+"col": 9
+},
+{
+"name": "INS_AMT_MEAN",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "log",
+"cols": [
+"AMT_INSTALMENT"
+],
+"meaning": "mean amount due",
+"train_mean": 9.43775160769488,
+"train_sd": 0.7810081550894479,
+"present_train": 12183,
+"clipped_train": 2,
+"col": 10
+},
+{
+"name": "INS_LAST_DAYS",
+"owner": "bank",
+"source": "installments_payments",
+"transform": "num",
+"cols": [
+"DAYS_INSTALMENT"
+],
+"meaning": "most recent due day (days before the application)",
+"train_mean": -324.83912008536487,
+"train_sd": 547.5081035236499,
+"present_train": 12183,
+"clipped_train": 0,
+"col": 11
+},
+{
+"name": "CC_HAS_RECORD",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "ind",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "any card month",
+"train_share_one": 0.2928280613842781,
+"col": 12
+},
+{
+"name": "CC_N_MONTHS",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "log",
+"cols": [
+"MONTHS_BALANCE"
+],
+"meaning": "monthly rows",
+"train_mean": 3.1048147479315045,
+"train_sd": 0.9673147455319917,
+"present_train": 3740,
+"clipped_train": 0,
+"col": 13
+},
+{
+"name": "CC_BALANCE_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "slog",
+"cols": [
+"AMT_BALANCE"
+],
+"meaning": "mean balance",
+"train_mean": 8.122610787688926,
+"train_sd": 4.972184977174681,
+"present_train": 3740,
+"clipped_train": 0,
+"col": 14
+},
+{
+"name": "CC_UTIL_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "num",
+"cols": [
+"AMT_BALANCE",
+"AMT_CREDIT_LIMIT_ACTUAL"
+],
+"meaning": "mean balance / limit, clipped to [0, 2]",
+"train_mean": 0.3916392375563774,
+"train_sd": 0.3432673016171013,
+"present_train": 3702,
+"clipped_train": 0,
+"col": 15
+},
+{
+"name": "CC_UTIL_MAX",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "num",
+"cols": [
+"AMT_BALANCE",
+"AMT_CREDIT_LIMIT_ACTUAL"
+],
+"meaning": "max balance / limit, clipped to [0, 2]",
+"train_mean": 0.702993247835009,
+"train_sd": 0.4620020807940357,
+"present_train": 3702,
+"clipped_train": 0,
+"col": 16
+},
+{
+"name": "CC_DRAWINGS_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "log",
+"cols": [
+"AMT_DRAWINGS_CURRENT"
+],
+"meaning": "mean drawings",
+"train_mean": 6.910486904828775,
+"train_sd": 4.211504653460799,
+"present_train": 3740,
+"clipped_train": 0,
+"col": 17
+},
+{
+"name": "CC_POS_DRAWINGS_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "log",
+"cols": [
+"AMT_DRAWINGS_POS_CURRENT"
+],
+"meaning": "mean purchase drawings",
+"train_mean": 5.1122994226099525,
+"train_sd": 4.3366516613727795,
+"present_train": 2844,
+"clipped_train": 0,
+"col": 18
+},
+{
+"name": "CC_ATM_DRAWINGS_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "log",
+"cols": [
+"AMT_DRAWINGS_ATM_CURRENT"
+],
+"meaning": "mean cash drawings",
+"train_mean": 7.634929524921473,
+"train_sd": 3.3974925825524993,
+"present_train": 2844,
+"clipped_train": 0,
+"col": 19
+},
+{
+"name": "CC_PAY_TO_MIN_MEAN",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "num",
+"cols": [
+"AMT_PAYMENT_CURRENT",
+"AMT_INST_MIN_REGULARITY"
+],
+"meaning": "mean paid / minimum due, clipped to [0, 5]",
+"train_mean": 1.8675530802209057,
+"train_sd": 0.9182748884144384,
+"present_train": 2752,
+"clipped_train": 0,
+"col": 20
+},
+{
+"name": "CC_DPD_SHARE",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "num",
+"cols": [
+"SK_DPD"
+],
+"meaning": "share of months past due",
+"train_mean": 0.02020545772018886,
+"train_sd": 0.07335864425338814,
+"present_train": 3740,
+"clipped_train": 41,
+"col": 21
+},
+{
+"name": "CC_DPD_MAX",
+"owner": "bank",
+"source": "credit_card_balance",
+"transform": "log",
+"cols": [
+"SK_DPD"
+],
+"meaning": "max days past due",
+"train_mean": 0.3549224788422827,
+"train_sd": 1.037819847735461,
+"present_train": 3740,
+"clipped_train": 43,
+"col": 22
+},
+{
+"name": "PREV_HAS_RECORD",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "ind",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "any previous application",
+"train_share_one": 0.9529439398684623,
+"col": 23
+},
+{
+"name": "PREV_N",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "log",
+"cols": [
+"SK_ID_PREV"
+],
+"meaning": "previous applications",
+"train_mean": 1.5775909746236298,
+"train_sd": 0.6305338456953585,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 24
+},
+{
+"name": "PREV_APPROVED_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_STATUS"
+],
+"meaning": "share Approved",
+"train_mean": 0.723564052469107,
+"train_sd": 0.2733579190459264,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 25
+},
+{
+"name": "PREV_REFUSED_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_STATUS"
+],
+"meaning": "share Refused",
+"train_mean": 0.13344335351820283,
+"train_sd": 0.20388600338214274,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 26
+},
+{
+"name": "PREV_CANCELED_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_STATUS"
+],
+"meaning": "share Canceled",
+"train_mean": 0.12927243494577798,
+"train_sd": 0.18799081175585078,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 27
+},
+{
+"name": "PREV_CONSUMER_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_TYPE"
+],
+"meaning": "share Consumer loans",
+"train_mean": 0.5658610272987888,
+"train_sd": 0.3522322358748615,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 28
+},
+{
+"name": "PREV_CASH_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_TYPE"
+],
+"meaning": "share Cash loans",
+"train_mean": 0.3254261166185888,
+"train_sd": 0.320960853290171,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 29
+},
+{
+"name": "PREV_REVOLVING_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_TYPE"
+],
+"meaning": "share Revolving loans",
+"train_mean": 0.10840700239495954,
+"train_sd": 0.17695071723051234,
+"present_train": 12171,
+"clipped_train": 69,
+"col": 30
+},
+{
+"name": "PREV_POS_SHARE",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"NAME_PORTFOLIO"
+],
+"meaning": "share in the POS portfolio",
+"train_mean": 0.5458975700290716,
+"train_sd": 0.35002649414311,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 31
+},
+{
+"name": "PREV_AMT_APPLICATION_MEAN",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "log",
+"cols": [
+"AMT_APPLICATION"
+],
+"meaning": "mean amount asked",
+"train_mean": 11.52550080887705,
+"train_sd": 0.991179239700674,
+"present_train": 12171,
+"clipped_train": 25,
+"col": 32
+},
+{
+"name": "PREV_CREDIT_TO_APP_MEAN",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"AMT_CREDIT",
+"AMT_APPLICATION"
+],
+"meaning": "mean granted / asked, clipped to [0, 3]",
+"train_mean": 1.027111833975589,
+"train_sd": 0.09996283740142212,
+"present_train": 12146,
+"clipped_train": 35,
+"col": 33
+},
+{
+"name": "PREV_DOWN_RATE_MEAN",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"RATE_DOWN_PAYMENT"
+],
+"meaning": "mean down-payment rate",
+"train_mean": 0.07686637788519204,
+"train_sd": 0.08701813452989554,
+"present_train": 11385,
+"clipped_train": 60,
+"col": 34
+},
+{
+"name": "PREV_CNT_PAYMENT_MEAN",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"CNT_PAYMENT"
+],
+"meaning": "mean number of instalments",
+"train_mean": 14.866062265286137,
+"train_sd": 8.83850287393587,
+"present_train": 12160,
+"clipped_train": 11,
+"col": 35
+},
+{
+"name": "PREV_DAYS_DECISION_MAX",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"DAYS_DECISION"
+],
+"meaning": "most recent decision day",
+"train_mean": -462.51606277216337,
+"train_sd": 534.5830400141333,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 36
+},
+{
+"name": "PREV_DAYS_DECISION_MEAN",
+"owner": "ecommerce",
+"source": "previous_application",
+"transform": "num",
+"cols": [
+"DAYS_DECISION"
+],
+"meaning": "mean decision day",
+"train_mean": -875.5407798485058,
+"train_sd": 575.491036592829,
+"present_train": 12171,
+"clipped_train": 0,
+"col": 37
+},
+{
+"name": "POS_HAS_RECORD",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "ind",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "any POS/cash month",
+"train_share_one": 0.9465236454744754,
+"col": 38
+},
+{
+"name": "POS_N_MONTHS",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "log",
+"cols": [
+"MONTHS_BALANCE"
+],
+"meaning": "monthly rows",
+"train_mean": 3.087129421067255,
+"train_sd": 0.7521857066622736,
+"present_train": 12089,
+"clipped_train": 0,
+"col": 39
+},
+{
+"name": "POS_N_PREV",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "log",
+"cols": [
+"SK_ID_PREV"
+],
+"meaning": "distinct plans",
+"train_mean": 1.1810269848647148,
+"train_sd": 0.4505403412565207,
+"present_train": 12089,
+"clipped_train": 0,
+"col": 40
+},
+{
+"name": "POS_DPD_SHARE",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "num",
+"cols": [
+"SK_DPD"
+],
+"meaning": "share of months past due",
+"train_mean": 0.02674009682940456,
+"train_sd": 0.08998084745824309,
+"present_train": 12089,
+"clipped_train": 117,
+"col": 41
+},
+{
+"name": "POS_DPD_DEF_SHARE",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "num",
+"cols": [
+"SK_DPD_DEF"
+],
+"meaning": "share of months past due with tolerance",
+"train_mean": 0.013011598393536654,
+"train_sd": 0.047812715553273245,
+"present_train": 12089,
+"clipped_train": 91,
+"col": 42
+},
+{
+"name": "POS_DPD_MAX",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "log",
+"cols": [
+"SK_DPD"
+],
+"meaning": "max days past due",
+"train_mean": 0.5378766330901251,
+"train_sd": 1.2407591370146556,
+"present_train": 12089,
+"clipped_train": 82,
+"col": 43
+},
+{
+"name": "POS_FUTURE_MEAN",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "num",
+"cols": [
+"CNT_INSTALMENT_FUTURE"
+],
+"meaning": "mean instalments left",
+"train_mean": 9.390490962288423,
+"train_sd": 6.7760784149671816,
+"present_train": 12088,
+"clipped_train": 19,
+"col": 44
+},
+{
+"name": "POS_COMPLETED_SHARE",
+"owner": "ecommerce",
+"source": "POS_CASH_balance",
+"transform": "num",
+"cols": [
+"NAME_CONTRACT_STATUS"
+],
+"meaning": "share of months marked Completed",
+"train_mean": 0.08303004848871821,
+"train_sd": 0.06298303151833004,
+"present_train": 12089,
+"clipped_train": 59,
+"col": 45
+},
+{
+"name": "BUR_HAS_RECORD",
+"owner": "bureau",
+"source": "bureau",
+"transform": "ind",
+"cols": [
+"SK_ID_CURR"
+],
+"meaning": "any bureau credit",
+"train_share_one": 0.8419198246163483,
+"col": 46
+},
+{
+"name": "BUR_N",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"SK_ID_BUREAU"
+],
+"meaning": "bureau credits",
+"train_mean": 1.6780777280960455,
+"train_sd": 0.6353862280478355,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 47
+},
+{
+"name": "BUR_ACTIVE_N",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"CREDIT_ACTIVE"
+],
+"meaning": "active credits",
+"train_mean": 1.009434230357346,
+"train_sd": 0.5936574007729114,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 48
+},
+{
+"name": "BUR_CLOSED_SHARE",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"CREDIT_ACTIVE"
+],
+"meaning": "share closed",
+"train_mean": 0.5436070610110859,
+"train_sd": 0.31541935933936305,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 49
+},
+{
+"name": "BUR_DAYS_CREDIT_MEAN",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"DAYS_CREDIT"
+],
+"meaning": "mean days since the credit was granted",
+"train_mean": -993.2226865731403,
+"train_sd": 564.3633167306349,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 50
+},
+{
+"name": "BUR_DAYS_CREDIT_MAX",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"DAYS_CREDIT"
+],
+"meaning": "most recent credit",
+"train_mean": -440.9530363619455,
+"train_sd": 509.110775530907,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 51
+},
+{
+"name": "BUR_ENDDATE_MEAN",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"DAYS_CREDIT_ENDDATE"
+],
+"meaning": "mean planned end day",
+"train_mean": 916.973500306085,
+"train_sd": 3665.374680216311,
+"present_train": 10635,
+"clipped_train": 85,
+"col": 52
+},
+{
+"name": "BUR_OVERDUE_DAYS_MAX",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"CREDIT_DAY_OVERDUE"
+],
+"meaning": "max days overdue now",
+"train_mean": 0.07374636833912268,
+"train_sd": 0.575033346638838,
+"present_train": 10753,
+"clipped_train": 143,
+"col": 53
+},
+{
+"name": "BUR_MAX_OVERDUE_AMT_MAX",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"AMT_CREDIT_MAX_OVERDUE"
+],
+"meaning": "largest overdue amount so far",
+"train_mean": 3.704025216739183,
+"train_sd": 4.516266913680066,
+"present_train": 7527,
+"clipped_train": 0,
+"col": 54
+},
+{
+"name": "BUR_PROLONG_SUM",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"CNT_CREDIT_PROLONG"
+],
+"meaning": "prolongations",
+"train_mean": 0.027005916278282856,
+"train_sd": 0.14588720954860074,
+"present_train": 10753,
+"clipped_train": 61,
+"col": 55
+},
+{
+"name": "BUR_CREDIT_SUM",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"AMT_CREDIT_SUM"
+],
+"meaning": "total credit",
+"train_mean": 13.546122835402224,
+"train_sd": 1.6522638123969942,
+"present_train": 10753,
+"clipped_train": 42,
+"col": 56
+},
+{
+"name": "BUR_DEBT_SUM",
+"owner": "bureau",
+"source": "bureau",
+"transform": "slog",
+"cols": [
+"AMT_CREDIT_SUM_DEBT"
+],
+"meaning": "total debt",
+"train_mean": 9.399524318366746,
+"train_sd": 5.829734072672056,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 57
+},
+{
+"name": "BUR_DEBT_RATIO",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"AMT_CREDIT_SUM_DEBT",
+"AMT_CREDIT_SUM"
+],
+"meaning": "total debt / total credit, clipped to [-1, 2]",
+"train_mean": 0.32695937817284015,
+"train_sd": 0.3117801220772442,
+"present_train": 10712,
+"clipped_train": 11,
+"col": 58
+},
+{
+"name": "BUR_OVERDUE_SUM",
+"owner": "bureau",
+"source": "bureau",
+"transform": "log",
+"cols": [
+"AMT_CREDIT_SUM_OVERDUE"
+],
+"meaning": "total overdue now",
+"train_mean": 0.12162555196332948,
+"train_sd": 0.9694223240186367,
+"present_train": 10753,
+"clipped_train": 133,
+"col": 59
+},
+{
+"name": "BUR_CARD_SHARE",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"CREDIT_TYPE"
+],
+"meaning": "share Credit card",
+"train_mean": 0.2544361370890209,
+"train_sd": 0.26329203853688055,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 60
+},
+{
+"name": "BUR_CONSUMER_SHARE",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"CREDIT_TYPE"
+],
+"meaning": "share Consumer credit",
+"train_mean": 0.7062603788248705,
+"train_sd": 0.28085766146518776,
+"present_train": 10753,
+"clipped_train": 0,
+"col": 61
+},
+{
+"name": "BUR_CAR_SHARE",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"CREDIT_TYPE"
+],
+"meaning": "share Car loan",
+"train_mean": 0.01638453174021391,
+"train_sd": 0.08363473762622468,
+"present_train": 10753,
+"clipped_train": 116,
+"col": 62
+},
+{
+"name": "BUR_MORTGAGE_SHARE",
+"owner": "bureau",
+"source": "bureau",
+"transform": "num",
+"cols": [
+"CREDIT_TYPE"
+],
+"meaning": "share Mortgage",
+"train_mean": 0.012205207226551256,
+"train_sd": 0.07605136821491869,
+"present_train": 10753,
+"clipped_train": 84,
+"col": 63
+},
+{
+"name": "BB_HAS_RECORD",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "ind",
+"cols": [
+"SK_ID_BUREAU"
+],
+"meaning": "any monthly bureau status",
+"train_share_one": 0.3005010961478234,
+"col": 64
+},
+{
+"name": "BB_N_MONTHS",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "log",
+"cols": [
+"MONTHS_BALANCE"
+],
+"meaning": "monthly statuses",
+"train_mean": 4.440888862296217,
+"train_sd": 1.1902178310252185,
+"present_train": 3838,
+"clipped_train": 0,
+"col": 65
+},
+{
+"name": "BB_DPD_SHARE",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "num",
+"cols": [
+"STATUS"
+],
+"meaning": "share of months with status 1-5 (past due)",
+"train_mean": 0.02205375458293521,
+"train_sd": 0.06221356506745283,
+"present_train": 3838,
+"clipped_train": 31,
+"col": 66
+},
+{
+"name": "BB_DPD_SEVERE_SHARE",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "num",
+"cols": [
+"STATUS"
+],
+"meaning": "share of months with status 2-5 (over 30 days)",
+"train_mean": 0.005154820921364858,
+"train_sd": 0.03966259376130532,
+"present_train": 3838,
+"clipped_train": 22,
+"col": 67
+},
+{
+"name": "BB_CLOSED_SHARE",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "num",
+"cols": [
+"STATUS"
+],
+"meaning": "share of months with status C",
+"train_mean": 0.37070054981602435,
+"train_sd": 0.28484599123168836,
+"present_train": 3838,
+"clipped_train": 0,
+"col": 68
+},
+{
+"name": "BB_UNKNOWN_SHARE",
+"owner": "bureau",
+"source": "bureau_balance",
+"transform": "num",
+"cols": [
+"STATUS"
+],
+"meaning": "share of months with status X",
+"train_mean": 0.18485299294778054,
+"train_sd": 0.2356391785673746,
+"present_train": 3838,
+"clipped_train": 0,
+"col": 69
+},
+{
+"name": "EXT_SOURCE_1_HAS_VALUE",
+"owner": "bureau",
+"source": "application_train",
+"transform": "ind",
+"cols": [
+"EXT_SOURCE_1"
+],
+"meaning": "EXT_SOURCE_1 present",
+"train_share_one": 0.418885061071093,
+"col": 70
+},
+{
+"name": "EXT_SOURCE_1",
+"owner": "bureau",
+"source": "application_train",
+"transform": "num",
+"cols": [
+"EXT_SOURCE_1"
+],
+"meaning": "external credit score",
+"train_mean": 0.4520827518300524,
+"train_sd": 0.21698887458863383,
+"present_train": 5350,
+"clipped_train": 0,
+"col": 71
+},
+{
+"name": "EXT_SOURCE_2_HAS_VALUE",
+"owner": "bureau",
+"source": "application_train",
+"transform": "ind",
+"cols": [
+"EXT_SOURCE_2"
+],
+"meaning": "EXT_SOURCE_2 present",
+"train_share_one": 0.9978077043532728,
+"col": 72
+},
+{
+"name": "EXT_SOURCE_2",
+"owner": "bureau",
+"source": "application_train",
+"transform": "num",
+"cols": [
+"EXT_SOURCE_2"
+],
+"meaning": "external credit score",
+"train_mean": 0.46683884132092013,
+"train_sd": 0.2080704054587019,
+"present_train": 12744,
+"clipped_train": 0,
+"col": 73
+},
+{
+"name": "EXT_SOURCE_3_HAS_VALUE",
+"owner": "bureau",
+"source": "application_train",
+"transform": "ind",
+"cols": [
+"EXT_SOURCE_3"
+],
+"meaning": "EXT_SOURCE_3 present",
+"train_share_one": 0.7918885061071093,
+"col": 74
+},
+{
+"name": "EXT_SOURCE_3",
+"owner": "bureau",
+"source": "application_train",
+"transform": "num",
+"cols": [
+"EXT_SOURCE_3"
+],
+"meaning": "external credit score",
+"train_mean": 0.45415333441564554,
+"train_sd": 0.20717293979532614,
+"present_train": 10114,
+"clipped_train": 0,
+"col": 75
+},
+{
+"name": "AMT_REQ_HAS_VALUE",
+"owner": "bureau",
+"source": "application_train",
+"transform": "ind",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_HOUR",
+"AMT_REQ_CREDIT_BUREAU_DAY",
+"AMT_REQ_CREDIT_BUREAU_WEEK",
+"AMT_REQ_CREDIT_BUREAU_MON",
+"AMT_REQ_CREDIT_BUREAU_QRT",
+"AMT_REQ_CREDIT_BUREAU_YEAR"
+],
+"meaning": "enquiry counts present",
+"train_share_one": 0.8486533041027247,
+"col": 76
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_HOUR",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_HOUR"
+],
+"meaning": "enquiries to the bureau in the hour before the application",
+"train_mean": 0.004268932748475038,
+"train_sd": 0.05535400180005209,
+"present_train": 10839,
+"clipped_train": 65,
+"col": 77
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_DAY",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_DAY"
+],
+"meaning": "enquiries to the bureau in the day before the application",
+"train_mean": 0.005200589878222122,
+"train_sd": 0.06599939916661629,
+"present_train": 10839,
+"clipped_train": 72,
+"col": 78
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_WEEK",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_WEEK"
+],
+"meaning": "enquiries to the bureau in the week before the application",
+"train_mean": 0.023361903047523246,
+"train_sd": 0.1296647275177711,
+"present_train": 10839,
+"clipped_train": 352,
+"col": 79
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_MON",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_MON"
+],
+"meaning": "enquiries to the bureau in the month before the application",
+"train_mean": 0.13758368712328353,
+"train_sd": 0.3426477863268785,
+"present_train": 10839,
+"clipped_train": 46,
+"col": 80
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_QRT",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_QRT"
+],
+"meaning": "enquiries to the bureau in the quarter before the application",
+"train_mean": 0.15906136204675297,
+"train_sd": 0.34814981785573307,
+"present_train": 10839,
+"clipped_train": 1,
+"col": 81
+},
+{
+"name": "AMT_REQ_CREDIT_BUREAU_YEAR",
+"owner": "bureau",
+"source": "application_train",
+"transform": "log",
+"cols": [
+"AMT_REQ_CREDIT_BUREAU_YEAR"
+],
+"meaning": "enquiries to the bureau in the year before the application",
+"train_mean": 0.8807516983053355,
+"train_sd": 0.6469036699831073,
+"present_train": 10839,
+"clipped_train": 0,
+"col": 82
+}
+],
+"dropped": []
+}

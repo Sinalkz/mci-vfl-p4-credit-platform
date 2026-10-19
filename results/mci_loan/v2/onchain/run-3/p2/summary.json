@@ -1,0 +1,284 @@
+{
+  "party": "p2",
+  "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "rpc": "http://127.0.0.1:8547",
+  "steps": [
+    {
+      "step": "discover the run on-chain (FederationCreated listing this passive)",
+      "startMs": 70,
+      "ms": 5801
+    },
+    {
+      "step": "register (mint Dp, approve, register, commitSeed)",
+      "startMs": 5890,
+      "ms": 7843
+    },
+    {
+      "step": "wait for the start",
+      "startMs": 13734,
+      "ms": 15
+    },
+    {
+      "step": "connect to A",
+      "startMs": 13764,
+      "ms": 539
+    },
+    {
+      "step": "PSI with A, then receive I",
+      "startMs": 14303,
+      "ms": 88826
+    },
+    {
+      "step": "wait for commitAlignment",
+      "startMs": 103129,
+      "ms": 1058
+    },
+    {
+      "step": "gamma_I check against the chain",
+      "startMs": 104187,
+      "ms": 36
+    },
+    {
+      "step": "wait for A's reveal",
+      "startMs": 104224,
+      "ms": 1582
+    },
+    {
+      "step": "revealSeed",
+      "startMs": 105806,
+      "ms": 1952
+    },
+    {
+      "step": "wait for s (state Training)",
+      "startMs": 107758,
+      "ms": 14
+    },
+    {
+      "step": "evaluation rows from on-chain s and sizeI",
+      "startMs": 107772,
+      "ms": 184
+    },
+    {
+      "step": "training, commitFinal, then the final message",
+      "startMs": 107977,
+      "ms": 6758
+    },
+    {
+      "step": "reconciliation and scoring: wait for the end, answering requests",
+      "startMs": 114735,
+      "ms": 123256
+    },
+    {
+      "step": "acknowledge",
+      "startMs": 238017,
+      "ms": 1920
+    },
+    {
+      "step": "wait for Settled (settleBackup after the response window)",
+      "startMs": 239949,
+      "ms": 13
+    },
+    {
+      "step": "withdraw",
+      "startMs": 239989,
+      "ms": 1936
+    }
+  ],
+  "txs": [
+    {
+      "step": "mint Dp",
+      "from": "p2",
+      "hash": "0xf61c20697b00bd7c811f4f20c829df328882df3999457dd8493499947b8b3826",
+      "block": 8,
+      "gasUsed": 51255,
+      "status": 1,
+      "wallMs": 1962
+    },
+    {
+      "step": "approve Dp",
+      "from": "p2",
+      "hash": "0xacb8d7204f530a252895954a2092b678e8243c1cf96608e1ffd82c025a775c34",
+      "block": 9,
+      "gasUsed": 46318,
+      "status": 1,
+      "wallMs": 1956
+    },
+    {
+      "step": "register",
+      "from": "p2",
+      "hash": "0x5f7d18613d8ea1a01df8235bdeecec1dd0448cd1f424ef2e024eb947f97e6a6b",
+      "block": 10,
+      "gasUsed": 112076,
+      "status": 1,
+      "wallMs": 1949
+    },
+    {
+      "step": "commitSeed",
+      "from": "p2",
+      "hash": "0x60851780f931178e757ae7a78a23e2f8d8f9408285b5bf239c546716fb1bb40b",
+      "block": 11,
+      "gasUsed": 60966,
+      "status": 1,
+      "wallMs": 1946
+    },
+    {
+      "step": "revealSeed",
+      "from": "p2",
+      "hash": "0x226f65e230a07e136288efe2d53ca5d0bb8f2ab64698f55605c3d571850bd2bb",
+      "block": 58,
+      "gasUsed": 81947,
+      "status": 1,
+      "wallMs": 1952
+    },
+    {
+      "step": "commitFinal",
+      "from": "p2",
+      "hash": "0x9e2f8c9e393e0e4933d67d2c423c5ac75901359655e9f3483744afc5d5e4d5e8",
+      "block": 61,
+      "gasUsed": 72207,
+      "status": 1,
+      "wallMs": 1671
+    },
+    {
+      "step": "acknowledge",
+      "from": "p2",
+      "hash": "0x5bfa739bc84c051f2fc4dceccc364e8686370b209b8596ee9d2a8b6167d236e8",
+      "block": 124,
+      "gasUsed": 77845,
+      "status": 1,
+      "wallMs": 1920
+    },
+    {
+      "step": "withdraw",
+      "from": "p2",
+      "hash": "0xd4a85d8445701f6f1adb1f445a784f301a9dde448fa305261eb7ce31256d1132",
+      "block": 125,
+      "gasUsed": 56013,
+      "status": 1,
+      "wallMs": 1936
+    }
+  ],
+  "federation": "0x62DE4B2fbc3dC76fD5F97e55f3BBBBD574126116",
+  "psi": {
+    "aSetSize": 15965,
+    "bytesOut": 1062521,
+    "bytesIn": 638852,
+    "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+    },
+    "timings": {
+      "waitAMs": 31848.392207999997,
+      "computeMs": 24095.786709000007,
+      "waitIMs": 32871.71120799999
+    }
+  },
+  "alignment": {
+    "alignSig": "0x788693ed77eb84ff2c7da61b5a91ebf09ffa0a6a32a6a99517b5e0fed3a77146572863e4d375385feffa835bbe73def2c66ad3146063adafdc522598fcb5f83d1b",
+    "listHash": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f",
+    "gammaIOnChain": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f",
+    "matches": true
+  },
+  "noise": "off",
+  "final": {
+    "signedRoot": "0x2b190672b621930962f0fbe91b3aa80d71773d45480a59640e2217bbc9b0aed5",
+    "registeredRoot": "0x2b190672b621930962f0fbe91b3aa80d71773d45480a59640e2217bbc9b0aed5",
+    "messageBytes": 127785,
+    "withheld": false,
+    "training": {
+      "batches": 4980,
+      "grads": 4980,
+      "missedGrads": 0
+    },
+    "trainingMs": 6757.029500000004
+  },
+  "settlement": {
+    "response": "acknowledge",
+    "settlementDeadline": 213,
+    "path": "normal",
+    "owed": "1001"
+  },
+  "state": "Settled",
+  "gammaICheck": {
+    "pass": true,
+    "onChain": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f",
+    "local": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f"
+  },
+  "sizeI": 15965,
+  "idx": [
+    8360,
+    4683,
+    8285,
+    5160,
+    13923,
+    9799,
+    3469,
+    8898,
+    5688,
+    13473,
+    12668,
+    7862,
+    7772,
+    9944,
+    3287,
+    2845,
+    7978,
+    15099,
+    1918,
+    15497,
+    6732,
+    10829,
+    7416,
+    11851,
+    10398,
+    4411,
+    5519,
+    12856,
+    2892,
+    12672,
+    6516,
+    9900,
+    3149,
+    1916,
+    14745,
+    5605,
+    5697,
+    6518,
+    6612,
+    15768,
+    7357,
+    7319,
+    15917,
+    3628,
+    1403,
+    645,
+    7058,
+    6274,
+    10423,
+    437,
+    1571,
+    1587,
+    435,
+    3726,
+    1107,
+    10258,
+    15769,
+    11684,
+    4560,
+    1593,
+    14823,
+    9095,
+    5613,
+    10549
+  ],
+  "rpcErrorsRetried": 0,
+  "totalMs": 241940
+}

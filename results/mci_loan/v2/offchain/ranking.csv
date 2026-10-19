@@ -1,0 +1,19 @@
+seed,l_1,l_2,l_3,ranking (largest l first)
+1,124,100,439,Credit bureau > Bank > E-commerce company
+2,94,68,632,Credit bureau > Bank > E-commerce company
+3,23,19,384,Credit bureau > Bank > E-commerce company
+4,112,10,407,Credit bureau > Bank > E-commerce company
+5,93,87,392,Credit bureau > Bank > E-commerce company
+6,101,110,386,Credit bureau > E-commerce company > Bank
+7,33,-17,679,Credit bureau > Bank > E-commerce company
+8,108,80,532,Credit bureau > Bank > E-commerce company
+9,61,36,478,Credit bureau > Bank > E-commerce company
+10,14,63,395,Credit bureau > E-commerce company > Bank
+modal,,,,Credit bureau > Bank > E-commerce company in 8 of 10 seeds
+share l_1 > l_2,,,,0.8000
+share l_1 > l_3,,,,0.0000
+share l_2 > l_1,,,,0.2000
+share l_2 > l_3,,,,0.0000
+share l_3 > l_1,,,,1.0000
+share l_3 > l_2,,,,1.0000
+"Friedman chi2 (descriptive, n = 10)",,,,16.800; p = 0.0002; smallest attainable p: 4.540e-05

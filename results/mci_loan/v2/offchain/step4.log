@@ -1,0 +1,641 @@
+2026-10-19T10:34:27.716Z step4v2 main start {"set":"main","seeds":[1,2,3,4,5,6,7,8,9,10],"commit":"632f4bd","prepared":"data/mci_loan/v2/prepared","clean":true,"started":"2026-10-19T10:34:27.708Z","machine":{"cpu":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","cores":12,"totalRamMB":16263,"freeRamMB":3021,"node":"v24.16.0","platform":"win32 10.0.26200","hostname":"laptop"}}
+2026-10-19T10:34:27.718Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 1 | free RAM MB 3021
+{"kind":"c2","seed":1,"F":{"FULL":6867,"FULL_J":6888,"LOO_1":6764,"LOO_2":6788,"LOO_3":6449,"BASELINE":5981},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:34:54.677Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 1 27 s
+2026-10-19T10:34:54.680Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 1 | free RAM MB 3057
+{"kind":"c4a32","seed":1,"F":6888,"unusedClass":0,"wallS":3,"peakRssMB":265}
+2026-10-19T10:34:58.684Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 1 4 s
+2026-10-19T10:34:58.688Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 1 | free RAM MB 3052
+{"kind":"c1b","seed":1,"F":5948,"unusedClass":0,"wallS":1,"peakRssMB":189}
+2026-10-19T10:35:00.276Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 1 2 s
+2026-10-19T10:35:00.280Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s1.json | free RAM MB 3041
+{"draws":1000,"fullTest":{"FULL":6867,"FULL_J":6888,"LOO_1":6764,"LOO_2":6788,"LOO_3":6449,"BASELINE":5981}}
+2026-10-19T10:35:06.409Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s1.json 6 s
+2026-10-19T10:35:06.412Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 2 | free RAM MB 3071
+{"kind":"c2","seed":2,"F":{"FULL":6826,"FULL_J":6796,"LOO_1":6732,"LOO_2":6758,"LOO_3":6194,"BASELINE":5837},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":341,"clipping":[0,0,0]}
+2026-10-19T10:35:33.150Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 2 27 s
+2026-10-19T10:35:33.152Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 2 | free RAM MB 3088
+{"kind":"c4a32","seed":2,"F":6796,"unusedClass":0,"wallS":3,"peakRssMB":265}
+2026-10-19T10:35:37.134Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 2 4 s
+2026-10-19T10:35:37.137Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 2 | free RAM MB 3089
+{"kind":"c1b","seed":2,"F":6010,"unusedClass":0,"wallS":1,"peakRssMB":191}
+2026-10-19T10:35:38.696Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 2 2 s
+2026-10-19T10:35:38.699Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s2.json | free RAM MB 3086
+{"draws":1000,"fullTest":{"FULL":6826,"FULL_J":6796,"LOO_1":6732,"LOO_2":6758,"LOO_3":6194,"BASELINE":5837}}
+2026-10-19T10:35:44.704Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s2.json 6 s
+2026-10-19T10:35:44.706Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 3 | free RAM MB 3080
+{"kind":"c2","seed":3,"F":{"FULL":6651,"FULL_J":6667,"LOO_1":6644,"LOO_2":6648,"LOO_3":6283,"BASELINE":6011},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":21,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:36:12.300Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 3 28 s
+2026-10-19T10:36:12.302Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 3 | free RAM MB 3069
+{"kind":"c4a32","seed":3,"F":6667,"unusedClass":0,"wallS":3,"peakRssMB":267}
+2026-10-19T10:36:16.110Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 3 4 s
+2026-10-19T10:36:16.114Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 3 | free RAM MB 3060
+{"kind":"c1b","seed":3,"F":5968,"unusedClass":0,"wallS":1,"peakRssMB":189}
+2026-10-19T10:36:17.714Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 3 2 s
+2026-10-19T10:36:17.717Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s3.json | free RAM MB 3072
+{"draws":1000,"fullTest":{"FULL":6651,"FULL_J":6667,"LOO_1":6644,"LOO_2":6648,"LOO_3":6283,"BASELINE":6011}}
+2026-10-19T10:36:23.708Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s3.json 6 s
+2026-10-19T10:36:23.710Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 4 | free RAM MB 3061
+{"kind":"c2","seed":4,"F":{"FULL":6843,"FULL_J":6784,"LOO_1":6731,"LOO_2":6833,"LOO_3":6436,"BASELINE":6078},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":21,"peakRssMB":331,"clipping":[0,0,0]}
+2026-10-19T10:36:51.167Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 4 27 s
+2026-10-19T10:36:51.169Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 4 | free RAM MB 3163
+{"kind":"c4a32","seed":4,"F":6784,"unusedClass":0,"wallS":3,"peakRssMB":265}
+2026-10-19T10:36:55.054Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 4 4 s
+2026-10-19T10:36:55.057Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 4 | free RAM MB 3172
+{"kind":"c1b","seed":4,"F":6072,"unusedClass":0,"wallS":1,"peakRssMB":190}
+2026-10-19T10:36:56.564Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 4 2 s
+2026-10-19T10:36:56.566Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s4.json | free RAM MB 3164
+{"draws":1000,"fullTest":{"FULL":6843,"FULL_J":6784,"LOO_1":6731,"LOO_2":6833,"LOO_3":6436,"BASELINE":6078}}
+2026-10-19T10:37:02.491Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s4.json 6 s
+2026-10-19T10:37:02.493Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 5 | free RAM MB 3155
+{"kind":"c2","seed":5,"F":{"FULL":6792,"FULL_J":6782,"LOO_1":6699,"LOO_2":6705,"LOO_3":6400,"BASELINE":5960},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T10:37:29.077Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 5 27 s
+2026-10-19T10:37:29.080Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 5 | free RAM MB 3026
+{"kind":"c4a32","seed":5,"F":6782,"unusedClass":0,"wallS":3,"peakRssMB":264}
+2026-10-19T10:37:32.943Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 5 4 s
+2026-10-19T10:37:32.945Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 5 | free RAM MB 3037
+{"kind":"c1b","seed":5,"F":5930,"unusedClass":0,"wallS":1,"peakRssMB":189}
+2026-10-19T10:37:34.593Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 5 2 s
+2026-10-19T10:37:34.595Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s5.json | free RAM MB 3028
+{"draws":1000,"fullTest":{"FULL":6792,"FULL_J":6782,"LOO_1":6699,"LOO_2":6705,"LOO_3":6400,"BASELINE":5960}}
+2026-10-19T10:37:40.670Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s5.json 6 s
+2026-10-19T10:37:40.674Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 6 | free RAM MB 3025
+{"kind":"c2","seed":6,"F":{"FULL":6836,"FULL_J":6834,"LOO_1":6735,"LOO_2":6726,"LOO_3":6450,"BASELINE":5978},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:38:08.348Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 6 28 s
+2026-10-19T10:38:08.351Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 6 | free RAM MB 2905
+{"kind":"c4a32","seed":6,"F":6834,"unusedClass":0,"wallS":4,"peakRssMB":264}
+2026-10-19T10:38:12.485Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 6 4 s
+2026-10-19T10:38:12.488Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 6 | free RAM MB 2897
+{"kind":"c1b","seed":6,"F":6052,"unusedClass":0,"wallS":1,"peakRssMB":190}
+2026-10-19T10:38:14.164Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 6 2 s
+2026-10-19T10:38:14.167Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s6.json | free RAM MB 2918
+{"draws":1000,"fullTest":{"FULL":6836,"FULL_J":6834,"LOO_1":6735,"LOO_2":6726,"LOO_3":6450,"BASELINE":5978}}
+2026-10-19T10:38:20.533Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s6.json 6 s
+2026-10-19T10:38:20.535Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 7 | free RAM MB 2882
+{"kind":"c2","seed":7,"F":{"FULL":6757,"FULL_J":6790,"LOO_1":6757,"LOO_2":6807,"LOO_3":6111,"BASELINE":5842},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:38:49.101Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 7 29 s
+2026-10-19T10:38:49.104Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 7 | free RAM MB 2103
+{"kind":"c4a32","seed":7,"F":6790,"unusedClass":0,"wallS":4,"peakRssMB":269}
+2026-10-19T10:38:53.828Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 7 5 s
+2026-10-19T10:39:54.422Z step4v2 main start {"set":"main","seeds":[1,2,3,4,5,6,7,8,9,10],"commit":"632f4bd","prepared":"data/mci_loan/v2/prepared","clean":true,"started":"2026-10-19T10:34:27.708Z","machine":{"cpu":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","cores":12,"totalRamMB":16263,"freeRamMB":2245,"node":"v24.16.0","platform":"win32 10.0.26200","hostname":"laptop"}}
+2026-10-19T10:39:54.423Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s1.json
+2026-10-19T10:39:54.423Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s1.json
+2026-10-19T10:39:54.424Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s1.json
+2026-10-19T10:39:54.424Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s1.json
+2026-10-19T10:39:54.425Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s2.json
+2026-10-19T10:39:54.425Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s2.json
+2026-10-19T10:39:54.425Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s2.json
+2026-10-19T10:39:54.426Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s2.json
+2026-10-19T10:39:54.426Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s3.json
+2026-10-19T10:39:54.427Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s3.json
+2026-10-19T10:39:54.427Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s3.json
+2026-10-19T10:39:54.427Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s3.json
+2026-10-19T10:39:54.428Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s4.json
+2026-10-19T10:39:54.428Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s4.json
+2026-10-19T10:39:54.428Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s4.json
+2026-10-19T10:39:54.429Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s4.json
+2026-10-19T10:39:54.429Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s5.json
+2026-10-19T10:39:54.429Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s5.json
+2026-10-19T10:39:54.429Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s5.json
+2026-10-19T10:39:54.430Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s5.json
+2026-10-19T10:39:54.430Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s6.json
+2026-10-19T10:39:54.430Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s6.json
+2026-10-19T10:39:54.431Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c1b-s6.json
+2026-10-19T10:39:54.431Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\n64-c2-s6.json
+2026-10-19T10:39:54.431Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c2-s7.json
+2026-10-19T10:39:54.431Z skip (exists) <repo>\results\mci_loan\v2\offchain\runs\c4a32-s7.json
+2026-10-19T10:39:54.433Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 7 | free RAM MB 2245
+{"kind":"c1b","seed":7,"F":5652,"unusedClass":0,"wallS":1,"peakRssMB":189}
+2026-10-19T10:39:56.041Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 7 2 s
+2026-10-19T10:39:56.044Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s7.json | free RAM MB 2209
+{"draws":1000,"fullTest":{"FULL":6757,"FULL_J":6790,"LOO_1":6757,"LOO_2":6807,"LOO_3":6111,"BASELINE":5842}}
+2026-10-19T10:40:02.069Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s7.json 6 s
+2026-10-19T10:40:02.071Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 8 | free RAM MB 2243
+{"kind":"c2","seed":8,"F":{"FULL":6831,"FULL_J":6793,"LOO_1":6723,"LOO_2":6751,"LOO_3":6299,"BASELINE":5865},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:40:27.989Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 8 26 s
+2026-10-19T10:40:27.991Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 8 | free RAM MB 2397
+{"kind":"c4a32","seed":8,"F":6793,"unusedClass":0,"wallS":3,"peakRssMB":265}
+2026-10-19T10:40:31.858Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 8 4 s
+2026-10-19T10:40:31.860Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 8 | free RAM MB 2380
+{"kind":"c1b","seed":8,"F":5898,"unusedClass":0,"wallS":1,"peakRssMB":190}
+2026-10-19T10:40:33.463Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 8 2 s
+2026-10-19T10:40:33.465Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s8.json | free RAM MB 2368
+{"draws":1000,"fullTest":{"FULL":6831,"FULL_J":6793,"LOO_1":6723,"LOO_2":6751,"LOO_3":6299,"BASELINE":5865}}
+2026-10-19T10:40:39.515Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s8.json 6 s
+2026-10-19T10:40:39.518Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 9 | free RAM MB 2371
+{"kind":"c2","seed":9,"F":{"FULL":6697,"FULL_J":6666,"LOO_1":6636,"LOO_2":6661,"LOO_3":6219,"BASELINE":5939},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":20,"peakRssMB":351,"clipping":[0,0,0]}
+2026-10-19T10:41:06.713Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 9 27 s
+2026-10-19T10:41:06.715Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 9 | free RAM MB 2357
+{"kind":"c4a32","seed":9,"F":6666,"unusedClass":0,"wallS":3,"peakRssMB":266}
+2026-10-19T10:41:10.537Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 9 4 s
+2026-10-19T10:41:10.540Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 9 | free RAM MB 2371
+{"kind":"c1b","seed":9,"F":5987,"unusedClass":0,"wallS":1,"peakRssMB":190}
+2026-10-19T10:41:12.066Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 9 2 s
+2026-10-19T10:41:12.068Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s9.json | free RAM MB 2368
+{"draws":1000,"fullTest":{"FULL":6697,"FULL_J":6666,"LOO_1":6636,"LOO_2":6661,"LOO_3":6219,"BASELINE":5939}}
+2026-10-19T10:41:17.957Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s9.json 6 s
+2026-10-19T10:41:17.959Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 10 | free RAM MB 2367
+{"kind":"c2","seed":10,"F":{"FULL":6739,"FULL_J":6717,"LOO_1":6725,"LOO_2":6676,"LOO_3":6344,"BASELINE":5910},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:41:44.734Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 10 27 s
+2026-10-19T10:41:44.737Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 10 | free RAM MB 2508
+{"kind":"c4a32","seed":10,"F":6717,"unusedClass":0,"wallS":3,"peakRssMB":266}
+2026-10-19T10:41:48.749Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c4a32 --seed 10 4 s
+2026-10-19T10:41:48.752Z start <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 10 | free RAM MB 2556
+{"kind":"c1b","seed":10,"F":6042,"unusedClass":0,"wallS":1,"peakRssMB":190}
+2026-10-19T10:41:50.371Z exit 0 <repo>\scenarios\mci_loan\offchain\central-run.mjs --mode c1b --seed 10 2 s
+2026-10-19T10:41:50.374Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s10.json | free RAM MB 2557
+{"draws":1000,"fullTest":{"FULL":6739,"FULL_J":6717,"LOO_1":6725,"LOO_2":6676,"LOO_3":6344,"BASELINE":5910}}
+2026-10-19T10:41:56.424Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\c2-s10.json 6 s
+2026-10-19T10:41:56.424Z step4v2 main done
+2026-10-19T10:41:56.968Z step4v2 scales start {"set":"scales","seeds":[1,2,3,4,5,6,7,8,9,10],"commit":"632f4bd","prepared":"data/mci_loan/v2/prepared","clean":true,"started":"2026-10-19T10:41:56.960Z","machine":{"cpu":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","cores":12,"totalRamMB":16263,"freeRamMB":2543,"node":"v24.16.0","platform":"win32 10.0.26200","hostname":"laptop"}}
+2026-10-19T10:41:56.970Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 1 | free RAM MB 2543
+{"kind":"c2","seed":1,"F":{"FULL":6867,"FULL_J":6888,"LOO_1":6764,"LOO_2":6788,"LOO_3":6449,"BASELINE":5981},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T10:42:23.395Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode c2 --seed 1 26 s
+2026-10-19T10:42:23.404Z check: C2 seed 1 reproduced {"FULL":6867,"FULL_J":6888,"LOO_1":6764,"LOO_2":6788,"LOO_3":6449,"BASELINE":5981}
+2026-10-19T10:42:23.406Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 1 | free RAM MB 2442
+{"kind":"ldp","seed":1,"F":{"FULL":6878,"FULL_J":6849,"LOO_1":6780,"LOO_2":6809,"LOO_3":6353,"BASELINE":5962},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:42:49.851Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 1 26 s
+2026-10-19T10:42:49.853Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s1.json | free RAM MB 2538
+{"draws":1000,"fullTest":{"FULL":6878,"FULL_J":6849,"LOO_1":6780,"LOO_2":6809,"LOO_3":6353,"BASELINE":5962}}
+2026-10-19T10:42:55.698Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s1.json 6 s
+2026-10-19T10:42:55.700Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 1 | free RAM MB 2574
+{"kind":"ldp","seed":2,"F":{"FULL":6775,"FULL_J":6774,"LOO_1":6715,"LOO_2":6692,"LOO_3":6237,"BASELINE":5933},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:43:21.197Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 1 25 s
+2026-10-19T10:43:21.199Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s2.json | free RAM MB 2547
+{"draws":1000,"fullTest":{"FULL":6775,"FULL_J":6774,"LOO_1":6715,"LOO_2":6692,"LOO_3":6237,"BASELINE":5933}}
+2026-10-19T10:43:27.085Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s2.json 6 s
+2026-10-19T10:43:27.087Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 1 | free RAM MB 2518
+{"kind":"ldp","seed":3,"F":{"FULL":6716,"FULL_J":6696,"LOO_1":6671,"LOO_2":6658,"LOO_3":6312,"BASELINE":5959},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:43:52.894Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 1 26 s
+2026-10-19T10:43:52.896Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s3.json | free RAM MB 2497
+{"draws":1000,"fullTest":{"FULL":6716,"FULL_J":6696,"LOO_1":6671,"LOO_2":6658,"LOO_3":6312,"BASELINE":5959}}
+2026-10-19T10:43:58.995Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s3.json 6 s
+2026-10-19T10:43:58.997Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 1 | free RAM MB 2446
+{"kind":"ldp","seed":4,"F":{"FULL":6849,"FULL_J":6824,"LOO_1":6733,"LOO_2":6793,"LOO_3":6448,"BASELINE":6053},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:44:25.415Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 1 26 s
+2026-10-19T10:44:25.417Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s4.json | free RAM MB 2501
+{"draws":1000,"fullTest":{"FULL":6849,"FULL_J":6824,"LOO_1":6733,"LOO_2":6793,"LOO_3":6448,"BASELINE":6053}}
+2026-10-19T10:44:31.503Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s4.json 6 s
+2026-10-19T10:44:31.506Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 1 | free RAM MB 2506
+{"kind":"ldp","seed":5,"F":{"FULL":6767,"FULL_J":6767,"LOO_1":6641,"LOO_2":6694,"LOO_3":6434,"BASELINE":5905},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":329,"clipping":[0,0,0]}
+2026-10-19T10:44:57.695Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 1 26 s
+2026-10-19T10:44:57.697Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s5.json | free RAM MB 2597
+{"draws":1000,"fullTest":{"FULL":6767,"FULL_J":6767,"LOO_1":6641,"LOO_2":6694,"LOO_3":6434,"BASELINE":5905}}
+2026-10-19T10:45:03.719Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s5.json 6 s
+2026-10-19T10:45:03.722Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 1 | free RAM MB 2530
+{"kind":"ldp","seed":6,"F":{"FULL":6719,"FULL_J":6706,"LOO_1":6648,"LOO_2":6729,"LOO_3":6484,"BASELINE":6030},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":348,"clipping":[0,0,0]}
+2026-10-19T10:45:30.496Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 1 27 s
+2026-10-19T10:45:30.498Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s6.json | free RAM MB 2556
+{"draws":1000,"fullTest":{"FULL":6719,"FULL_J":6706,"LOO_1":6648,"LOO_2":6729,"LOO_3":6484,"BASELINE":6030}}
+2026-10-19T10:45:36.494Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s6.json 6 s
+2026-10-19T10:45:36.497Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 1 | free RAM MB 2543
+{"kind":"ldp","seed":7,"F":{"FULL":6772,"FULL_J":6761,"LOO_1":6734,"LOO_2":6791,"LOO_3":6146,"BASELINE":5782},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:46:02.173Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 1 26 s
+2026-10-19T10:46:02.175Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s7.json | free RAM MB 2589
+{"draws":1000,"fullTest":{"FULL":6772,"FULL_J":6761,"LOO_1":6734,"LOO_2":6791,"LOO_3":6146,"BASELINE":5782}}
+2026-10-19T10:46:07.793Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s7.json 6 s
+2026-10-19T10:46:07.795Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 1 | free RAM MB 2582
+{"kind":"ldp","seed":8,"F":{"FULL":6781,"FULL_J":6823,"LOO_1":6768,"LOO_2":6767,"LOO_3":6307,"BASELINE":5880},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T10:46:31.467Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 1 24 s
+2026-10-19T10:46:31.469Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s8.json | free RAM MB 2601
+{"draws":1000,"fullTest":{"FULL":6781,"FULL_J":6823,"LOO_1":6768,"LOO_2":6767,"LOO_3":6307,"BASELINE":5880}}
+2026-10-19T10:46:37.073Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s8.json 6 s
+2026-10-19T10:46:37.075Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 1 | free RAM MB 2598
+{"kind":"ldp","seed":9,"F":{"FULL":6705,"FULL_J":6696,"LOO_1":6639,"LOO_2":6624,"LOO_3":6246,"BASELINE":5913},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:47:01.316Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 1 24 s
+2026-10-19T10:47:01.318Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s9.json | free RAM MB 2682
+{"draws":1000,"fullTest":{"FULL":6705,"FULL_J":6696,"LOO_1":6639,"LOO_2":6624,"LOO_3":6246,"BASELINE":5913}}
+2026-10-19T10:47:07.323Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s9.json 6 s
+2026-10-19T10:47:07.326Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 1 | free RAM MB 2611
+{"kind":"ldp","seed":10,"F":{"FULL":6756,"FULL_J":6709,"LOO_1":6684,"LOO_2":6689,"LOO_3":6340,"BASELINE":5927},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":329,"clipping":[0,0,0]}
+2026-10-19T10:47:31.282Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 1 24 s
+2026-10-19T10:47:31.284Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s10.json | free RAM MB 2708
+{"draws":1000,"fullTest":{"FULL":6756,"FULL_J":6709,"LOO_1":6684,"LOO_2":6689,"LOO_3":6340,"BASELINE":5927}}
+2026-10-19T10:47:36.876Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x1-s10.json 6 s
+2026-10-19T10:47:36.878Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 0 | free RAM MB 2699
+{"kind":"ldp","seed":1,"F":{"FULL":6863,"FULL_J":6861,"LOO_1":6730,"LOO_2":6788,"LOO_3":6461,"BASELINE":5999},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":330,"clipping":[0,0,0]}
+2026-10-19T10:48:00.857Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 0 24 s
+2026-10-19T10:48:00.859Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s1.json | free RAM MB 2715
+{"draws":1000,"fullTest":{"FULL":6863,"FULL_J":6861,"LOO_1":6730,"LOO_2":6788,"LOO_3":6461,"BASELINE":5999}}
+2026-10-19T10:48:06.495Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s1.json 6 s
+2026-10-19T10:48:06.498Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 0 | free RAM MB 2714
+{"kind":"ldp","seed":2,"F":{"FULL":6760,"FULL_J":6743,"LOO_1":6732,"LOO_2":6634,"LOO_3":6250,"BASELINE":5976},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:48:30.427Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 0 24 s
+2026-10-19T10:48:30.429Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s2.json | free RAM MB 2715
+{"draws":1000,"fullTest":{"FULL":6760,"FULL_J":6743,"LOO_1":6732,"LOO_2":6634,"LOO_3":6250,"BASELINE":5976}}
+2026-10-19T10:48:35.976Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s2.json 6 s
+2026-10-19T10:48:35.978Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 0 | free RAM MB 2708
+{"kind":"ldp","seed":3,"F":{"FULL":6698,"FULL_J":6670,"LOO_1":6647,"LOO_2":6680,"LOO_3":6252,"BASELINE":5994},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T10:49:00.650Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 0 25 s
+2026-10-19T10:49:00.652Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s3.json | free RAM MB 2672
+{"draws":1000,"fullTest":{"FULL":6698,"FULL_J":6670,"LOO_1":6647,"LOO_2":6680,"LOO_3":6252,"BASELINE":5994}}
+2026-10-19T10:49:06.295Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s3.json 6 s
+2026-10-19T10:49:06.297Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 0 | free RAM MB 2662
+{"kind":"ldp","seed":4,"F":{"FULL":6810,"FULL_J":6787,"LOO_1":6737,"LOO_2":6823,"LOO_3":6455,"BASELINE":6063},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T10:49:30.025Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 0 24 s
+2026-10-19T10:49:30.027Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s4.json | free RAM MB 2688
+{"draws":1000,"fullTest":{"FULL":6810,"FULL_J":6787,"LOO_1":6737,"LOO_2":6823,"LOO_3":6455,"BASELINE":6063}}
+2026-10-19T10:49:35.668Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s4.json 6 s
+2026-10-19T10:49:35.671Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 0 | free RAM MB 2690
+{"kind":"ldp","seed":5,"F":{"FULL":6834,"FULL_J":6782,"LOO_1":6734,"LOO_2":6687,"LOO_3":6392,"BASELINE":5940},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:49:59.716Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 0 24 s
+2026-10-19T10:49:59.718Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s5.json | free RAM MB 2666
+{"draws":1000,"fullTest":{"FULL":6834,"FULL_J":6782,"LOO_1":6734,"LOO_2":6687,"LOO_3":6392,"BASELINE":5940}}
+2026-10-19T10:50:05.338Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s5.json 6 s
+2026-10-19T10:50:05.340Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 0 | free RAM MB 2665
+{"kind":"ldp","seed":6,"F":{"FULL":6725,"FULL_J":6726,"LOO_1":6617,"LOO_2":6660,"LOO_3":6461,"BASELINE":6050},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:50:29.255Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 0 24 s
+2026-10-19T10:50:29.257Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s6.json | free RAM MB 3436
+{"draws":1000,"fullTest":{"FULL":6725,"FULL_J":6726,"LOO_1":6617,"LOO_2":6660,"LOO_3":6461,"BASELINE":6050}}
+2026-10-19T10:50:34.878Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s6.json 6 s
+2026-10-19T10:50:34.881Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 0 | free RAM MB 3428
+{"kind":"ldp","seed":7,"F":{"FULL":6764,"FULL_J":6761,"LOO_1":6722,"LOO_2":6797,"LOO_3":6130,"BASELINE":5789},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:50:59.953Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 0 25 s
+2026-10-19T10:50:59.955Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s7.json | free RAM MB 3327
+{"draws":1000,"fullTest":{"FULL":6764,"FULL_J":6761,"LOO_1":6722,"LOO_2":6797,"LOO_3":6130,"BASELINE":5789}}
+2026-10-19T10:51:05.880Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s7.json 6 s
+2026-10-19T10:51:05.883Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 0 | free RAM MB 3321
+{"kind":"ldp","seed":8,"F":{"FULL":6835,"FULL_J":6833,"LOO_1":6716,"LOO_2":6759,"LOO_3":6330,"BASELINE":5812},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:51:31.813Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 0 26 s
+2026-10-19T10:51:31.815Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s8.json | free RAM MB 3234
+{"draws":1000,"fullTest":{"FULL":6835,"FULL_J":6833,"LOO_1":6716,"LOO_2":6759,"LOO_3":6330,"BASELINE":5812}}
+2026-10-19T10:51:37.814Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s8.json 6 s
+2026-10-19T10:51:37.817Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 0 | free RAM MB 3225
+{"kind":"ldp","seed":9,"F":{"FULL":6703,"FULL_J":6683,"LOO_1":6647,"LOO_2":6660,"LOO_3":6237,"BASELINE":5908},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":338,"clipping":[0,0,0]}
+2026-10-19T10:52:04.355Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 0 27 s
+2026-10-19T10:52:04.358Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s9.json | free RAM MB 3246
+{"draws":1000,"fullTest":{"FULL":6703,"FULL_J":6683,"LOO_1":6647,"LOO_2":6660,"LOO_3":6237,"BASELINE":5908}}
+2026-10-19T10:52:10.344Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s9.json 6 s
+2026-10-19T10:52:10.347Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 0 | free RAM MB 3226
+{"kind":"ldp","seed":10,"F":{"FULL":6759,"FULL_J":6712,"LOO_1":6698,"LOO_2":6682,"LOO_3":6357,"BASELINE":5901},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":327,"clipping":[0,0,0]}
+2026-10-19T10:52:36.038Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 0 26 s
+2026-10-19T10:52:36.040Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s10.json | free RAM MB 3186
+{"draws":1000,"fullTest":{"FULL":6759,"FULL_J":6712,"LOO_1":6698,"LOO_2":6682,"LOO_3":6357,"BASELINE":5901}}
+2026-10-19T10:52:42.028Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0-s10.json 6 s
+2026-10-19T10:52:42.031Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 0.5 | free RAM MB 3187
+{"kind":"ldp","seed":1,"F":{"FULL":6870,"FULL_J":6867,"LOO_1":6760,"LOO_2":6776,"LOO_3":6404,"BASELINE":5997},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:53:07.673Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 0.5 26 s
+2026-10-19T10:53:07.675Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s1.json | free RAM MB 3256
+{"draws":1000,"fullTest":{"FULL":6870,"FULL_J":6867,"LOO_1":6760,"LOO_2":6776,"LOO_3":6404,"BASELINE":5997}}
+2026-10-19T10:53:13.625Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s1.json 6 s
+2026-10-19T10:53:13.627Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 0.5 | free RAM MB 3266
+{"kind":"ldp","seed":2,"F":{"FULL":6884,"FULL_J":6877,"LOO_1":6773,"LOO_2":6728,"LOO_3":6256,"BASELINE":5895},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":349,"clipping":[0,0,0]}
+2026-10-19T10:53:39.172Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 0.5 26 s
+2026-10-19T10:53:39.174Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s2.json | free RAM MB 3259
+{"draws":1000,"fullTest":{"FULL":6884,"FULL_J":6877,"LOO_1":6773,"LOO_2":6728,"LOO_3":6256,"BASELINE":5895}}
+2026-10-19T10:53:45.159Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s2.json 6 s
+2026-10-19T10:53:45.161Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 0.5 | free RAM MB 3230
+{"kind":"ldp","seed":3,"F":{"FULL":6705,"FULL_J":6678,"LOO_1":6694,"LOO_2":6617,"LOO_3":6302,"BASELINE":5944},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:54:10.811Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 0.5 26 s
+2026-10-19T10:54:10.814Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s3.json | free RAM MB 3100
+{"draws":1000,"fullTest":{"FULL":6705,"FULL_J":6678,"LOO_1":6694,"LOO_2":6617,"LOO_3":6302,"BASELINE":5944}}
+2026-10-19T10:54:17.747Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s3.json 7 s
+2026-10-19T10:54:17.749Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 0.5 | free RAM MB 2819
+{"kind":"ldp","seed":4,"F":{"FULL":6832,"FULL_J":6817,"LOO_1":6793,"LOO_2":6817,"LOO_3":6446,"BASELINE":6053},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":21,"peakRssMB":338,"clipping":[0,0,0]}
+2026-10-19T10:54:45.772Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 0.5 28 s
+2026-10-19T10:54:45.776Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s4.json | free RAM MB 2689
+{"draws":1000,"fullTest":{"FULL":6832,"FULL_J":6817,"LOO_1":6793,"LOO_2":6817,"LOO_3":6446,"BASELINE":6053}}
+2026-10-19T10:54:52.663Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s4.json 7 s
+2026-10-19T10:54:52.666Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 0.5 | free RAM MB 2391
+{"kind":"ldp","seed":5,"F":{"FULL":6812,"FULL_J":6766,"LOO_1":6679,"LOO_2":6703,"LOO_3":6418,"BASELINE":5871},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":30,"trainingS":24,"peakRssMB":341,"clipping":[0,0,0]}
+2026-10-19T10:55:23.847Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 0.5 31 s
+2026-10-19T10:55:23.851Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s5.json | free RAM MB 2669
+{"draws":1000,"fullTest":{"FULL":6812,"FULL_J":6766,"LOO_1":6679,"LOO_2":6703,"LOO_3":6418,"BASELINE":5871}}
+2026-10-19T10:55:29.766Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s5.json 6 s
+2026-10-19T10:55:29.768Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 0.5 | free RAM MB 2667
+{"kind":"ldp","seed":6,"F":{"FULL":6741,"FULL_J":6715,"LOO_1":6676,"LOO_2":6734,"LOO_3":6490,"BASELINE":6032},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:55:54.990Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 0.5 25 s
+2026-10-19T10:55:54.993Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s6.json | free RAM MB 2727
+{"draws":1000,"fullTest":{"FULL":6741,"FULL_J":6715,"LOO_1":6676,"LOO_2":6734,"LOO_3":6490,"BASELINE":6032}}
+2026-10-19T10:56:00.834Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s6.json 6 s
+2026-10-19T10:56:00.836Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 0.5 | free RAM MB 2721
+{"kind":"ldp","seed":7,"F":{"FULL":6771,"FULL_J":6770,"LOO_1":6751,"LOO_2":6791,"LOO_3":6150,"BASELINE":5787},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:56:27.613Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 0.5 27 s
+2026-10-19T10:56:27.616Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s7.json | free RAM MB 2794
+{"draws":1000,"fullTest":{"FULL":6771,"FULL_J":6770,"LOO_1":6751,"LOO_2":6791,"LOO_3":6150,"BASELINE":5787}}
+2026-10-19T10:56:33.472Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s7.json 6 s
+2026-10-19T10:56:33.475Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 0.5 | free RAM MB 2821
+{"kind":"ldp","seed":8,"F":{"FULL":6748,"FULL_J":6824,"LOO_1":6753,"LOO_2":6730,"LOO_3":6334,"BASELINE":5884},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:57:00.469Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 0.5 27 s
+2026-10-19T10:57:00.471Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s8.json | free RAM MB 2843
+{"draws":1000,"fullTest":{"FULL":6748,"FULL_J":6824,"LOO_1":6753,"LOO_2":6730,"LOO_3":6334,"BASELINE":5884}}
+2026-10-19T10:57:06.438Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s8.json 6 s
+2026-10-19T10:57:06.440Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 0.5 | free RAM MB 2831
+{"kind":"ldp","seed":9,"F":{"FULL":6688,"FULL_J":6672,"LOO_1":6656,"LOO_2":6620,"LOO_3":6249,"BASELINE":5936},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:57:33.051Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 0.5 27 s
+2026-10-19T10:57:33.053Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s9.json | free RAM MB 2818
+{"draws":1000,"fullTest":{"FULL":6688,"FULL_J":6672,"LOO_1":6656,"LOO_2":6620,"LOO_3":6249,"BASELINE":5936}}
+2026-10-19T10:57:38.966Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s9.json 6 s
+2026-10-19T10:57:38.968Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 0.5 | free RAM MB 2852
+{"kind":"ldp","seed":10,"F":{"FULL":6765,"FULL_J":6738,"LOO_1":6705,"LOO_2":6723,"LOO_3":6326,"BASELINE":5930},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T10:58:06.022Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 0.5 27 s
+2026-10-19T10:58:06.025Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s10.json | free RAM MB 2849
+{"draws":1000,"fullTest":{"FULL":6765,"FULL_J":6738,"LOO_1":6705,"LOO_2":6723,"LOO_3":6326,"BASELINE":5930}}
+2026-10-19T10:58:11.821Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x0.5-s10.json 6 s
+2026-10-19T10:58:11.823Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 4 | free RAM MB 2836
+{"kind":"ldp","seed":1,"F":{"FULL":6800,"FULL_J":6752,"LOO_1":6701,"LOO_2":6680,"LOO_3":6240,"BASELINE":5967},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T10:58:37.014Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigma-scale 4 25 s
+2026-10-19T10:58:37.016Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s1.json | free RAM MB 2837
+{"draws":1000,"fullTest":{"FULL":6800,"FULL_J":6752,"LOO_1":6701,"LOO_2":6680,"LOO_3":6240,"BASELINE":5967}}
+2026-10-19T10:58:43.070Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s1.json 6 s
+2026-10-19T10:58:43.073Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 4 | free RAM MB 2847
+{"kind":"ldp","seed":2,"F":{"FULL":6723,"FULL_J":6720,"LOO_1":6732,"LOO_2":6692,"LOO_3":6214,"BASELINE":5883},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:59:08.851Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigma-scale 4 26 s
+2026-10-19T10:59:08.853Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s2.json | free RAM MB 2822
+{"draws":1000,"fullTest":{"FULL":6723,"FULL_J":6720,"LOO_1":6732,"LOO_2":6692,"LOO_3":6214,"BASELINE":5883}}
+2026-10-19T10:59:14.719Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s2.json 6 s
+2026-10-19T10:59:14.720Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 4 | free RAM MB 2812
+{"kind":"ldp","seed":3,"F":{"FULL":6690,"FULL_J":6689,"LOO_1":6682,"LOO_2":6695,"LOO_3":6312,"BASELINE":5986},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T10:59:38.850Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigma-scale 4 24 s
+2026-10-19T10:59:38.852Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s3.json | free RAM MB 2833
+{"draws":1000,"fullTest":{"FULL":6690,"FULL_J":6689,"LOO_1":6682,"LOO_2":6695,"LOO_3":6312,"BASELINE":5986}}
+2026-10-19T10:59:44.541Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s3.json 6 s
+2026-10-19T10:59:44.544Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 4 | free RAM MB 2854
+{"kind":"ldp","seed":4,"F":{"FULL":6714,"FULL_J":6699,"LOO_1":6628,"LOO_2":6668,"LOO_3":6477,"BASELINE":6095},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:00:09.862Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigma-scale 4 25 s
+2026-10-19T11:00:09.865Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s4.json | free RAM MB 2846
+{"draws":1000,"fullTest":{"FULL":6714,"FULL_J":6699,"LOO_1":6628,"LOO_2":6668,"LOO_3":6477,"BASELINE":6095}}
+2026-10-19T11:00:15.819Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s4.json 6 s
+2026-10-19T11:00:15.822Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 4 | free RAM MB 2809
+{"kind":"ldp","seed":5,"F":{"FULL":6601,"FULL_J":6591,"LOO_1":6618,"LOO_2":6674,"LOO_3":6484,"BASELINE":5952},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":345,"clipping":[0,0,0]}
+2026-10-19T11:00:41.996Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigma-scale 4 26 s
+2026-10-19T11:00:41.999Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s5.json | free RAM MB 2758
+{"draws":1000,"fullTest":{"FULL":6601,"FULL_J":6591,"LOO_1":6618,"LOO_2":6674,"LOO_3":6484,"BASELINE":5952}}
+2026-10-19T11:00:48.028Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s5.json 6 s
+2026-10-19T11:00:48.030Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 4 | free RAM MB 2840
+{"kind":"ldp","seed":6,"F":{"FULL":6701,"FULL_J":6668,"LOO_1":6583,"LOO_2":6644,"LOO_3":6419,"BASELINE":6042},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":346,"clipping":[0,0,0]}
+2026-10-19T11:01:14.138Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigma-scale 4 26 s
+2026-10-19T11:01:14.140Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s6.json | free RAM MB 2844
+{"draws":1000,"fullTest":{"FULL":6701,"FULL_J":6668,"LOO_1":6583,"LOO_2":6644,"LOO_3":6419,"BASELINE":6042}}
+2026-10-19T11:01:20.124Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s6.json 6 s
+2026-10-19T11:01:20.126Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 4 | free RAM MB 2852
+{"kind":"ldp","seed":7,"F":{"FULL":6639,"FULL_J":6606,"LOO_1":6564,"LOO_2":6616,"LOO_3":6185,"BASELINE":5884},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:01:46.380Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigma-scale 4 26 s
+2026-10-19T11:01:46.382Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s7.json | free RAM MB 3033
+{"draws":1000,"fullTest":{"FULL":6639,"FULL_J":6606,"LOO_1":6564,"LOO_2":6616,"LOO_3":6185,"BASELINE":5884}}
+2026-10-19T11:01:52.450Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s7.json 6 s
+2026-10-19T11:01:52.452Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 4 | free RAM MB 3038
+{"kind":"ldp","seed":8,"F":{"FULL":6702,"FULL_J":6725,"LOO_1":6622,"LOO_2":6700,"LOO_3":6252,"BASELINE":5929},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T11:02:18.232Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigma-scale 4 26 s
+2026-10-19T11:02:18.235Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s8.json | free RAM MB 3012
+{"draws":1000,"fullTest":{"FULL":6702,"FULL_J":6725,"LOO_1":6622,"LOO_2":6700,"LOO_3":6252,"BASELINE":5929}}
+2026-10-19T11:02:24.128Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s8.json 6 s
+2026-10-19T11:02:24.131Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 4 | free RAM MB 3042
+{"kind":"ldp","seed":9,"F":{"FULL":6718,"FULL_J":6653,"LOO_1":6489,"LOO_2":6595,"LOO_3":6162,"BASELINE":5958},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":19,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T11:02:50.310Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigma-scale 4 26 s
+2026-10-19T11:02:50.312Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s9.json | free RAM MB 3033
+{"draws":1000,"fullTest":{"FULL":6718,"FULL_J":6653,"LOO_1":6489,"LOO_2":6595,"LOO_3":6162,"BASELINE":5958}}
+2026-10-19T11:02:56.279Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s9.json 6 s
+2026-10-19T11:02:56.281Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 4 | free RAM MB 3015
+{"kind":"ldp","seed":10,"F":{"FULL":6719,"FULL_J":6614,"LOO_1":6641,"LOO_2":6665,"LOO_3":6302,"BASELINE":5952},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:03:22.999Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigma-scale 4 27 s
+2026-10-19T11:03:23.001Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s10.json | free RAM MB 2685
+{"draws":1000,"fullTest":{"FULL":6719,"FULL_J":6614,"LOO_1":6641,"LOO_2":6665,"LOO_3":6302,"BASELINE":5952}}
+2026-10-19T11:03:29.042Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\ldp-x4-s10.json 6 s
+2026-10-19T11:03:29.043Z step4v2 scales done
+2026-10-19T11:03:29.591Z step4v2 eps start {"set":"eps","seeds":[1,2,3,4,5,6,7,8,9,10],"commit":"632f4bd","prepared":"data/mci_loan/v2/prepared","clean":true,"started":"2026-10-19T11:03:29.577Z","machine":{"cpu":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","cores":12,"totalRamMB":16263,"freeRamMB":2707,"node":"v24.16.0","platform":"win32 10.0.26200","hostname":"laptop"}}
+2026-10-19T11:03:29.594Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --sigma-scale 0 --seed 1 | free RAM MB 2707
+{"kind":"ldp","seed":1,"F":{"FULL":6863,"FULL_J":6861,"LOO_1":6730,"LOO_2":6788,"LOO_3":6461,"BASELINE":5999},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":22,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:03:58.779Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --sigma-scale 0 --seed 1 29 s
+2026-10-19T11:03:58.788Z check: LDP off seed 1 reproduced {"FULL":6863,"FULL_J":6861,"LOO_1":6730,"LOO_2":6788,"LOO_3":6461,"BASELINE":5999}
+2026-10-19T11:03:58.790Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2525
+{"kind":"ldp","seed":1,"F":{"FULL":5725,"FULL_J":5786,"LOO_1":5722,"LOO_2":5860,"LOO_3":5761,"BASELINE":5992},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":21,"peakRssMB":333,"clipping":[48512,48357,43697]}
+2026-10-19T11:04:27.263Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 28 s
+2026-10-19T11:04:27.266Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s1.json | free RAM MB 2590
+{"draws":1000,"fullTest":{"FULL":5725,"FULL_J":5786,"LOO_1":5722,"LOO_2":5860,"LOO_3":5761,"BASELINE":5992}}
+2026-10-19T11:04:33.937Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s1.json 7 s
+2026-10-19T11:04:33.939Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2370
+{"kind":"ldp","seed":2,"F":{"FULL":4025,"FULL_J":3795,"LOO_1":4242,"LOO_2":3858,"LOO_3":4157,"BASELINE":5304},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":22,"peakRssMB":325,"clipping":[48343,48350,43405]}
+2026-10-19T11:05:02.867Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 29 s
+2026-10-19T11:05:02.869Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s2.json | free RAM MB 2501
+{"draws":1000,"fullTest":{"FULL":4025,"FULL_J":3795,"LOO_1":4242,"LOO_2":3858,"LOO_3":4157,"BASELINE":5304}}
+2026-10-19T11:05:08.966Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s2.json 6 s
+2026-10-19T11:05:08.969Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2329
+{"kind":"ldp","seed":3,"F":{"FULL":5790,"FULL_J":5070,"LOO_1":5886,"LOO_2":5974,"LOO_3":5877,"BASELINE":6062},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":330,"clipping":[48302,48422,43248]}
+2026-10-19T11:05:35.340Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 26 s
+2026-10-19T11:05:35.342Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s3.json | free RAM MB 2500
+{"draws":1000,"fullTest":{"FULL":5790,"FULL_J":5070,"LOO_1":5886,"LOO_2":5974,"LOO_3":5877,"BASELINE":6062}}
+2026-10-19T11:05:41.439Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s3.json 6 s
+2026-10-19T11:05:41.442Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2518
+{"kind":"ldp","seed":4,"F":{"FULL":5570,"FULL_J":5249,"LOO_1":5634,"LOO_2":5493,"LOO_3":5646,"BASELINE":5865},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":22,"peakRssMB":330,"clipping":[48386,48335,43564]}
+2026-10-19T11:06:09.678Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 28 s
+2026-10-19T11:06:09.682Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s4.json | free RAM MB 2343
+{"draws":1000,"fullTest":{"FULL":5570,"FULL_J":5249,"LOO_1":5634,"LOO_2":5493,"LOO_3":5646,"BASELINE":5865}}
+2026-10-19T11:06:16.016Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s4.json 6 s
+2026-10-19T11:06:16.018Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2340
+{"kind":"ldp","seed":5,"F":{"FULL":5738,"FULL_J":5547,"LOO_1":5848,"LOO_2":5809,"LOO_3":5819,"BASELINE":5971},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":22,"peakRssMB":329,"clipping":[48475,48428,43512]}
+2026-10-19T11:06:44.388Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 28 s
+2026-10-19T11:06:44.391Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s5.json | free RAM MB 2219
+{"draws":1000,"fullTest":{"FULL":5738,"FULL_J":5547,"LOO_1":5848,"LOO_2":5809,"LOO_3":5819,"BASELINE":5971}}
+2026-10-19T11:06:50.820Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s5.json 6 s
+2026-10-19T11:06:50.823Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2361
+{"kind":"ldp","seed":6,"F":{"FULL":5867,"FULL_J":5580,"LOO_1":5930,"LOO_2":5874,"LOO_3":5945,"BASELINE":5996},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":346,"clipping":[48450,48380,43432]}
+2026-10-19T11:07:17.950Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 27 s
+2026-10-19T11:07:17.953Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s6.json | free RAM MB 2425
+{"draws":1000,"fullTest":{"FULL":5867,"FULL_J":5580,"LOO_1":5930,"LOO_2":5874,"LOO_3":5945,"BASELINE":5996}}
+2026-10-19T11:07:24.074Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s6.json 6 s
+2026-10-19T11:07:24.075Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2337
+{"kind":"ldp","seed":7,"F":{"FULL":5205,"FULL_J":3541,"LOO_1":5207,"LOO_2":5214,"LOO_3":5358,"BASELINE":5906},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":19,"peakRssMB":354,"clipping":[48481,48540,43446]}
+2026-10-19T11:07:51.164Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 27 s
+2026-10-19T11:07:51.168Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s7.json | free RAM MB 2338
+{"draws":1000,"fullTest":{"FULL":5205,"FULL_J":3541,"LOO_1":5207,"LOO_2":5214,"LOO_3":5358,"BASELINE":5906}}
+2026-10-19T11:07:57.279Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s7.json 6 s
+2026-10-19T11:07:57.281Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2369
+{"kind":"ldp","seed":8,"F":{"FULL":5680,"FULL_J":4533,"LOO_1":5616,"LOO_2":5758,"LOO_3":5612,"BASELINE":5839},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":332,"clipping":[48440,48365,43375]}
+2026-10-19T11:08:23.497Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 26 s
+2026-10-19T11:08:23.499Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s8.json | free RAM MB 2596
+{"draws":1000,"fullTest":{"FULL":5680,"FULL_J":4533,"LOO_1":5616,"LOO_2":5758,"LOO_3":5612,"BASELINE":5839}}
+2026-10-19T11:08:29.565Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s8.json 6 s
+2026-10-19T11:08:29.567Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2571
+{"kind":"ldp","seed":9,"F":{"FULL":5626,"FULL_J":5791,"LOO_1":5419,"LOO_2":5427,"LOO_3":5578,"BASELINE":5882},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":333,"clipping":[48456,48411,43557]}
+2026-10-19T11:08:56.381Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 27 s
+2026-10-19T11:08:56.384Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s9.json | free RAM MB 2559
+{"draws":1000,"fullTest":{"FULL":5626,"FULL_J":5791,"LOO_1":5419,"LOO_2":5427,"LOO_3":5578,"BASELINE":5882}}
+2026-10-19T11:09:02.856Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s9.json 6 s
+2026-10-19T11:09:02.859Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 | free RAM MB 2424
+{"kind":"ldp","seed":10,"F":{"FULL":5412,"FULL_J":3334,"LOO_1":5531,"LOO_2":5304,"LOO_3":5347,"BASELINE":5796},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":21,"peakRssMB":331,"clipping":[48475,48300,43461]}
+2026-10-19T11:09:31.037Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 25.97149236462211,25.97149236462211,19.47861927346659 28 s
+2026-10-19T11:09:31.039Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s10.json | free RAM MB 2624
+{"draws":1000,"fullTest":{"FULL":5412,"FULL_J":3334,"LOO_1":5531,"LOO_2":5304,"LOO_3":5347,"BASELINE":5796}}
+2026-10-19T11:09:37.006Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e1-s10.json 6 s
+2026-10-19T11:09:37.008Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2629
+{"kind":"ldp","seed":1,"F":{"FULL":6052,"FULL_J":5973,"LOO_1":6015,"LOO_2":6003,"LOO_3":6001,"BASELINE":5962},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":20,"peakRssMB":333,"clipping":[19620,19462,11420]}
+2026-10-19T11:10:04.811Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 28 s
+2026-10-19T11:10:04.814Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s1.json | free RAM MB 2613
+{"draws":1000,"fullTest":{"FULL":6052,"FULL_J":5973,"LOO_1":6015,"LOO_2":6003,"LOO_3":6001,"BASELINE":5962}}
+2026-10-19T11:10:10.883Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s1.json 6 s
+2026-10-19T11:10:10.885Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2638
+{"kind":"ldp","seed":2,"F":{"FULL":5341,"FULL_J":3668,"LOO_1":5489,"LOO_2":5464,"LOO_3":5180,"BASELINE":5854},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":347,"clipping":[19201,19472,11132]}
+2026-10-19T11:10:36.993Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 26 s
+2026-10-19T11:10:36.996Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s2.json | free RAM MB 2665
+{"draws":1000,"fullTest":{"FULL":5341,"FULL_J":3668,"LOO_1":5489,"LOO_2":5464,"LOO_3":5180,"BASELINE":5854}}
+2026-10-19T11:10:43.023Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s2.json 6 s
+2026-10-19T11:10:43.025Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2664
+{"kind":"ldp","seed":3,"F":{"FULL":6010,"FULL_J":5922,"LOO_1":5993,"LOO_2":6006,"LOO_3":6010,"BASELINE":6071},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":20,"peakRssMB":330,"clipping":[19500,19424,10806]}
+2026-10-19T11:11:10.724Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 28 s
+2026-10-19T11:11:10.727Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s3.json | free RAM MB 2623
+{"draws":1000,"fullTest":{"FULL":6010,"FULL_J":5922,"LOO_1":5993,"LOO_2":6006,"LOO_3":6010,"BASELINE":6071}}
+2026-10-19T11:11:17.233Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s3.json 7 s
+2026-10-19T11:11:17.236Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2569
+{"kind":"ldp","seed":4,"F":{"FULL":5969,"FULL_J":5997,"LOO_1":6015,"LOO_2":5968,"LOO_3":5988,"BASELINE":6110},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":331,"clipping":[19592,19438,10934]}
+2026-10-19T11:11:43.860Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 27 s
+2026-10-19T11:11:43.863Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s4.json | free RAM MB 2448
+{"draws":1000,"fullTest":{"FULL":5969,"FULL_J":5997,"LOO_1":6015,"LOO_2":5968,"LOO_3":5988,"BASELINE":6110}}
+2026-10-19T11:11:49.719Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s4.json 6 s
+2026-10-19T11:11:49.721Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2612
+{"kind":"ldp","seed":5,"F":{"FULL":5722,"FULL_J":5720,"LOO_1":5854,"LOO_2":5870,"LOO_3":5799,"BASELINE":6006},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":22,"peakRssMB":334,"clipping":[19610,19554,10983]}
+2026-10-19T11:12:17.722Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 28 s
+2026-10-19T11:12:17.725Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s5.json | free RAM MB 2436
+{"draws":1000,"fullTest":{"FULL":5722,"FULL_J":5720,"LOO_1":5854,"LOO_2":5870,"LOO_3":5799,"BASELINE":6006}}
+2026-10-19T11:12:23.816Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s5.json 6 s
+2026-10-19T11:12:23.819Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2457
+{"kind":"ldp","seed":6,"F":{"FULL":6026,"FULL_J":5973,"LOO_1":6035,"LOO_2":5970,"LOO_3":6061,"BASELINE":5984},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":20,"peakRssMB":350,"clipping":[19267,19512,11372]}
+2026-10-19T11:12:50.175Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 26 s
+2026-10-19T11:12:50.177Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s6.json | free RAM MB 2488
+{"draws":1000,"fullTest":{"FULL":6026,"FULL_J":5973,"LOO_1":6035,"LOO_2":5970,"LOO_3":6061,"BASELINE":5984}}
+2026-10-19T11:12:56.109Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s6.json 6 s
+2026-10-19T11:12:56.112Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2470
+{"kind":"ldp","seed":7,"F":{"FULL":5750,"FULL_J":5912,"LOO_1":5718,"LOO_2":5787,"LOO_3":5821,"BASELINE":5889},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":27,"trainingS":21,"peakRssMB":343,"clipping":[19518,19409,11335]}
+2026-10-19T11:13:23.915Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 28 s
+2026-10-19T11:13:23.917Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s7.json | free RAM MB 2362
+{"draws":1000,"fullTest":{"FULL":5750,"FULL_J":5912,"LOO_1":5718,"LOO_2":5787,"LOO_3":5821,"BASELINE":5889}}
+2026-10-19T11:13:29.844Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s7.json 6 s
+2026-10-19T11:13:29.846Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2368
+{"kind":"ldp","seed":8,"F":{"FULL":5684,"FULL_J":5287,"LOO_1":5679,"LOO_2":5832,"LOO_3":5479,"BASELINE":5772},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":330,"clipping":[19657,19340,11023]}
+2026-10-19T11:13:55.871Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 26 s
+2026-10-19T11:13:55.874Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s8.json | free RAM MB 2635
+{"draws":1000,"fullTest":{"FULL":5684,"FULL_J":5287,"LOO_1":5679,"LOO_2":5832,"LOO_3":5479,"BASELINE":5772}}
+2026-10-19T11:14:01.898Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s8.json 6 s
+2026-10-19T11:14:01.900Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2595
+{"kind":"ldp","seed":9,"F":{"FULL":5739,"FULL_J":5908,"LOO_1":5832,"LOO_2":5793,"LOO_3":5860,"BASELINE":5946},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":26,"trainingS":19,"peakRssMB":337,"clipping":[19608,19665,11062]}
+2026-10-19T11:14:28.054Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 26 s
+2026-10-19T11:14:28.056Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s9.json | free RAM MB 2730
+{"draws":1000,"fullTest":{"FULL":5739,"FULL_J":5908,"LOO_1":5832,"LOO_2":5793,"LOO_3":5860,"BASELINE":5946}}
+2026-10-19T11:14:33.820Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s9.json 6 s
+2026-10-19T11:14:33.822Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 | free RAM MB 2719
+{"kind":"ldp","seed":10,"F":{"FULL":5825,"FULL_J":5821,"LOO_1":5836,"LOO_2":5877,"LOO_3":5937,"BASELINE":5942},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":351,"clipping":[19374,19262,11206]}
+2026-10-19T11:14:59.283Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 7.7783017287509475,7.7783017287509475,5.833726296563208 25 s
+2026-10-19T11:14:59.285Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s10.json | free RAM MB 2653
+{"draws":1000,"fullTest":{"FULL":5825,"FULL_J":5821,"LOO_1":5836,"LOO_2":5877,"LOO_3":5937,"BASELINE":5942}}
+2026-10-19T11:15:05.133Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e4-s10.json 6 s
+2026-10-19T11:15:05.136Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2679
+{"kind":"ldp","seed":1,"F":{"FULL":6320,"FULL_J":6337,"LOO_1":6364,"LOO_2":6372,"LOO_3":6034,"BASELINE":5968},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":28,"trainingS":21,"peakRssMB":342,"clipping":[292,171,38]}
+2026-10-19T11:15:33.398Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 28 s
+2026-10-19T11:15:33.400Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s1.json | free RAM MB 2407
+{"draws":1000,"fullTest":{"FULL":6320,"FULL_J":6337,"LOO_1":6364,"LOO_2":6372,"LOO_3":6034,"BASELINE":5968}}
+2026-10-19T11:15:39.873Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s1.json 6 s
+2026-10-19T11:15:39.874Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2373
+{"kind":"ldp","seed":2,"F":{"FULL":6244,"FULL_J":6267,"LOO_1":6239,"LOO_2":6281,"LOO_3":5969,"BASELINE":6020},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":343,"clipping":[222,452,45]}
+2026-10-19T11:16:05.693Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:16:05.695Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s2.json | free RAM MB 2616
+{"draws":1000,"fullTest":{"FULL":6244,"FULL_J":6267,"LOO_1":6239,"LOO_2":6281,"LOO_3":5969,"BASELINE":6020}}
+2026-10-19T11:16:11.766Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s2.json 6 s
+2026-10-19T11:16:11.768Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2604
+{"kind":"ldp","seed":3,"F":{"FULL":6328,"FULL_J":6366,"LOO_1":6398,"LOO_2":6391,"LOO_3":5983,"BASELINE":5984},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":335,"clipping":[291,372,55]}
+2026-10-19T11:16:37.896Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:16:37.898Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s3.json | free RAM MB 2642
+{"draws":1000,"fullTest":{"FULL":6328,"FULL_J":6366,"LOO_1":6398,"LOO_2":6391,"LOO_3":5983,"BASELINE":5984}}
+2026-10-19T11:16:43.864Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s3.json 6 s
+2026-10-19T11:16:43.866Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2638
+{"kind":"ldp","seed":4,"F":{"FULL":6459,"FULL_J":6459,"LOO_1":6380,"LOO_2":6307,"LOO_3":6247,"BASELINE":6063},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":343,"clipping":[291,637,47]}
+2026-10-19T11:17:09.559Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:17:09.561Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s4.json | free RAM MB 2711
+{"draws":1000,"fullTest":{"FULL":6459,"FULL_J":6459,"LOO_1":6380,"LOO_2":6307,"LOO_3":6247,"BASELINE":6063}}
+2026-10-19T11:17:15.419Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s4.json 6 s
+2026-10-19T11:17:15.421Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2712
+{"kind":"ldp","seed":5,"F":{"FULL":6340,"FULL_J":6410,"LOO_1":6299,"LOO_2":6340,"LOO_3":6010,"BASELINE":6028},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[331,212,19]}
+2026-10-19T11:17:40.904Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 25 s
+2026-10-19T11:17:40.907Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s5.json | free RAM MB 2704
+{"draws":1000,"fullTest":{"FULL":6340,"FULL_J":6410,"LOO_1":6299,"LOO_2":6340,"LOO_3":6010,"BASELINE":6028}}
+2026-10-19T11:17:46.772Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s5.json 6 s
+2026-10-19T11:17:46.774Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2718
+{"kind":"ldp","seed":6,"F":{"FULL":6334,"FULL_J":6379,"LOO_1":6354,"LOO_2":6196,"LOO_3":6160,"BASELINE":5949},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[269,491,25]}
+2026-10-19T11:18:12.484Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:18:12.486Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s6.json | free RAM MB 2731
+{"draws":1000,"fullTest":{"FULL":6334,"FULL_J":6379,"LOO_1":6354,"LOO_2":6196,"LOO_3":6160,"BASELINE":5949}}
+2026-10-19T11:18:18.405Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s6.json 6 s
+2026-10-19T11:18:18.408Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2738
+{"kind":"ldp","seed":7,"F":{"FULL":5998,"FULL_J":5835,"LOO_1":6038,"LOO_2":6065,"LOO_3":5858,"BASELINE":5853},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":329,"clipping":[441,293,26]}
+2026-10-19T11:18:43.709Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 25 s
+2026-10-19T11:18:43.711Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s7.json | free RAM MB 2639
+{"draws":1000,"fullTest":{"FULL":5998,"FULL_J":5835,"LOO_1":6038,"LOO_2":6065,"LOO_3":5858,"BASELINE":5853}}
+2026-10-19T11:18:49.373Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s7.json 6 s
+2026-10-19T11:18:49.375Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2638
+{"kind":"ldp","seed":8,"F":{"FULL":6309,"FULL_J":6333,"LOO_1":6256,"LOO_2":6337,"LOO_3":5956,"BASELINE":5780},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":349,"clipping":[244,337,60]}
+2026-10-19T11:19:13.930Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 25 s
+2026-10-19T11:19:13.932Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s8.json | free RAM MB 2690
+{"draws":1000,"fullTest":{"FULL":6309,"FULL_J":6333,"LOO_1":6256,"LOO_2":6337,"LOO_3":5956,"BASELINE":5780}}
+2026-10-19T11:19:19.553Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s8.json 6 s
+2026-10-19T11:19:19.555Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2692
+{"kind":"ldp","seed":9,"F":{"FULL":6380,"FULL_J":6304,"LOO_1":6274,"LOO_2":6340,"LOO_3":5888,"BASELINE":5927},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":330,"clipping":[271,456,46]}
+2026-10-19T11:19:45.101Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:19:45.103Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s9.json | free RAM MB 2803
+{"draws":1000,"fullTest":{"FULL":6380,"FULL_J":6304,"LOO_1":6274,"LOO_2":6340,"LOO_3":5888,"BASELINE":5927}}
+2026-10-19T11:19:50.673Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s9.json 6 s
+2026-10-19T11:19:50.675Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 | free RAM MB 2814
+{"kind":"ldp","seed":10,"F":{"FULL":6293,"FULL_J":6359,"LOO_1":6257,"LOO_2":6312,"LOO_3":6067,"BASELINE":5935},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":20,"peakRssMB":343,"clipping":[335,353,33]}
+2026-10-19T11:20:16.251Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 2.5653590510559714,2.5653590510559714,1.9240192882919784 26 s
+2026-10-19T11:20:16.253Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s10.json | free RAM MB 3309
+{"draws":1000,"fullTest":{"FULL":6293,"FULL_J":6359,"LOO_1":6257,"LOO_2":6312,"LOO_3":6067,"BASELINE":5935}}
+2026-10-19T11:20:21.879Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e16-s10.json 6 s
+2026-10-19T11:20:21.881Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3331
+{"kind":"ldp","seed":1,"F":{"FULL":6576,"FULL_J":6618,"LOO_1":6617,"LOO_2":6567,"LOO_3":6090,"BASELINE":5995},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":23,"trainingS":18,"peakRssMB":353,"clipping":[0,0,0]}
+2026-10-19T11:20:45.298Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 1 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 23 s
+2026-10-19T11:20:45.300Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s1.json | free RAM MB 3345
+{"draws":1000,"fullTest":{"FULL":6576,"FULL_J":6618,"LOO_1":6617,"LOO_2":6567,"LOO_3":6090,"BASELINE":5995}}
+2026-10-19T11:20:50.867Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s1.json 6 s
+2026-10-19T11:20:50.869Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3342
+{"kind":"ldp","seed":2,"F":{"FULL":6491,"FULL_J":6532,"LOO_1":6542,"LOO_2":6565,"LOO_3":6120,"BASELINE":5960},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":341,"clipping":[0,0,0]}
+2026-10-19T11:21:14.970Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 2 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 24 s
+2026-10-19T11:21:14.971Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s2.json | free RAM MB 3361
+{"draws":1000,"fullTest":{"FULL":6491,"FULL_J":6532,"LOO_1":6542,"LOO_2":6565,"LOO_3":6120,"BASELINE":5960}}
+2026-10-19T11:21:20.813Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s2.json 6 s
+2026-10-19T11:21:20.816Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3351
+{"kind":"ldp","seed":3,"F":{"FULL":6613,"FULL_J":6610,"LOO_1":6632,"LOO_2":6565,"LOO_3":6228,"BASELINE":5992},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:21:45.948Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 3 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 25 s
+2026-10-19T11:21:45.950Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s3.json | free RAM MB 3405
+{"draws":1000,"fullTest":{"FULL":6613,"FULL_J":6610,"LOO_1":6632,"LOO_2":6565,"LOO_3":6228,"BASELINE":5992}}
+2026-10-19T11:21:51.872Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s3.json 6 s
+2026-10-19T11:21:51.875Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3424
+{"kind":"ldp","seed":4,"F":{"FULL":6601,"FULL_J":6582,"LOO_1":6513,"LOO_2":6390,"LOO_3":6364,"BASELINE":6091},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T11:22:16.071Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 4 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 24 s
+2026-10-19T11:22:16.073Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s4.json | free RAM MB 3438
+{"draws":1000,"fullTest":{"FULL":6601,"FULL_J":6582,"LOO_1":6513,"LOO_2":6390,"LOO_3":6364,"BASELINE":6091}}
+2026-10-19T11:22:21.855Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s4.json 6 s
+2026-10-19T11:22:21.857Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3456
+{"kind":"ldp","seed":5,"F":{"FULL":6588,"FULL_J":6556,"LOO_1":6553,"LOO_2":6499,"LOO_3":6322,"BASELINE":6009},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":19,"peakRssMB":343,"clipping":[0,0,0]}
+2026-10-19T11:22:46.681Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 5 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 25 s
+2026-10-19T11:22:46.684Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s5.json | free RAM MB 3456
+{"draws":1000,"fullTest":{"FULL":6588,"FULL_J":6556,"LOO_1":6553,"LOO_2":6499,"LOO_3":6322,"BASELINE":6009}}
+2026-10-19T11:22:52.864Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s5.json 6 s
+2026-10-19T11:22:52.866Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3383
+{"kind":"ldp","seed":6,"F":{"FULL":6569,"FULL_J":6520,"LOO_1":6503,"LOO_2":6459,"LOO_3":6324,"BASELINE":6018},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T11:23:18.558Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 6 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 26 s
+2026-10-19T11:23:18.561Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s6.json | free RAM MB 3362
+{"draws":1000,"fullTest":{"FULL":6569,"FULL_J":6520,"LOO_1":6503,"LOO_2":6459,"LOO_3":6324,"BASELINE":6018}}
+2026-10-19T11:23:24.583Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s6.json 6 s
+2026-10-19T11:23:24.585Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3296
+{"kind":"ldp","seed":7,"F":{"FULL":6529,"FULL_J":6521,"LOO_1":6414,"LOO_2":6492,"LOO_3":5963,"BASELINE":5900},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":329,"clipping":[0,0,0]}
+2026-10-19T11:23:50.193Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 7 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 26 s
+2026-10-19T11:23:50.195Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s7.json | free RAM MB 3342
+{"draws":1000,"fullTest":{"FULL":6529,"FULL_J":6521,"LOO_1":6414,"LOO_2":6492,"LOO_3":5963,"BASELINE":5900}}
+2026-10-19T11:23:56.038Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s7.json 6 s
+2026-10-19T11:23:56.040Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3361
+{"kind":"ldp","seed":8,"F":{"FULL":6657,"FULL_J":6716,"LOO_1":6605,"LOO_2":6663,"LOO_3":6148,"BASELINE":5878},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":24,"trainingS":18,"peakRssMB":344,"clipping":[0,0,0]}
+2026-10-19T11:24:20.330Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 8 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 24 s
+2026-10-19T11:24:20.332Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s8.json | free RAM MB 3355
+{"draws":1000,"fullTest":{"FULL":6657,"FULL_J":6716,"LOO_1":6605,"LOO_2":6663,"LOO_3":6148,"BASELINE":5878}}
+2026-10-19T11:24:26.021Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s8.json 6 s
+2026-10-19T11:24:26.023Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3366
+{"kind":"ldp","seed":9,"F":{"FULL":6596,"FULL_J":6567,"LOO_1":6517,"LOO_2":6571,"LOO_3":6150,"BASELINE":5888},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":342,"clipping":[0,0,0]}
+2026-10-19T11:24:51.552Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 9 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 26 s
+2026-10-19T11:24:51.554Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s9.json | free RAM MB 3361
+{"draws":1000,"fullTest":{"FULL":6596,"FULL_J":6567,"LOO_1":6517,"LOO_2":6571,"LOO_3":6150,"BASELINE":5888}}
+2026-10-19T11:24:57.395Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s9.json 6 s
+2026-10-19T11:24:57.398Z start <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 | free RAM MB 3359
+{"kind":"ldp","seed":10,"F":{"FULL":6470,"FULL_J":6516,"LOO_1":6508,"LOO_2":6471,"LOO_3":6235,"BASELINE":5992},"unusedClass":{"FULL":0,"FULL_J":0,"LOO_1":0,"LOO_2":0,"LOO_3":0,"BASELINE":0},"wallS":25,"trainingS":19,"peakRssMB":353,"clipping":[0,0,0]}
+2026-10-19T11:25:22.894Z exit 0 <repo>\scenarios\mci_loan\offchain\vfl-run.mjs --mode ldp --seed 10 --sigmas 0.9736107637946303,0.9736107637946303,0.7302080728459728 25 s
+2026-10-19T11:25:22.897Z start <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s10.json | free RAM MB 3384
+{"draws":1000,"fullTest":{"FULL":6470,"FULL_J":6516,"LOO_1":6508,"LOO_2":6471,"LOO_3":6235,"BASELINE":5992}}
+2026-10-19T11:25:28.888Z exit 0 <repo>\scenarios\mci_loan\offchain\n64.mjs --in <repo>\results\mci_loan\v2\offchain\runs\eps-e64-s10.json 6 s
+2026-10-19T11:25:28.889Z step4v2 eps done

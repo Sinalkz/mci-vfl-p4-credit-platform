@@ -1,0 +1,64 @@
+{
+  "name": "vfl-m3-split-mlp",
+  "version": 1,
+  "architecture": {
+    "fA": {
+      "in": 8,
+      "layers": [
+        {
+          "out": 4,
+          "act": "relu"
+        }
+      ]
+    },
+    "fi": {
+      "in": [
+        23,
+        23,
+        37
+      ],
+      "layers": [
+        {
+          "out": 8,
+          "act": "relu"
+        },
+        {
+          "out": 4,
+          "act": "linear"
+        }
+      ]
+    },
+    "fusion": {
+      "in": 16,
+      "input": "[f_A(x_A), h_1, h_2, h_3]; a zero-filled or masked slot is 0",
+      "layers": [
+        {
+          "out": 8,
+          "act": "relu"
+        },
+        {
+          "out": 5,
+          "act": "linear"
+        }
+      ]
+    },
+    "loss": "softmax cross-entropy, mean over the batch",
+    "init": "W ~ N(0, 1/in) from splitmix64(initSeed + member tag: fA 0, fusion 100, f_i i), b = 0",
+    "embeddingGradient": "straight-through: a passive backpropagates A's gradient as if clipping and noise were the identity"
+  },
+  "fixedPoint": {
+    "xA, W0, W1, W2, h_i": "int16 at scale 2^12",
+    "b0, b1": "int32 at scale 2^24",
+    "b2": "int48 at scale 2^36",
+    "eA": "floor(max(W0 xA + b0, 0) / 2^12)",
+    "rounding": "round to nearest, then clip to the integer range"
+  },
+  "optimizer": "sgd",
+  "learningRate": 0.1,
+  "batchSize": 64,
+  "T": 20,
+  "perBatchWaitMs": 10000,
+  "initSeed": 20261003,
+  "shuffleSeed": 20262003,
+  "scoring": "retrain the fusion model only (bottom models frozen), from its initial weights, T epochs over I^tr with the same optimiser, learning rate, batch size and batch order"
+}

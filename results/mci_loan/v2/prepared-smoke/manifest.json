@@ -1,0 +1,456 @@
+{
+ "rows": 1000,
+ "ids": {
+  "redacted": "row-level applicant IDs (SK_ID_CURR), not delivered (Kaggle competition rules)",
+  "count": 1000
+ },
+ "split": {
+  "seed": 20267002,
+  "train_pos": {
+   "redacted": "row-level split positions, not delivered",
+   "count": 800
+  },
+  "test_pos": {
+   "redacted": "row-level split positions, not delivered",
+   "count": 200
+  }
+ },
+ "y": {
+  "redacted": "row-level labels, not delivered (Kaggle competition rules)",
+  "count": 1000
+ },
+ "class_counts": {
+  "train": [
+   400,
+   400
+  ],
+  "test": [
+   100,
+   100
+  ]
+ },
+ "a": {
+  "vars": [
+   "ANNUITY_TO_CREDIT",
+   "NAME_EDUCATION_TYPE",
+   "DAYS_BIRTH",
+   "REGION_RATING_CLIENT",
+   "REGION_RATING_CLIENT_W_CITY",
+   "DOC_COUNT",
+   "OCCUPATION_TYPE",
+   "EMPLOYED_TO_AGE"
+  ],
+  "scale": 4096,
+  "info": {
+   "ANNUITY_TO_CREDIT": {
+    "kind": "derived",
+    "formula": "AMT_ANNUITY / AMT_CREDIT",
+    "missing_train": 1,
+    "missing_test": 0,
+    "train_median": 0.05,
+    "train_mean": 0.054458593432743674,
+    "train_sd": 0.022017034612749054,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -1.470741097969451,
+    "zmax": 3.178038449591349
+   },
+   "NAME_EDUCATION_TYPE": {
+    "kind": "ordinal",
+    "formula": null,
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": 1.0,
+    "train_mean": 1.4342311305981836,
+    "train_sd": 0.8271236819019572,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -1.7339983873998057,
+    "zmax": 3.1020377309254084
+   },
+   "DAYS_BIRTH": {
+    "kind": "num",
+    "formula": null,
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": -15058.0,
+    "train_mean": -15518.513310366427,
+    "train_sd": 4331.363554115701,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -2.2257394395982057,
+    "zmax": 1.8097103169550846
+   },
+   "REGION_RATING_CLIENT": {
+    "kind": "num",
+    "formula": null,
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": 2.0,
+    "train_mean": 2.1046038208581272,
+    "train_sd": 0.5123169198045323,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -2.156094749475723,
+    "zmax": 1.7477388400201563
+   },
+   "REGION_RATING_CLIENT_W_CITY": {
+    "kind": "num",
+    "formula": null,
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": 2.0,
+    "train_mean": 2.084090197306608,
+    "train_sd": 0.5067418268262208,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -2.139334351175199,
+    "zmax": 1.8074485945433685
+   },
+   "DOC_COUNT": {
+    "kind": "derived",
+    "formula": "number of FLAG_DOCUMENT_2..21 set",
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": 1.0,
+    "train_mean": 0.9426088318196054,
+    "train_sd": 0.3179232389331183,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -2.9648944033874245,
+    "zmax": 6.471345646466596
+   },
+   "OCCUPATION_TYPE": {
+    "kind": "woe",
+    "formula": null,
+    "missing_train": 0,
+    "missing_test": 0,
+    "train_median": -0.20683306090461806,
+    "train_mean": 0.0005843523257990669,
+    "train_sd": 0.3132966415417928,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -2.382588331241268,
+    "zmax": 3.6229855591070703,
+    "woe": {
+     "Accountants": -0.6516271753417584,
+     "Cleaning staff": 0.32171182103809226,
+     "Cooking staff": 0.3083912594163425,
+     "Core staff": -0.24939065709724284,
+     "Drivers": 0.3764257658160539,
+     "HR staff": -0.2984929885559966,
+     "High skill tech staff": -0.27311365662349063,
+     "IT staff": -0.1112256351102241,
+     "Laborers": 0.27635891513850486,
+     "Low-skill Laborers": 0.9576759480370098,
+     "MISSING": -0.21906383437365018,
+     "Managers": -0.45082080982896144,
+     "Medicine staff": -0.2462702813942279,
+     "Private service staff": -0.26319105244348506,
+     "Realty agents": -0.41616039722491216,
+     "Sales staff": 0.2083488026967122,
+     "Secretaries": 0.24256163717131152,
+     "Security staff": 0.40934860813456186,
+     "Waiters/barmen staff": 0.6157605169445253
+    }
+   },
+   "EMPLOYED_TO_AGE": {
+    "kind": "derived",
+    "formula": "DAYS_EMPLOYED / DAYS_BIRTH (DAYS_EMPLOYED 365243 as missing)",
+    "missing_train": 1877,
+    "missing_test": 544,
+    "train_median": 0.10397039030955585,
+    "train_mean": 0.13638596571458814,
+    "train_sd": 0.11672436601241722,
+    "clipped_train": 0,
+    "clipped_test": 0,
+    "zmin": -1.1613654638685864,
+    "zmax": 4.9243820126266
+   }
+  },
+  "owner": "mci",
+  "file": "a_int16.bin",
+  "dtype": "int16 little-endian",
+  "shape": [
+   1000,
+   8
+  ],
+  "sha256": "94541723bbac51842ee0fe9242ff1dde0989cc6a614d4b6d830e408d548b696e"
+ },
+ "passive": {
+  "dropped": [],
+  "width": 83,
+  "file": "passive_f32.bin",
+  "dtype": "float32 little-endian",
+  "shape": [
+   1000,
+   83
+  ],
+  "sha256": "eee0f7ece2091906b0ecb68e5aa247c94e37288b9646bdeb94970d9645924034"
+ },
+ "parties": {
+  "bank": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22
+  ],
+  "ecommerce": [
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45
+  ],
+  "bureau": [
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82
+  ]
+ },
+ "thin_file_pos": {
+  "redacted": "row-level thin-file positions, not delivered (Kaggle competition rules)",
+  "count": 168
+ },
+ "version": "v2: MCI active (the student's correction, 2026-10-19)",
+ "passiveOrder": [
+  "bank",
+  "ecommerce",
+  "bureau"
+ ],
+ "variables": {
+  "bank": [
+   "INS_HAS_RECORD",
+   "INS_N",
+   "INS_N_PREV",
+   "INS_LATE_SHARE",
+   "INS_DPD_MEAN",
+   "INS_DPD_MAX",
+   "INS_EARLY_MEAN",
+   "INS_UNPAID_SHARE",
+   "INS_UNDERPAID_SHARE",
+   "INS_PAY_RATIO_MEAN",
+   "INS_AMT_MEAN",
+   "INS_LAST_DAYS",
+   "CC_HAS_RECORD",
+   "CC_N_MONTHS",
+   "CC_BALANCE_MEAN",
+   "CC_UTIL_MEAN",
+   "CC_UTIL_MAX",
+   "CC_DRAWINGS_MEAN",
+   "CC_POS_DRAWINGS_MEAN",
+   "CC_ATM_DRAWINGS_MEAN",
+   "CC_PAY_TO_MIN_MEAN",
+   "CC_DPD_SHARE",
+   "CC_DPD_MAX"
+  ],
+  "ecommerce": [
+   "PREV_HAS_RECORD",
+   "PREV_N",
+   "PREV_APPROVED_SHARE",
+   "PREV_REFUSED_SHARE",
+   "PREV_CANCELED_SHARE",
+   "PREV_CONSUMER_SHARE",
+   "PREV_CASH_SHARE",
+   "PREV_REVOLVING_SHARE",
+   "PREV_POS_SHARE",
+   "PREV_AMT_APPLICATION_MEAN",
+   "PREV_CREDIT_TO_APP_MEAN",
+   "PREV_DOWN_RATE_MEAN",
+   "PREV_CNT_PAYMENT_MEAN",
+   "PREV_DAYS_DECISION_MAX",
+   "PREV_DAYS_DECISION_MEAN",
+   "POS_HAS_RECORD",
+   "POS_N_MONTHS",
+   "POS_N_PREV",
+   "POS_DPD_SHARE",
+   "POS_DPD_DEF_SHARE",
+   "POS_DPD_MAX",
+   "POS_FUTURE_MEAN",
+   "POS_COMPLETED_SHARE"
+  ],
+  "bureau": [
+   "BUR_HAS_RECORD",
+   "BUR_N",
+   "BUR_ACTIVE_N",
+   "BUR_CLOSED_SHARE",
+   "BUR_DAYS_CREDIT_MEAN",
+   "BUR_DAYS_CREDIT_MAX",
+   "BUR_ENDDATE_MEAN",
+   "BUR_OVERDUE_DAYS_MAX",
+   "BUR_MAX_OVERDUE_AMT_MAX",
+   "BUR_PROLONG_SUM",
+   "BUR_CREDIT_SUM",
+   "BUR_DEBT_SUM",
+   "BUR_DEBT_RATIO",
+   "BUR_OVERDUE_SUM",
+   "BUR_CARD_SHARE",
+   "BUR_CONSUMER_SHARE",
+   "BUR_CAR_SHARE",
+   "BUR_MORTGAGE_SHARE",
+   "BB_HAS_RECORD",
+   "BB_N_MONTHS",
+   "BB_DPD_SHARE",
+   "BB_DPD_SEVERE_SHARE",
+   "BB_CLOSED_SHARE",
+   "BB_UNKNOWN_SHARE",
+   "EXT_SOURCE_1_HAS_VALUE",
+   "EXT_SOURCE_1",
+   "EXT_SOURCE_2_HAS_VALUE",
+   "EXT_SOURCE_2",
+   "EXT_SOURCE_3_HAS_VALUE",
+   "EXT_SOURCE_3",
+   "AMT_REQ_HAS_VALUE",
+   "AMT_REQ_CREDIT_BUREAU_HOUR",
+   "AMT_REQ_CREDIT_BUREAU_DAY",
+   "AMT_REQ_CREDIT_BUREAU_WEEK",
+   "AMT_REQ_CREDIT_BUREAU_MON",
+   "AMT_REQ_CREDIT_BUREAU_QRT",
+   "AMT_REQ_CREDIT_BUREAU_YEAR"
+  ]
+ },
+ "population": {
+  "rows": 307511,
+  "defaults": 24825,
+  "default_rate": 0.08072881945686496
+ },
+ "cohort": {
+  "seed": 20267001,
+  "n": 15965,
+  "defaults": 7982,
+  "repaid": 7983
+ },
+ "seeds": {
+  "cohort": 20267001,
+  "split": 20267002,
+  "extra": 20267003,
+  "smoke": 20267004,
+  "folds": 20267006,
+  "calibration": 20267007
+ },
+ "label": {
+  "0": "repaid (TARGET 0)",
+  "1": "default: payment difficulties (TARGET 1), read as on MCI-issued credit"
+ },
+ "slots": {
+  "what": "MCI loan instance v2: the thesis code's member slots (validator node, process, proposal order), the party rule's data-owner keys and the user-facing names. MCI is the lender, so it is the active member (the student's correction, 2026-10-19). Code keeps the slot names and the owner keys; docs, dashboard and figures use only the names below, and no real company's name except MCI's (the naming rule, 2026-10-19).",
+  "simulated": "Every partner organisation is a generic simulated role over one public dataset (Kaggle Home Credit Default Risk); no real company's data is used, MCI's included.",
+  "members": [
+   {
+    "slot": "power",
+    "role": "active",
+    "index": 0,
+    "process": "A",
+    "owner": "mci",
+    "name": "MCI",
+    "nameFa": "همراه اول"
+   },
+   {
+    "slot": "mci",
+    "role": "passive",
+    "index": 1,
+    "process": "p1",
+    "owner": "bank",
+    "name": "Bank",
+    "nameFa": "بانک"
+   },
+   {
+    "slot": "digikala",
+    "role": "passive",
+    "index": 2,
+    "process": "p2",
+    "owner": "ecommerce",
+    "name": "E-commerce company",
+    "nameFa": "شرکت تجارت الکترونیک"
+   },
+   {
+    "slot": "maker",
+    "role": "passive",
+    "index": 3,
+    "process": "p3",
+    "owner": "bureau",
+    "name": "Credit bureau",
+    "nameFa": "شرکت اعتبارسنجی"
+   }
+  ]
+ },
+ "smoke": {
+  "of": "data/mci_loan/v2/prepared",
+  "cohort_pos": {
+   "redacted": "row-level smoke positions, not delivered",
+   "count": 1000
+  },
+  "rule": "common.smoke_positions: 400 + 400 training, 100 + 100 test rows"
+ }
+}

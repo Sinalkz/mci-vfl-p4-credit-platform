@@ -1,0 +1,8 @@
+# MCI loan dashboard (dashboard/app.py): served on this machine only by default; for a presentation on the local
+# network pass --server.address 0.0.0.0 (or the machine's address) to streamlit run.
+[server]
+address = "127.0.0.1"
+headless = true
+
+[browser]
+gatherUsageStats = false

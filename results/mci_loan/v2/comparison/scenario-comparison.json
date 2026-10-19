@@ -1,0 +1,804 @@
+{
+ "what": "electricity (thesis), loan v1 (Bank active) and loan v2 (MCI active): the same metrics, costs and stability measures (scenarios/mci_loan/v2/comparison2.py)",
+ "names": "v1's file under the naming rule: the thesis's retailer and v1's e-commerce role appear without a company name (comparison2.RENAME)",
+ "data": {
+  "electricity": {
+   "rows": 15965,
+   "train": 12772,
+   "classes": 5,
+   "passiveWidths": [
+    46,
+    225,
+    358
+   ]
+  },
+  "loan": {
+   "rows": 15965,
+   "train": 12772,
+   "test": 3193,
+   "classes": 2,
+   "passiveWidths": [
+    18,
+    34,
+    37
+   ]
+  },
+  "loan2": {
+   "rows": 15965,
+   "train": 12772,
+   "test": 3193,
+   "classes": 2,
+   "passiveWidths": [
+    23,
+    23,
+    37
+   ]
+  }
+ },
+ "electricity": {
+  "quality": {
+   "U_fed": {
+    "mean": 4680.6,
+    "sd": 111.93073254870124,
+    "n": 10
+   },
+   "U_A": {
+    "mean": 2877.8,
+    "sd": 107.9915634564931,
+    "n": 10
+   },
+   "C1b": {
+    "mean": 3113.9,
+    "sd": 169.06044284022605,
+    "n": 10
+   },
+   "E": {
+    "mean": 1802.8,
+    "sd": 143.70710954345066,
+    "n": 10
+   },
+   "relative_gain": 0.6264507609979846
+  },
+  "contributions": {
+   "l_1": {
+    "mean": 178.0,
+    "sd": 65.82468297598469,
+    "n": 10
+   },
+   "l_2": {
+    "mean": 382.5,
+    "sd": 140.00257934131864,
+    "n": 10
+   },
+   "l_3": {
+    "mean": 721.0,
+    "sd": 116.99382699764784,
+    "n": 10
+   }
+  },
+  "ranking": {
+   "modal": "device maker > retailer > telecom (MCI)",
+   "count": 9,
+   "n": 10,
+   "friedman": {
+    "chi2": 18.200000000000017,
+    "p": 0.0001116658084901137
+   },
+   "slot1Last": 9
+  },
+  "talmudAtB": {
+   "regimes": {
+    "cea": 10
+   },
+   "E_prime": 200.0,
+   "awards_perf": [
+    63.1,
+    67.1,
+    67.9
+   ],
+   "awards_tokens": [
+    315500.0,
+    335500.0,
+    339500.0
+   ]
+  },
+  "n64SameRankingSeed1": 0.375,
+  "equivalenceBitwise": true,
+  "ldpUtility": {
+   "off": {
+    "mean": 1516.5,
+    "sd": 242.93997886995325,
+    "seeds_above": 10
+   },
+   "e1": {
+    "mean": -66.5,
+    "sd": 193.95718313300205,
+    "seeds_above": 2
+   },
+   "e4": {
+    "mean": -25.1,
+    "sd": 231.45407511834586,
+    "seeds_above": 3
+   },
+   "e16": {
+    "mean": 378.2,
+    "sd": 260.0554641695584,
+    "seeds_above": 9
+   },
+   "e64": {
+    "mean": 825.9,
+    "sd": 180.72658907864113,
+    "seeds_above": 10
+   }
+  },
+  "ldpProtocolSigma": {
+   "x0": {
+    "mean": 4447.9,
+    "sd": 183.50201331017837,
+    "n": 10
+   },
+   "x1": {
+    "mean": 4475.1,
+    "sd": 205.3833542968422,
+    "n": 10
+   },
+   "x0.5": {
+    "mean": 4478.9,
+    "sd": 165.80607816227834,
+    "n": 10
+   },
+   "x4": {
+    "mean": 4303.1,
+    "sd": 169.4680894249219,
+    "n": 10
+   }
+  },
+  "onchainRuns": [
+   {
+    "run": 1,
+    "path": "normal",
+    "U_fed": 4677,
+    "U_A": 4399,
+    "E": 278,
+    "E_prime": 200,
+    "awards_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "l": [
+     494,
+     308,
+     886
+    ],
+    "accepted": true
+   },
+   {
+    "run": 2,
+    "path": "normal",
+    "U_fed": 3866,
+    "U_A": 2245,
+    "E": 1621,
+    "E_prime": 200,
+    "awards_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "l": [
+     841,
+     962,
+     1629
+    ],
+    "accepted": true
+   },
+   {
+    "run": 3,
+    "path": "normal",
+    "U_fed": 4817,
+    "U_A": 5292,
+    "E": 0,
+    "E_prime": 0,
+    "awards_tokens": [
+     0,
+     0,
+     0
+    ],
+    "l": [
+     -194,
+     684,
+     1234
+    ],
+    "accepted": true
+   },
+   {
+    "run": 4,
+    "path": "normal",
+    "U_fed": 4212,
+    "U_A": 3590,
+    "E": 622,
+    "E_prime": 200,
+    "awards_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "l": [
+     391,
+     506,
+     509
+    ],
+    "accepted": true
+   },
+   {
+    "run": 5,
+    "path": "normal",
+    "U_fed": 3920,
+    "U_A": 3802,
+    "E": 118,
+    "E_prime": 118,
+    "awards_tokens": [
+     295000,
+     295000,
+     0
+    ],
+    "l": [
+     474,
+     317,
+     -97
+    ],
+    "accepted": true
+   }
+  ],
+  "passiveNames": {
+   "1": "telecom (MCI)",
+   "2": "retailer",
+   "3": "device maker"
+  },
+  "activeName": "power company"
+ },
+ "loan": {
+  "quality": {
+   "U_fed": {
+    "mean": 6801.4,
+    "sd": 56.837389884554774,
+    "n": 10
+   },
+   "U_A": {
+    "mean": 5873.8,
+    "sd": 82.80740707609837,
+    "n": 10
+   },
+   "C1b": {
+    "mean": 5955.9,
+    "sd": 120.46617782597735,
+    "n": 10
+   },
+   "E": {
+    "mean": 927.6,
+    "sd": 71.94936491110336,
+    "n": 10
+   },
+   "relative_gain": 0.15792161803261934
+  },
+  "contributions": {
+   "l_1": {
+    "mean": 40.2,
+    "sd": 19.876284025608676,
+    "n": 10
+   },
+   "l_2": {
+    "mean": 117.0,
+    "sd": 44.487201655207656,
+    "n": 10
+   },
+   "l_3": {
+    "mean": 486.8,
+    "sd": 91.92726593466284,
+    "n": 10
+   }
+  },
+  "ranking": {
+   "modal": "Credit bureau > e-commerce role > MCI",
+   "count": 9,
+   "n": 10,
+   "friedman": {
+    "chi2": 18.200000000000017,
+    "p": 0.0001116658084901137,
+    "floor_p": 4.539992976248486e-05
+   },
+   "slot1Last": 9
+  },
+  "talmudAtB": {
+   "regimes": {
+    "cea": 10
+   },
+   "E_prime": 200.0,
+   "awards_tokens": [
+    99500.0,
+    291000.0,
+    606500.0
+   ]
+  },
+  "n64SameRankingSeed1": 0.315,
+  "equivalenceBitwise": true,
+  "ldpUtility": {
+   "off": {
+    "mean": 906.3,
+    "sd": 89.91360050379228,
+    "seeds_above": 10
+   },
+   "e1": {
+    "mean": -358.3,
+    "sd": 236.33453220194275,
+    "seeds_above": 0
+   },
+   "e4": {
+    "mean": -111.3,
+    "sd": 196.68816266703325,
+    "seeds_above": 4
+   },
+   "e16": {
+    "mean": 354.1,
+    "sd": 172.98262597408126,
+    "seeds_above": 9
+   },
+   "e64": {
+    "mean": 652.8,
+    "sd": 89.62737676997283,
+    "seeds_above": 10
+   }
+  },
+  "ldpProtocolSigma": {
+   "x0": {
+    "mean": 6787.8,
+    "sd": 60.807163320706806,
+    "n": 10
+   },
+   "x1": {
+    "mean": 6795.9,
+    "sd": 73.97214190340698,
+    "n": 10
+   },
+   "x0.5": {
+    "mean": 6790.7,
+    "sd": 69.23398330620913,
+    "n": 10
+   },
+   "x4": {
+    "mean": 6716.1,
+    "sd": 63.873920951964244,
+    "n": 10
+   }
+  },
+  "onchainRuns": [
+   {
+    "run": 1,
+    "path": "normal",
+    "U_fed": 7117,
+    "U_A": 7408,
+    "E": 0,
+    "E_prime": 0,
+    "awards_tokens": [
+     0,
+     0,
+     0
+    ],
+    "l": [
+     -45,
+     -173,
+     419
+    ],
+    "accepted": true
+   },
+   {
+    "run": 2,
+    "path": "normal",
+    "U_fed": 7142,
+    "U_A": 7162,
+    "E": 0,
+    "E_prime": 0,
+    "awards_tokens": [
+     0,
+     0,
+     0
+    ],
+    "l": [
+     -148,
+     -185,
+     809
+    ],
+    "accepted": true
+   },
+   {
+    "run": 3,
+    "path": "normal",
+    "U_fed": 6711,
+    "U_A": 5515,
+    "E": 1196,
+    "E_prime": 200,
+    "awards_tokens": [
+     0,
+     30000,
+     965000
+    ],
+    "l": [
+     -151,
+     13,
+     790
+    ],
+    "accepted": true
+   },
+   {
+    "run": 4,
+    "path": "normal",
+    "U_fed": 6235,
+    "U_A": 5145,
+    "E": 1090,
+    "E_prime": 200,
+    "awards_tokens": [
+     0,
+     470000,
+     525000
+    ],
+    "l": [
+     -463,
+     189,
+     1595
+    ],
+    "accepted": true
+   },
+   {
+    "run": 5,
+    "path": "normal",
+    "U_fed": 7555,
+    "U_A": 7030,
+    "E": 525,
+    "E_prime": 200,
+    "awards_tokens": [
+     400000,
+     400000,
+     195000
+    ],
+    "l": [
+     181,
+     509,
+     78
+    ],
+    "accepted": true
+   }
+  ],
+  "passiveNames": {
+   "1": "MCI",
+   "2": "e-commerce role",
+   "3": "Credit bureau"
+  },
+  "activeName": "Bank"
+ },
+ "loan2": {
+  "quality": {
+   "U_fed": {
+    "mean": 6790.9,
+    "sd": 69.82589459187442,
+    "n": 10
+   },
+   "U_A": {
+    "mean": 5940.1,
+    "sd": 77.70950177852555,
+    "n": 10
+   },
+   "C1b": {
+    "mean": 5955.9,
+    "sd": 120.46617782597735,
+    "n": 10
+   },
+   "E": {
+    "mean": 850.8,
+    "sd": 105.29197500284626,
+    "n": 10
+   },
+   "relative_gain": 0.14322991195434406
+  },
+  "contributions": {
+   "l_1": {
+    "mean": 76.3,
+    "sd": 40.26040238248992,
+    "n": 10
+   },
+   "l_2": {
+    "mean": 55.6,
+    "sd": 41.891924440556956,
+    "n": 10
+   },
+   "l_3": {
+    "mean": 472.4,
+    "sd": 107.94360667599643,
+    "n": 10
+   }
+  },
+  "ranking": {
+   "modal": "Credit bureau > Bank > E-commerce company",
+   "count": 8,
+   "n": 10,
+   "friedman": {
+    "chi2": 16.80000000000001,
+    "p": 0.00022486732417884692,
+    "floor_p": 4.539992976248486e-05
+   },
+   "lastPlace": {
+    "Bank": 2,
+    "E-commerce company": 8,
+    "Credit bureau": 0
+   }
+  },
+  "talmudAtB": {
+   "regimes": {
+    "cea": 10
+   },
+   "E_prime": 200.0,
+   "awards_tokens": [
+    189500.0,
+    142500.0,
+    665000.0
+   ]
+  },
+  "n64SameRankingSeed1": 0.316,
+  "equivalenceBitwise": true,
+  "ldpUtility": {
+   "off": {
+    "mean": 832.0,
+    "sd": 112.59169102952886,
+    "seeds_above": 10
+   },
+   "e1": {
+    "mean": -374.9,
+    "sd": 361.65282615606185,
+    "seeds_above": 0
+   },
+   "e4": {
+    "mean": -105.9,
+    "sd": 176.8354225449943,
+    "seeds_above": 3
+   },
+   "e16": {
+    "mean": 378.1,
+    "sd": 112.03020426057726,
+    "seeds_above": 10
+   },
+   "e64": {
+    "mean": 615.5,
+    "sd": 97.30735954809494,
+    "seeds_above": 10
+   }
+  },
+  "ldpProtocolSigma": {
+   "x0": {
+    "mean": 6775.2,
+    "sd": 57.89415629692977,
+    "n": 10
+   },
+   "x1": {
+    "mean": 6776.0,
+    "sd": 58.05170109479997,
+    "n": 10
+   },
+   "x0.5": {
+    "mean": 6789.2,
+    "sd": 66.37402437031456,
+    "n": 10
+   },
+   "x4": {
+    "mean": 6703.0,
+    "sd": 53.29998957681782,
+    "n": 10
+   }
+  },
+  "onchainRuns": [
+   {
+    "run": 1,
+    "path": "normal",
+    "U_fed": 7437,
+    "U_A": 7229,
+    "E": 208,
+    "E_prime": 200,
+    "awards_tokens": [
+     0,
+     435000,
+     560000
+    ],
+    "l": [
+     -23,
+     175,
+     424
+    ],
+    "accepted": true
+   },
+   {
+    "run": 2,
+    "path": "normal",
+    "U_fed": 7311,
+    "U_A": 7013,
+    "E": 298,
+    "E_prime": 200,
+    "awards_tokens": [
+     370000,
+     0,
+     625000
+    ],
+    "l": [
+     149,
+     0,
+     659
+    ],
+    "accepted": true
+   },
+   {
+    "run": 3,
+    "path": "normal",
+    "U_fed": 6847,
+    "U_A": 5873,
+    "E": 974,
+    "E_prime": 200,
+    "awards_tokens": [
+     0,
+     0,
+     1000000
+    ],
+    "l": [
+     -315,
+     -166,
+     1092
+    ],
+    "accepted": true
+   },
+   {
+    "run": 4,
+    "path": "normal",
+    "U_fed": 6398,
+    "U_A": 5294,
+    "E": 1104,
+    "E_prime": 200,
+    "awards_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "l": [
+     329,
+     313,
+     1443
+    ],
+    "accepted": true
+   },
+   {
+    "run": 5,
+    "path": "normal",
+    "U_fed": 7555,
+    "U_A": 6679,
+    "E": 876,
+    "E_prime": 200,
+    "awards_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "l": [
+     293,
+     652,
+     413
+    ],
+    "accepted": true
+   }
+  ],
+  "passiveNames": {
+   "1": "Bank",
+   "2": "E-commerce company",
+   "3": "Credit bureau"
+  },
+  "activeName": "MCI"
+ },
+ "onchainCost": {
+  "gas: setup": {
+   "loan2_mean": 6556338.0,
+   "loan2_sd": 20.784609690826528,
+   "loan_mean": 6556347.6,
+   "loan_sd": 10.039920318408907,
+   "electricity_mean": 6556386.0,
+   "electricity_sd": 18.973665961010276,
+   "runs": 5
+  },
+  "gas: alignment": {
+   "loan2_mean": 120500.0,
+   "loan2_sd": 0.0,
+   "loan_mean": 120500.0,
+   "loan_sd": 0.0,
+   "electricity_mean": 120488.0,
+   "electricity_sd": 0.0,
+   "runs": 5
+  },
+  "gas: training": {
+   "loan2_mean": 409629.4,
+   "loan2_sd": 5.366563145999495,
+   "loan_mean": 409629.4,
+   "loan_sd": 10.039920318408907,
+   "electricity_mean": 409629.4,
+   "electricity_sd": 5.366563145999495,
+   "runs": 5
+  },
+  "gas: scoring": {
+   "loan2_mean": 2445480.8,
+   "loan2_sd": 21.79908254950194,
+   "loan_mean": 2445481.2,
+   "loan_sd": 47.40464112299554,
+   "electricity_mean": 2445495.6,
+   "electricity_sd": 40.55613393803704,
+   "runs": 5
+  },
+  "gas: settlement": {
+   "loan2_mean": 594357.0,
+   "loan2_sd": 271.60633276858624,
+   "loan_mean": 594060.8,
+   "loan_sd": 876.1136912524538,
+   "electricity_mean": 594101.4,
+   "electricity_sd": 864.6888457705465,
+   "runs": 5
+  },
+  "gas: total": {
+   "loan2_mean": 10126305.2,
+   "loan2_sd": 263.1258254143823,
+   "loan_mean": 10126019.0,
+   "loan_sd": 900.613124487979,
+   "electricity_mean": 10126100.4,
+   "electricity_sd": 827.4948942440673,
+   "runs": 5
+  },
+  "proof time per figure (ms, rapidsnark)": {
+   "loan2_mean": 3113.6753250666666,
+   "loan2_sd": 99.92389674347518,
+   "loan_mean": 3130.7024972,
+   "loan_sd": 94.14527750226097,
+   "electricity_mean": 3155.5668263,
+   "electricity_sd": 107.36312255286879,
+   "runs": 30
+  },
+  "prover peak memory per figure (MB)": {
+   "loan2_mean": 876.4395833333333,
+   "loan2_sd": 0.015206315800675885,
+   "loan_mean": 876.4385416666667,
+   "loan_sd": 0.012264300824451579,
+   "electricity_mean": 876.4484375,
+   "electricity_sd": 0.01543527050074065,
+   "runs": 30
+  },
+  "run wall clock (s)": {
+   "loan2_mean": 250.666,
+   "loan2_sd": 2.516688300127763,
+   "loan_mean": 251.6796,
+   "loan_sd": 1.0622663507802568,
+   "electricity_mean": 245.2906,
+   "electricity_sd": 3.3176850814988446,
+   "runs": 5
+  },
+  "|I| (aligned rows)": {
+   "loan2_mean": 15965.0,
+   "loan2_sd": 0.0,
+   "loan_mean": 15965.0,
+   "loan_sd": 0.0,
+   "electricity_mean": 14244.0,
+   "electricity_sd": 0.0,
+   "runs": 5
+  }
+ },
+ "sources": {
+  "electricity and loan v1": [
+   "results/mci_loan/comparison/scenario-comparison.json"
+  ],
+  "loan v2": [
+   "results/mci_loan/v2/prepared/manifest.json",
+   "results/mci_loan/v2/offchain/summary.json",
+   "results/mci_loan/v2/offchain/n64.csv",
+   "results/mci_loan/v2/onchain/summary.json",
+   "results/mci_loan/v2/onchain/cost_comparison.csv"
+  ]
+ }
+}

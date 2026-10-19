@@ -1,0 +1,28 @@
+No contracts to compile
+
+Running Mocha tests
+
+
+  M3 scoring (F_r, F_j, LOO_j, BASELINE with the M1b verifier; U_fed = max(F_r, F_j); D115 timeout)
+      F: FULL 7175, FULL_J 5959, LOO_1 4507, LOO_2 5734, LOO_3 6292, BASELINE 3585
+    ✔ S01 n = 3, all 6 figures: each accepted, each F equals the Python oracle, and U_fed = max(F_r, F_j) (385ms)
+    ✔ S02 the submitScore ABI has no parameter for gamma, seed, sizeI or mask; submitJointScore has no C_model either
+    ✔ S03 LOO_1's proof submitted as LOO_2, a wrong F, FULL's proof submitted as BASELINE: each reverts (147ms)
+    ✔ S04 resubmitting after an invalid proof works; replacing an accepted figure reverts (128ms)
+    ✔ S05 one passive left in training: exactly 5 figures are required, and its mask bit is 0 everywhere (980ms)
+    ✔ S06 scoring timeout: remaining passives get Dp + an equal share of B (remainder to the first), A nothing (4615ms)
+    ✔ S14 D141: scoring timeout with every passive left: B is credited to A, the three forfeited D_p are locked (844ms)
+    ✔ S15 scoring timeout: the forfeited deposits are split equally among the remaining non-equivocators, remainder to the first (779ms)
+    ✔ S16 scoring timeout: every remaining passive equivocated: each gets its share of B, no Dp; the forfeited deposits stay locked (812ms)
+    ✔ S07 conservation on every M3 terminal path: owed + locked + forfeitedToPool + Dc escrow (+ the run's pending B and Dp when Scored) = deposits = balance (22607ms)
+    ✔ S08 D139: F_j must be proven for the committed gammaG; the retrained FULL's valid proof is rejected as F_j (85ms)
+    ✔ S09 D139: submitScore with kind FULL_JOINT reverts BadFigure (F_j takes no C_model); submitJointScore uses gammaG (769ms)
+    ✔ S10 D139: commitFA with a zero or non-field gammaG reverts; a valid one is stored (241ms)
+    ✔ S11 D139: U_fed = max(F_r, F_j), set once both are accepted, in either order, ties included (3245ms)
+    ✔ S12 M4 (D128): a left passive's public-input slot is the empty-tree root, whether it never committed or timed out (1519ms)
+    ✔ S13 M4 (D128), real proof: with passive 3 left, BASELINE proven with -32768 rows for its slot is accepted (63997ms)
+
+
+  16 passing (9m)
+
+

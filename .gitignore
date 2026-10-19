@@ -1,0 +1,39 @@
+# Dependencies and build output (README.md says how to regenerate each)
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+contracts/coverage/
+circuits/build/
+circuits/ptau/*.ptau
+circuits/ptau/*.part
+
+# Besu runtime data and generated node keys (chain/scripts/generate.sh)
+chain/data/
+chain/.env
+
+# The Home Credit data: never committed (Kaggle competition rules). Raw CSVs and prepared row-level inputs.
+/data/
+
+# Row-level outputs the pipeline writes under results/: per-applicant margins and predictions, applicant-ID lists.
+# Only aggregated results are committed (DELIVERY-NOTES.md).
+results/mci_loan/v2/offchain/runs/
+results/mci_loan/v2/offchain/check-*.json
+results/mci_loan/v2/smoke/c2-s1.json
+results/mci_loan/v2/onchain/run-*/A/I*.json
+results/mci_loan/v2/onchain/run-*/p[123]/I*.json
+results/mci_loan/v2/onchain/run-*/sample.json
+
+# Secrets
+.env
+kaggle.json
+access_token
+
+# OS / editor
+.DS_Store
+Thumbs.db
+~$*

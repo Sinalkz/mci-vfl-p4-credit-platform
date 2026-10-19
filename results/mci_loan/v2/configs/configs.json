@@ -1,0 +1,231 @@
+{
+ "what": "the MCI loan instance v2's model configurations (scenarios/mci_loan/v2/offchain/configs2.mjs)",
+ "base": "contracts/offchain/model-config.json via contracts/offchain/data1/configs.mjs writeConfig",
+ "passiveOrder": [
+  "bank",
+  "ecommerce",
+  "bureau"
+ ],
+ "widths": [
+  23,
+  23,
+  37
+ ],
+ "configs": [
+  {
+   "name": "loan2-s1",
+   "file": "results/mci_loan/v2/configs/loan2-s1.json",
+   "keccak256": "0xfaf6e41590179d95c307aed8ddaca3c1cd951e214f14c28044cebbb5165f762b",
+   "sha256": "252f162153785260d74a0f4bbde8cfff49e31e13c26ed149880948f17dcdaa96",
+   "seed": 1,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s2",
+   "file": "results/mci_loan/v2/configs/loan2-s2.json",
+   "keccak256": "0xcc5cbd2094f08a3aa4a098d920a06c0064da791c5d4bcea7f219c569fb15214d",
+   "sha256": "7d79ec3f6700ac28af5d5f9b390a53d9336400acbb21311f1bf2975c05084cf0",
+   "seed": 2,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s3",
+   "file": "results/mci_loan/v2/configs/loan2-s3.json",
+   "keccak256": "0x3be8c6a5e50d0ae2e6040c220f48756c109e353e208aad74cea6d09cb79b0b9e",
+   "sha256": "8cb836ff3a4f0edd0e2b5aa6383507d6f2149830e62eab135a0cfd221faabfaa",
+   "seed": 3,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s4",
+   "file": "results/mci_loan/v2/configs/loan2-s4.json",
+   "keccak256": "0xe8e8234a44137a23b6d04b3c484e89c3ff09021c0016b54b678b06dbb975154d",
+   "sha256": "062182d76d7274c148c5e35d185eefbe99a179ced7f10db13673da9315d39c08",
+   "seed": 4,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s5",
+   "file": "results/mci_loan/v2/configs/loan2-s5.json",
+   "keccak256": "0xe9cdbb8c4938bc87ea797a429fa4f68a852a92eb9450bea7e8d17d31b7f52886",
+   "sha256": "6902a6f77264f2fb0b921c5ab443193c491ee63f37298d734db2b0f135573c4b",
+   "seed": 5,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s6",
+   "file": "results/mci_loan/v2/configs/loan2-s6.json",
+   "keccak256": "0xdd5cd5ad11539b180457886d88ccb5ddf690fb402caed33590905a63524041a9",
+   "sha256": "41612838baa8af32b6aaf524a588eb2e68432aec5c4cf24d905d01d6cdbbd544",
+   "seed": 6,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s7",
+   "file": "results/mci_loan/v2/configs/loan2-s7.json",
+   "keccak256": "0x39694db439ed2358782b78415d4532acd5940170fc2816c96e2458d20ce5b109",
+   "sha256": "26dbcccd6627769d950c66eb05b021c09457950cc846f96c6b5707f781267785",
+   "seed": 7,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s8",
+   "file": "results/mci_loan/v2/configs/loan2-s8.json",
+   "keccak256": "0xbcedb4a6062d119033e2c3b11ef18489cddeb4f057fea1298b7762fa91e42dc0",
+   "sha256": "ed1fffbb3c3d787789bc287d211079e75477dc3efa9a45d2132d63c567e3709e",
+   "seed": 8,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s9",
+   "file": "results/mci_loan/v2/configs/loan2-s9.json",
+   "keccak256": "0xbef11d9a17d2793941ca5a278d63df84d9eacfd01bf7dbf67354f1f2423225b8",
+   "sha256": "1ed02b190425f4dadfce6ca7b94157e641d3bd32de966ac00eb5a5985bd5c6b0",
+   "seed": 9,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s10",
+   "file": "results/mci_loan/v2/configs/loan2-s10.json",
+   "keccak256": "0x20bc3d9c8aeabcce9b2095e708e2048f1d667d5ef5b3d87e32edceeb207f026a",
+   "sha256": "4f7b7ea7f8efdb7910b738b0791ed488a30666f0d8775859fbb6a18cc4198ae8",
+   "seed": 10,
+   "widths": [
+    23,
+    23,
+    37
+   ]
+  },
+  {
+   "name": "loan2-s1-wait10s",
+   "file": "results/mci_loan/v2/configs/loan2-s1-wait10s.json",
+   "keccak256": "0x25d4338b0918b6d1a97eebd50bdd07c405aa754b1a8df7da1c18562573b4fead",
+   "sha256": "d1fd6bdb3c6c6350cffe13ce682b64a22e6791b800f11962b100d20c909b4b58",
+   "seed": 1,
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "onChainRun": 1,
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   }
+  },
+  {
+   "name": "loan2-s2-wait10s",
+   "file": "results/mci_loan/v2/configs/loan2-s2-wait10s.json",
+   "keccak256": "0x107cc0cf05ba20816c771eb2c91b3f7f6a8c1fbfe90feee63299524357961b0c",
+   "sha256": "fc3ba4b66897f8d1b32af7d6b329b6b98912211b1c171d75ea93d0aca8dcdf19",
+   "seed": 2,
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "onChainRun": 2,
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   }
+  },
+  {
+   "name": "loan2-s3-wait10s",
+   "file": "results/mci_loan/v2/configs/loan2-s3-wait10s.json",
+   "keccak256": "0x237856ce6b5a07cf5a1af65b3f2e643bd77ba9a284410dabfe3376ef3d6df76b",
+   "sha256": "89fa4c89fe272d0f8a431a77db72fdbfd2bf78106b96c4b6cbed2265b4503256",
+   "seed": 3,
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "onChainRun": 3,
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   }
+  },
+  {
+   "name": "loan2-s4-wait10s",
+   "file": "results/mci_loan/v2/configs/loan2-s4-wait10s.json",
+   "keccak256": "0x9bcbd722a3367281a848e281b9f2c319cdaaedbe338ccba2f457ea683f60a92e",
+   "sha256": "1aca3d323ac82219747530ddbfdb2eabf62cd46179bea98f5f70b8987790c4a8",
+   "seed": 4,
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "onChainRun": 4,
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   }
+  },
+  {
+   "name": "loan2-s5-wait10s",
+   "file": "results/mci_loan/v2/configs/loan2-s5-wait10s.json",
+   "keccak256": "0x3b5a79a24b6650f8d31a73f51de9a74d4d181a1d4b92fa9451bac15a242b6a7e",
+   "sha256": "77d4d964c5ce72a3e303ce34d90d46663a342219b32432bb0068ce4a7b6e39f3",
+   "seed": 5,
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "onChainRun": 5,
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,997 @@
+{
+ "what": "the v2 Step 3 smoke run on the 1,000-row sample (scenarios/mci_loan/v2/smoke2.py)",
+ "sample": {
+  "rows": 1000,
+  "train": 800,
+  "test": 200,
+  "classCounts": {
+   "train": [
+    400,
+    400
+   ],
+   "test": [
+    100,
+    100
+   ]
+  },
+  "thinFile": 168,
+  "rule": "common.smoke_positions: 400 + 400 training, 100 + 100 test rows"
+ },
+ "labels": {
+  "FULL": "all members (F_r)",
+  "FULL_J": "all members, joint head (F_j)",
+  "LOO_1": "all but the Bank",
+  "LOO_2": "all but the E-commerce company",
+  "LOO_3": "all but the Credit bureau",
+  "BASELINE": "MCI alone (U_A)"
+ },
+ "runs": {
+  "main": {
+   "run": "results/mci_loan/v2/smoke/c2-s1.json",
+   "configHash": "0xfaf6e41590179d95c307aed8ddaca3c1cd951e214f14c28044cebbb5165f762b",
+   "widths": [
+    23,
+    23,
+    37
+   ],
+   "rows": {
+    "total": 1000,
+    "train": 800,
+    "test": 200,
+    "testPosSha256": "f7dd0d30c895e14cbda2e4faf705b119fda84320dd94771966504472acce7df5"
+   },
+   "wallMs": 9153.325,
+   "peakRssMB": 275,
+   "zeroFilledBatches": 0,
+   "finalsReceivedAndSigned": true,
+   "F": {
+    "FULL": 6093,
+    "FULL_J": 6180,
+    "LOO_1": 6149,
+    "LOO_2": 6376,
+    "LOO_3": 5306,
+    "BASELINE": 5546
+   },
+   "unusedClassRows": {
+    "FULL": {
+     "test": 0,
+     "train": 0
+    },
+    "FULL_J": {
+     "test": 0,
+     "train": 0
+    },
+    "LOO_1": {
+     "test": 0,
+     "train": 0
+    },
+    "LOO_2": {
+     "test": 0,
+     "train": 0
+    },
+    "LOO_3": {
+     "test": 0,
+     "train": 0
+    },
+    "BASELINE": {
+     "test": 0,
+     "train": 0
+    }
+   },
+   "unusedClassTotal": 0,
+   "offchainNotZkVerified": {
+    "auc": {
+     "FULL": 0.6544,
+     "FULL_J": 0.6553,
+     "LOO_1": 0.6566,
+     "LOO_2": 0.6819,
+     "LOO_3": 0.52965,
+     "BASELINE": 0.5617
+    },
+    "business": {
+     "baselineModel": "BASELINE",
+     "approvalRate": 0.6603114259910102,
+     "rows": 200,
+     "models": {
+      "BASELINE": {
+       "approvedRows": 122,
+       "approvedWeightShare": 0.6603114259910102,
+       "defaultRateAmongApproved": 0.06725003151539341,
+       "relativeToBaseline": 0.0
+      },
+      "FULL": {
+       "approvedRows": 113,
+       "approvedWeightShare": 0.6614302331494363,
+       "defaultRateAmongApproved": 0.05492968224436026,
+       "relativeToBaseline": -0.18320213378952904
+      },
+      "FULL_J": {
+       "approvedRows": 112,
+       "approvedWeightShare": 0.6606228519820204,
+       "defaultRateAmongApproved": 0.05377466319809156,
+       "relativeToBaseline": -0.20037713014628647
+      },
+      "LOO_1": {
+       "approvedRows": 113,
+       "approvedWeightShare": 0.6614302331494363,
+       "defaultRateAmongApproved": 0.05492968224436026,
+       "relativeToBaseline": -0.18320213378952904
+      },
+      "LOO_2": {
+       "approvedRows": 110,
+       "approvedWeightShare": 0.6673933273123571,
+       "defaultRateAmongApproved": 0.04959987837660163,
+       "relativeToBaseline": -0.26245568576055894
+      },
+      "LOO_3": {
+       "approvedRows": 129,
+       "approvedWeightShare": 0.6659630941629209,
+       "defaultRateAmongApproved": 0.07516577542889252,
+       "relativeToBaseline": 0.11770617403632314
+      }
+     },
+     "atBaselineDefaultRate": {
+      "defaultRate": 0.06725003151539341,
+      "models": {
+       "BASELINE": {
+        "approvedRows": 122,
+        "approvedWeightShare": 0.6603114259910102,
+        "defaultRateAmongApproved": 0.06725003151539341,
+        "extraApprovalShare": 0.0,
+        "extraPer10000": 0.0,
+        "relativeToBaseline": 0.0
+       },
+       "FULL": {
+        "approvedRows": 163,
+        "approvedWeightShare": 0.8862745201539309,
+        "defaultRateAmongApproved": 0.06650177104393995,
+        "extraApprovalShare": 0.2259630941629207,
+        "extraPer10000": 2259.630941629207,
+        "relativeToBaseline": 0.34220685159853215
+       },
+       "FULL_J": {
+        "approvedRows": 165,
+        "approvedWeightShare": 0.8962745201539309,
+        "defaultRateAmongApproved": 0.06666061016496279,
+        "extraApprovalShare": 0.23596309416292072,
+        "extraPer10000": 2359.630941629207,
+        "relativeToBaseline": 0.3573512207649323
+       },
+       "LOO_1": {
+        "approvedRows": 160,
+        "approvedWeightShare": 0.8670819013213469,
+        "defaultRateAmongApproved": 0.06704262188537448,
+        "extraApprovalShare": 0.20677047533033666,
+        "extraPer10000": 2067.7047533033665,
+        "relativeToBaseline": 0.31314084111146623
+       },
+       "LOO_2": {
+        "approvedRows": 160,
+        "approvedWeightShare": 0.8670819013213469,
+        "defaultRateAmongApproved": 0.06704262188537448,
+        "extraApprovalShare": 0.20677047533033666,
+        "extraPer10000": 2067.7047533033665,
+        "relativeToBaseline": 0.31314084111146623
+       },
+       "LOO_3": {
+        "approvedRows": 92,
+        "approvedWeightShare": 0.5019261883258418,
+        "defaultRateAmongApproved": 0.0659511869154728,
+        "extraApprovalShare": -0.15838523766516843,
+        "extraPer10000": -1583.8523766516844,
+        "relativeToBaseline": -0.23986445097093434
+       }
+      },
+      "baselineShareMinusApprovalRate": 0.0
+     }
+    },
+    "policy": {
+     "cuts": [
+      0.04,
+      0.12
+     ],
+     "tiers": [
+      {
+       "key": "credit4m",
+       "name": "4-month credit",
+       "nameFa": "اعتبار چهارماهه",
+       "rule": "PD < 4%"
+      },
+      {
+       "key": "credit1m",
+       "name": "1-month credit",
+       "nameFa": "اعتبار یک‌ماهه",
+       "rule": "4% <= PD < 12%"
+      },
+      {
+       "key": "none",
+       "name": "no credit",
+       "nameFa": "بدون اعتبار",
+       "rule": "PD >= 12%"
+      }
+     ],
+     "prior": 0.08072881945686496,
+     "calibrationSeed": 20267007,
+     "crossFit": "2 folds of the test rows: calibrate on one, report on the other, swap, pool; every model alike",
+     "foldRows": [
+      100,
+      100
+     ],
+     "models": {
+      "BASELINE": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -8240491964.6,
+         "marginSd": 41433963184.39704,
+         "a": 0.0002011708567533413,
+         "b": 0.15292203966648613,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -2224708164.9,
+         "marginSd": 47081061831.43148,
+         "a": 0.0007889609034923945,
+         "b": 0.3084267988719219,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 193,
+          "defaults": 98,
+          "share": 0.9524221435022474,
+          "defaultRate": 0.08307592903688417,
+          "meanPD": 0.07772941309289784
+         },
+         "none": {
+          "rows": 7,
+          "defaults": 2,
+          "share": 0.04757785649775255,
+          "defaultRate": 0.03393936704374032,
+          "meanPD": 0.13494897954573581
+         }
+        },
+        "granted": {
+         "rows": 193,
+         "defaults": 98,
+         "share": 0.9524221435022474,
+         "defaultRate": 0.08307592903688417,
+         "meanPD": 0.07772941309289784
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.08045179741445457
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 30,
+          "defaults": 17,
+          "share": 0.9354551293321945,
+          "defaultRate": 0.10302130762757415,
+          "meanPD": 0.07947267297027306
+         },
+         "none": {
+          "rows": 1,
+          "defaults": 0,
+          "share": 0.06454487066780544,
+          "defaultRate": 0.0,
+          "meanPD": 0.12228984017452968
+         }
+        },
+        "granted": {
+         "rows": 30,
+         "defaults": 17,
+         "share": 0.9354551293321945,
+         "defaultRate": 0.10302130762757415,
+         "meanPD": 0.07947267297027306
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.08223630148983362
+        }
+       }
+      },
+      "FULL": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -2923978308.5,
+         "marginSd": 103812634802.15929,
+         "a": 0.005257091525236355,
+         "b": 0.5405094819244546,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -2061211176.91,
+         "marginSd": 100176118475.09586,
+         "a": 0.00628636168900273,
+         "b": 0.5465005892753488,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 12,
+          "defaults": 4,
+          "share": 0.07677047533033673,
+          "defaultRate": 0.04206727463607451,
+          "meanPD": 0.03479147786288122
+         },
+         "credit1m": {
+          "rows": 144,
+          "defaults": 66,
+          "share": 0.7703114259910102,
+          "defaultRate": 0.06917612182746675,
+          "meanPD": 0.06907595824954837
+         },
+         "none": {
+          "rows": 44,
+          "defaults": 30,
+          "share": 0.15291809867865297,
+          "defaultRate": 0.15839482201105667,
+          "meanPD": 0.1673240798878793
+         }
+        },
+        "granted": {
+         "rows": 156,
+         "defaults": 70,
+         "share": 0.8470819013213466,
+         "defaultRate": 0.06671926484434118,
+         "meanPD": 0.06596877835155698
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.08146783835349292
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 21,
+          "defaults": 11,
+          "share": 0.707806937099111,
+          "defaultRate": 0.0881006205966657,
+          "meanPD": 0.06577215093075234
+         },
+         "none": {
+          "rows": 10,
+          "defaults": 6,
+          "share": 0.29219306290088914,
+          "defaultRate": 0.11640789788772173,
+          "meanPD": 0.15327337736876578
+         }
+        },
+        "granted": {
+         "rows": 21,
+         "defaults": 11,
+         "share": 0.707806937099111,
+         "defaultRate": 0.0881006205966657,
+         "meanPD": 0.06577215093075234
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.09133940229125977
+        }
+       }
+      },
+      "FULL_J": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -25342205568.53,
+         "marginSd": 91187077070.7086,
+         "a": 0.004376168655365845,
+         "b": 0.538508740753138,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -25466138005.75,
+         "marginSd": 86455469138.30392,
+         "a": 0.006209991942025323,
+         "b": 0.5741813905745226,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 15,
+          "defaults": 5,
+          "share": 0.09596309416292091,
+          "defaultRate": 0.04206727463607451,
+          "meanPD": 0.0346823198436734
+         },
+         "credit1m": {
+          "rows": 141,
+          "defaults": 65,
+          "share": 0.7511188071584258,
+          "defaultRate": 0.0698688082123324,
+          "meanPD": 0.06972736411108979
+         },
+         "none": {
+          "rows": 44,
+          "defaults": 30,
+          "share": 0.15291809867865297,
+          "defaultRate": 0.15839482201105667,
+          "meanPD": 0.1688242847861813
+         }
+        },
+        "granted": {
+         "rows": 156,
+         "defaults": 70,
+         "share": 0.8470819013213466,
+         "defaultRate": 0.06671926484434118,
+         "meanPD": 0.06575722748353124
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.08151804592265627
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 21,
+          "defaults": 11,
+          "share": 0.707806937099111,
+          "defaultRate": 0.0881006205966657,
+          "meanPD": 0.06505297699863051
+         },
+         "none": {
+          "rows": 10,
+          "defaults": 6,
+          "share": 0.29219306290088914,
+          "defaultRate": 0.11640789788772173,
+          "meanPD": 0.1573173576699067
+         }
+        },
+        "granted": {
+         "rows": 21,
+         "defaults": 11,
+         "share": 0.707806937099111,
+         "defaultRate": 0.0881006205966657,
+         "meanPD": 0.06505297699863051
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.0920119889836243
+        }
+       }
+      },
+      "LOO_1": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": 9696896954.2,
+         "marginSd": 96209659785.05606,
+         "a": 0.0027473522781056928,
+         "b": 0.4597093980794813,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": 4916687083.95,
+         "marginSd": 93095956176.65747,
+         "a": 0.005520941587826511,
+         "b": 0.6354686210622966,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 16,
+          "defaults": 5,
+          "share": 0.1051557129955051,
+          "defaultRate": 0.038389790930823044,
+          "meanPD": 0.03447751284918494
+         },
+         "credit1m": {
+          "rows": 140,
+          "defaults": 64,
+          "share": 0.7503114259910101,
+          "defaultRate": 0.06886792993504441,
+          "meanPD": 0.07098570521728316
+         },
+         "none": {
+          "rows": 44,
+          "defaults": 31,
+          "share": 0.1445328610134846,
+          "defaultRate": 0.17317041961519825,
+          "meanPD": 0.18144092302328096
+         }
+        },
+        "granted": {
+         "rows": 156,
+         "defaults": 69,
+         "share": 0.8554671389865152,
+         "defaultRate": 0.065121496797283,
+         "meanPD": 0.06649804599147982
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.08311106886200716
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 23,
+          "defaults": 12,
+          "share": 0.7780207378051943,
+          "defaultRate": 0.08743617895229903,
+          "meanPD": 0.07299495219905161
+         },
+         "none": {
+          "rows": 8,
+          "defaults": 5,
+          "share": 0.22197926219480577,
+          "defaultRate": 0.1276905324899882,
+          "meanPD": 0.1502963896875712
+         }
+        },
+        "granted": {
+         "rows": 23,
+         "defaults": 12,
+         "share": 0.7780207378051943,
+         "defaultRate": 0.08743617895229903,
+         "meanPD": 0.07299495219905161
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.09015426825935109
+        }
+       }
+      },
+      "LOO_2": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -12014120759.69,
+         "marginSd": 96967296280.37207,
+         "a": 0.006694508685831483,
+         "b": 0.6218483720160823,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -10618626754.11,
+         "marginSd": 96106105056.79904,
+         "a": 0.009914340720578896,
+         "b": 0.6511181582183727,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 21,
+          "defaults": 6,
+          "share": 0.1427335694932576,
+          "defaultRate": 0.03393936704374033,
+          "meanPD": 0.03375804456041032
+         },
+         "credit1m": {
+          "rows": 131,
+          "defaults": 61,
+          "share": 0.6927335694932574,
+          "defaultRate": 0.07109551692202792,
+          "meanPD": 0.06777770779363734
+         },
+         "none": {
+          "rows": 48,
+          "defaults": 33,
+          "share": 0.16453286101348463,
+          "defaultRate": 0.16193469414318548,
+          "meanPD": 0.1833475286164449
+         }
+        },
+        "granted": {
+         "rows": 152,
+         "defaults": 67,
+         "share": 0.8354671389865151,
+         "defaultRate": 0.06474765516508565,
+         "meanPD": 0.06196569228800366
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.0819369930941926
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 1,
+          "defaults": 0,
+          "share": 0.06454487066780544,
+          "defaultRate": 0.0,
+          "meanPD": 0.0382657927796627
+         },
+         "credit1m": {
+          "rows": 21,
+          "defaults": 11,
+          "share": 0.707806937099111,
+          "defaultRate": 0.0881006205966657,
+          "meanPD": 0.06929214213646248
+         },
+         "none": {
+          "rows": 9,
+          "defaults": 6,
+          "share": 0.22764819223308366,
+          "defaultRate": 0.14941291602632908,
+          "meanPD": 0.17970165685243994
+         }
+        },
+        "granted": {
+         "rows": 22,
+         "defaults": 11,
+         "share": 0.7723518077669164,
+         "defaultRate": 0.08073811674158149,
+         "meanPD": 0.06669929301461108
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.09242407686035803
+        }
+       }
+      },
+      "LOO_3": {
+       "calibration": [
+        {
+         "fittedOnFold": 1,
+         "appliedToFold": 0,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -23267030278.37,
+         "marginSd": 51532896974.65481,
+         "a": 0.00022091008723252713,
+         "b": 0.16425303578685677,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        },
+        {
+         "fittedOnFold": 0,
+         "appliedToFold": 1,
+         "fitRows": 100,
+         "appliedRows": 100,
+         "marginMean": -9217153574.92,
+         "marginSd": 59065814628.8047,
+         "a": 5.6640925302627644e-05,
+         "b": 0.10453754731992425,
+         "fitDefaultShare": 0.5,
+         "priorShift": -2.432485531080057
+        }
+       ],
+       "overall": {
+        "rows": 200,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 196,
+          "defaults": 97,
+          "share": 0.9883852376651682,
+          "defaultRate": 0.07923628384448296,
+          "meanPD": 0.08101330766715609
+         },
+         "none": {
+          "rows": 4,
+          "defaults": 3,
+          "share": 0.011614762334831628,
+          "defaultRate": 0.20854008307889804,
+          "meanPD": 0.13353873404445987
+         }
+        },
+        "granted": {
+         "rows": 196,
+         "defaults": 97,
+         "share": 0.9883852376651682,
+         "defaultRate": 0.07923628384448296,
+         "meanPD": 0.08101330766715609
+        },
+        "all": {
+         "rows": 200,
+         "defaults": 100,
+         "share": 1.0,
+         "defaultRate": 0.08073811674158145,
+         "meanPD": 0.08162337801106416
+        }
+       },
+       "thinFile": {
+        "rows": 31,
+        "tiers": {
+         "credit4m": {
+          "rows": 0,
+          "defaults": 0,
+          "share": 0.0,
+          "defaultRate": null,
+          "meanPD": null
+         },
+         "credit1m": {
+          "rows": 30,
+          "defaults": 17,
+          "share": 0.9354551293321948,
+          "defaultRate": 0.10302130762757414,
+          "meanPD": 0.08052941522165176
+         },
+         "none": {
+          "rows": 1,
+          "defaults": 0,
+          "share": 0.06454487066780544,
+          "defaultRate": 0.0,
+          "meanPD": 0.13474539951187742
+         }
+        },
+        "granted": {
+         "rows": 30,
+         "defaults": 17,
+         "share": 0.9354551293321948,
+         "defaultRate": 0.10302130762757414,
+         "meanPD": 0.08052941522165176
+        },
+        "all": {
+         "rows": 31,
+         "defaults": 17,
+         "share": 1.0,
+         "defaultRate": 0.09637181065072419,
+         "meanPD": 0.08402877891579218
+        }
+       }
+      }
+     }
+    },
+    "thinFile": {
+     "rows": 31,
+     "defaults": 17,
+     "auc": {
+      "FULL": 0.6092436974789915,
+      "FULL_J": 0.6176470588235294,
+      "LOO_1": 0.6428571428571429,
+      "LOO_2": 0.6470588235294118,
+      "LOO_3": 0.5336134453781513,
+      "BASELINE": 0.5987394957983193
+     },
+     "business": {
+      "baselineModel": "BASELINE",
+      "approvalRate": 0.5617104056486667,
+      "rows": 31,
+      "models": {
+       "BASELINE": {
+        "approvedRows": 16,
+        "approvedWeightShare": 0.5617104056486667,
+        "defaultRateAmongApproved": 0.08073811674158148,
+        "relativeToBaseline": 0.0
+       },
+       "FULL": {
+        "approvedRows": 13,
+        "approvedWeightShare": 0.6035795561633607,
+        "defaultRateAmongApproved": 0.037568734596064274,
+        "relativeToBaseline": -0.53468403633552
+       },
+       "FULL_J": {
+        "approvedRows": 13,
+        "approvedWeightShare": 0.6035795561633607,
+        "defaultRateAmongApproved": 0.037568734596064274,
+        "relativeToBaseline": -0.53468403633552
+       },
+       "LOO_1": {
+        "approvedRows": 16,
+        "approvedWeightShare": 0.5617104056486667,
+        "defaultRateAmongApproved": 0.08073811674158148,
+        "relativeToBaseline": 0.0
+       },
+       "LOO_2": {
+        "approvedRows": 13,
+        "approvedWeightShare": 0.6035795561633607,
+        "defaultRateAmongApproved": 0.037568734596064274,
+        "relativeToBaseline": -0.53468403633552
+       },
+       "LOO_3": {
+        "approvedRows": 16,
+        "approvedWeightShare": 0.5617104056486667,
+        "defaultRateAmongApproved": 0.08073811674158148,
+        "relativeToBaseline": 0.0
+       }
+      },
+      "atBaselineDefaultRate": {
+       "defaultRate": 0.08073811674158148,
+       "models": {
+        "BASELINE": {
+         "approvedRows": 22,
+         "approvedWeightShare": 0.7723518077669164,
+         "defaultRateAmongApproved": 0.08073811674158149,
+         "extraApprovalShare": 0.0,
+         "extraPer10000": 0.0,
+         "relativeToBaseline": 0.0
+        },
+        "FULL": {
+         "approvedRows": 22,
+         "approvedWeightShare": 0.7723518077669164,
+         "defaultRateAmongApproved": 0.08073811674158149,
+         "extraApprovalShare": 0.0,
+         "extraPer10000": 0.0,
+         "relativeToBaseline": 0.0
+        },
+        "FULL_J": {
+         "approvedRows": 20,
+         "approvedWeightShare": 0.7021380070608332,
+         "defaultRateAmongApproved": 0.08073811674158149,
+         "extraApprovalShare": -0.07021380070608318,
+         "extraPer10000": -702.1380070608318,
+         "relativeToBaseline": -0.09090909090909072
+        },
+        "LOO_1": {
+         "approvedRows": 22,
+         "approvedWeightShare": 0.7723518077669164,
+         "defaultRateAmongApproved": 0.08073811674158149,
+         "extraApprovalShare": 0.0,
+         "extraPer10000": 0.0,
+         "relativeToBaseline": 0.0
+        },
+        "LOO_2": {
+         "approvedRows": 22,
+         "approvedWeightShare": 0.7723518077669164,
+         "defaultRateAmongApproved": 0.08073811674158149,
+         "extraApprovalShare": 0.0,
+         "extraPer10000": 0.0,
+         "relativeToBaseline": 0.0
+        },
+        "LOO_3": {
+         "approvedRows": 24,
+         "approvedWeightShare": 0.8425656084730001,
+         "defaultRateAmongApproved": 0.08073811674158145,
+         "extraApprovalShare": 0.07021380070608374,
+         "extraPer10000": 702.1380070608374,
+         "relativeToBaseline": 0.0909090909090915
+        }
+       },
+       "baselineShareMinusApprovalRate": 0.21064140211824967
+      }
+     }
+    }
+   }
+  }
+ },
+ "pass": {
+  "noPredictionInClasses2to4": true,
+  "completedWithThesisChecks": true
+ },
+ "seconds": 10.3,
+ "machine": {
+  "cpu": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "cores": 12,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.5",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "sklearn": "1.9.1"
+ }
+}

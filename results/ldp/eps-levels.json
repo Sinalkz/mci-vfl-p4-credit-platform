@@ -1,0 +1,134 @@
+{
+ "delta": 7.829627309740057e-05,
+ "n_train": 12772,
+ "releases_training_household": 21,
+ "releases_test_household": 1,
+ "mechanism": "Gaussian mechanism on one household's released embedding row (L2 clip C, N(0, sigma^2) per entry); replace-one neighbours, L2 sensitivity 2C; analytic Gaussian mechanism (Balle & Wang 2018)",
+ "accountant": "Gaussian DP (Dong, Roth & Su 2019): k releases at sensitivity 2C and noise sigma compose to one Gaussian mechanism with sensitivity sqrt(k) * 2C (exact); simple composition (k eps, k delta) for comparison",
+ "levels": [
+  {
+   "eps": 1,
+   "passives": [
+    {
+     "passive": 1,
+     "clip": 4,
+     "sigma": 25.97149236462211,
+     "sigma_over_C": 6.492873091155528,
+     "eps_check": 0.9999999999999982
+    },
+    {
+     "passive": 2,
+     "clip": 4,
+     "sigma": 25.97149236462211,
+     "sigma_over_C": 6.492873091155528,
+     "eps_check": 0.9999999999999982
+    },
+    {
+     "passive": 3,
+     "clip": 3,
+     "sigma": 19.47861927346659,
+     "sigma_over_C": 6.492873091155531,
+     "eps_check": 0.9999999999999992
+    }
+   ],
+   "releases": 21,
+   "eps_total_gdp": 5.849549227924493,
+   "delta_total_gdp": 7.829627309740057e-05,
+   "eps_total_simple": 21,
+   "delta_total_simple": 0.0016442217350454119
+  },
+  {
+   "eps": 4,
+   "passives": [
+    {
+     "passive": 1,
+     "clip": 4,
+     "sigma": 7.7783017287509475,
+     "sigma_over_C": 1.9445754321877369,
+     "eps_check": 3.9999999999999964
+    },
+    {
+     "passive": 2,
+     "clip": 4,
+     "sigma": 7.7783017287509475,
+     "sigma_over_C": 1.9445754321877369,
+     "eps_check": 3.9999999999999964
+    },
+    {
+     "passive": 3,
+     "clip": 3,
+     "sigma": 5.833726296563208,
+     "sigma_over_C": 1.944575432187736,
+     "eps_check": 3.9999999999999982
+    }
+   ],
+   "releases": 21,
+   "eps_total_gdp": 28.193317041033726,
+   "delta_total_gdp": 7.829627309740057e-05,
+   "eps_total_simple": 84,
+   "delta_total_simple": 0.0016442217350454119
+  },
+  {
+   "eps": 16,
+   "passives": [
+    {
+     "passive": 1,
+     "clip": 4,
+     "sigma": 2.5653590510559714,
+     "sigma_over_C": 0.6413397627639928,
+     "eps_check": 16.0
+    },
+    {
+     "passive": 2,
+     "clip": 4,
+     "sigma": 2.5653590510559714,
+     "sigma_over_C": 0.6413397627639928,
+     "eps_check": 16.0
+    },
+    {
+     "passive": 3,
+     "clip": 3,
+     "sigma": 1.9240192882919784,
+     "sigma_over_C": 0.6413397627639928,
+     "eps_check": 16.0
+    }
+   ],
+   "releases": 21,
+   "eps_total_gdp": 155.248680342476,
+   "delta_total_gdp": 7.829627309740057e-05,
+   "eps_total_simple": 336,
+   "delta_total_simple": 0.0016442217350454119
+  },
+  {
+   "eps": 64,
+   "passives": [
+    {
+     "passive": 1,
+     "clip": 4,
+     "sigma": 0.9736107637946303,
+     "sigma_over_C": 0.24340269094865757,
+     "eps_check": 63.99999999999998
+    },
+    {
+     "passive": 2,
+     "clip": 4,
+     "sigma": 0.9736107637946303,
+     "sigma_over_C": 0.24340269094865757,
+     "eps_check": 63.99999999999998
+    },
+    {
+     "passive": 3,
+     "clip": 3,
+     "sigma": 0.7302080728459728,
+     "sigma_over_C": 0.2434026909486576,
+     "eps_check": 63.99999999999997
+    }
+   ],
+   "releases": 21,
+   "eps_total_gdp": 850.3166544479697,
+   "delta_total_gdp": 7.829627309740057e-05,
+   "eps_total_simple": 1344,
+   "delta_total_simple": 0.0016442217350454119
+  }
+ ]
+}

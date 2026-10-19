@@ -1,0 +1,850 @@
+{
+ "what": "the MCI loan instance v2's five on-chain runs (scenarios/mci_loan/v2/onchain_report2.py)",
+ "plan": {
+  "what": "the MCI loan instance v2's five on-chain runs, fixed before run 1 (scenarios/mci_loan/v2/onchain_plan2.py)",
+  "preregistration": "docs/mci/v2/02-preregistration.md section 10 (tag mci-prereg-v2)",
+  "members": [
+   {
+    "slot": "power",
+    "role": "active",
+    "index": 0,
+    "process": "A",
+    "owner": "mci",
+    "name": "MCI",
+    "nameFa": "همراه اول"
+   },
+   {
+    "slot": "mci",
+    "role": "passive",
+    "index": 1,
+    "process": "p1",
+    "owner": "bank",
+    "name": "Bank",
+    "nameFa": "بانک"
+   },
+   {
+    "slot": "digikala",
+    "role": "passive",
+    "index": 2,
+    "process": "p2",
+    "owner": "ecommerce",
+    "name": "E-commerce company",
+    "nameFa": "شرکت تجارت الکترونیک"
+   },
+   {
+    "slot": "maker",
+    "role": "passive",
+    "index": 3,
+    "process": "p3",
+    "owner": "bureau",
+    "name": "Credit bureau",
+    "nameFa": "شرکت اعتبارسنجی"
+   }
+  ],
+  "alignmentBenchmark": {
+   "file": "results/mci_loan/v2/onchain/psi-bench.json",
+   "slowestAlignmentS": 87.465303792,
+   "rule": "ceil(2 x slowest alignment / block time), rounded up to a multiple of 10 blocks, at least the default 60",
+   "machine": {
+    "cpu": "Apple M4",
+    "threads": 10,
+    "totalRamMB": 16384,
+    "os": "darwin 27.0.0",
+    "node": "v24.16.0"
+   }
+  },
+  "runs": [
+   {
+    "run": 1,
+    "modelConfig": "results/mci_loan/v2/configs/loan2-s1-wait10s.json",
+    "modelConfigSha256": "d1fd6bdb3c6c6350cffe13ce682b64a22e6791b800f11962b100d20c909b4b58",
+    "modelConfigHash": "0x25d4338b0918b6d1a97eebd50bdd07c405aa754b1a8df7da1c18562573b4fead",
+    "offchainConfig": "results/mci_loan/v2/configs/loan2-s1.json",
+    "change": {
+     "perBatchWaitMs": [
+      2000,
+      10000
+     ]
+    },
+    "runSeed": 1,
+    "scenarioSeed": 20267005,
+    "prepared": "data/mci_loan/v2/prepared",
+    "setup": "mpc-d14",
+    "prover": "rapidsnark",
+    "alignmentPeriodBlocks": 90,
+    "compareWith": "results/mci_loan/v2/offchain/runs/c2-s1.json (off-chain seed 1, the same model seeds)",
+    "outDir": "results/mci_loan/v2/onchain/run-1",
+    "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 1 90"
+   },
+   {
+    "run": 2,
+    "modelConfig": "results/mci_loan/v2/configs/loan2-s2-wait10s.json",
+    "modelConfigSha256": "fc3ba4b66897f8d1b32af7d6b329b6b98912211b1c171d75ea93d0aca8dcdf19",
+    "modelConfigHash": "0x107cc0cf05ba20816c771eb2c91b3f7f6a8c1fbfe90feee63299524357961b0c",
+    "offchainConfig": "results/mci_loan/v2/configs/loan2-s2.json",
+    "change": {
+     "perBatchWaitMs": [
+      2000,
+      10000
+     ]
+    },
+    "runSeed": 2,
+    "scenarioSeed": 20267005,
+    "prepared": "data/mci_loan/v2/prepared",
+    "setup": "mpc-d14",
+    "prover": "rapidsnark",
+    "alignmentPeriodBlocks": 90,
+    "compareWith": "results/mci_loan/v2/offchain/runs/c2-s2.json (off-chain seed 2, the same model seeds)",
+    "outDir": "results/mci_loan/v2/onchain/run-2",
+    "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 2 90"
+   },
+   {
+    "run": 3,
+    "modelConfig": "results/mci_loan/v2/configs/loan2-s3-wait10s.json",
+    "modelConfigSha256": "89fa4c89fe272d0f8a431a77db72fdbfd2bf78106b96c4b6cbed2265b4503256",
+    "modelConfigHash": "0x237856ce6b5a07cf5a1af65b3f2e643bd77ba9a284410dabfe3376ef3d6df76b",
+    "offchainConfig": "results/mci_loan/v2/configs/loan2-s3.json",
+    "change": {
+     "perBatchWaitMs": [
+      2000,
+      10000
+     ]
+    },
+    "runSeed": 3,
+    "scenarioSeed": 20267005,
+    "prepared": "data/mci_loan/v2/prepared",
+    "setup": "mpc-d14",
+    "prover": "rapidsnark",
+    "alignmentPeriodBlocks": 90,
+    "compareWith": "results/mci_loan/v2/offchain/runs/c2-s3.json (off-chain seed 3, the same model seeds)",
+    "outDir": "results/mci_loan/v2/onchain/run-3",
+    "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 3 90"
+   },
+   {
+    "run": 4,
+    "modelConfig": "results/mci_loan/v2/configs/loan2-s4-wait10s.json",
+    "modelConfigSha256": "1aca3d323ac82219747530ddbfdb2eabf62cd46179bea98f5f70b8987790c4a8",
+    "modelConfigHash": "0x9bcbd722a3367281a848e281b9f2c319cdaaedbe338ccba2f457ea683f60a92e",
+    "offchainConfig": "results/mci_loan/v2/configs/loan2-s4.json",
+    "change": {
+     "perBatchWaitMs": [
+      2000,
+      10000
+     ]
+    },
+    "runSeed": 4,
+    "scenarioSeed": 20267005,
+    "prepared": "data/mci_loan/v2/prepared",
+    "setup": "mpc-d14",
+    "prover": "rapidsnark",
+    "alignmentPeriodBlocks": 90,
+    "compareWith": "results/mci_loan/v2/offchain/runs/c2-s4.json (off-chain seed 4, the same model seeds)",
+    "outDir": "results/mci_loan/v2/onchain/run-4",
+    "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 4 90"
+   },
+   {
+    "run": 5,
+    "modelConfig": "results/mci_loan/v2/configs/loan2-s5-wait10s.json",
+    "modelConfigSha256": "77d4d964c5ce72a3e303ce34d90d46663a342219b32432bb0068ce4a7b6e39f3",
+    "modelConfigHash": "0x3b5a79a24b6650f8d31a73f51de9a74d4d181a1d4b92fa9451bac15a242b6a7e",
+    "offchainConfig": "results/mci_loan/v2/configs/loan2-s5.json",
+    "change": {
+     "perBatchWaitMs": [
+      2000,
+      10000
+     ]
+    },
+    "runSeed": 5,
+    "scenarioSeed": 20267005,
+    "prepared": "data/mci_loan/v2/prepared",
+    "setup": "mpc-d14",
+    "prover": "rapidsnark",
+    "alignmentPeriodBlocks": 90,
+    "compareWith": "results/mci_loan/v2/offchain/runs/c2-s5.json (off-chain seed 5, the same model seeds)",
+    "outDir": "results/mci_loan/v2/onchain/run-5",
+    "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 5 90"
+   }
+  ]
+ },
+ "members": {
+  "A": "MCI",
+  "p1": "Bank",
+  "p2": "E-commerce company",
+  "p3": "Credit bureau",
+  "arbiter": "arbiter"
+ },
+ "alignmentBenchmark": {
+  "slowestAlignmentS": 87.465303792,
+  "alignmentPeriod": {
+   "blocks": 90,
+   "seconds": 180,
+   "rule": "ceil(2 x slowest alignment / block time), rounded up to a multiple of 10 blocks, at least the default 60",
+   "default": 60,
+   "ratioToSlowest": 2.05795889565599
+  },
+  "machine": {
+   "cpu": "Apple M4",
+   "threads": 10,
+   "totalRamMB": 16384,
+   "os": "darwin 27.0.0",
+   "node": "v24.16.0"
+  },
+  "allCorrect": true
+ },
+ "runs": {
+  "1": {
+   "finalState": "Settled",
+   "path": "normal",
+   "accepted": true,
+   "checkOk": true,
+   "replayEqualsChain": true,
+   "figures": {
+    "F_r": 7437,
+    "F_j": 7437,
+    "LOO_1": 7460,
+    "LOO_2": 7262,
+    "LOO_3": 7013,
+    "BASELINE": 7229
+   },
+   "division": {
+    "B": 1000003,
+    "rho": 5000,
+    "U_fed": 7437,
+    "F_j_binds": false,
+    "l": [
+     -23,
+     175,
+     424
+    ],
+    "claims": [
+     0,
+     175,
+     424
+    ],
+    "E": 208,
+    "E_prime": 200,
+    "B_over_rho": 200,
+    "regime": "Talmud division of E'",
+    "awards": [
+     0,
+     87,
+     112
+    ],
+    "award_tokens": [
+     0,
+     435000,
+     560000
+    ],
+    "to_A": 5003
+   },
+   "gas": {
+    "setup": 6556350,
+    "alignment": 120500,
+    "training": 409627,
+    "scoring": 2445476,
+    "settlement": 594314,
+    "test token": 407452,
+    "infrastructure": 9169460
+   },
+   "gasTotal": 10126267,
+   "proveMs": [
+    3386.7717919999996,
+    3069.5204169999997,
+    3040.5337089999994,
+    3026.0745829999996,
+    3166.694958,
+    3032.341125
+   ],
+   "proverPeakRssMB": [
+    876.421875,
+    876.46875,
+    876.453125,
+    876.421875,
+    876.46875,
+    876.4375
+   ],
+   "wallClockS": 250.792,
+   "sizeI": 15965,
+   "conservation": {
+    "deposits": 1003006,
+    "withdrawnTotal": 1003006,
+    "contractBalance": 0,
+    "lockedForever": 0,
+    "conserved": true
+   },
+   "sameRankingAsOffchainSeed": false,
+   "sameTopAsOffchainSeed": true,
+   "machine": {
+    "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+    "cpus": 10,
+    "totalRamMB": 16384,
+    "freeRamMBAtStart": 73
+   },
+   "chain": {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+    "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ"
+   },
+   "keys": {
+    "setup": "mpc-d14",
+    "verifierContract": "MembersVarVerifierN64D14Mpc",
+    "verifier": "0x9bAaB117304f7D6517048e371025dB8f89a8DbE5",
+    "vkFile": "./results/full/setup/verification_key.json",
+    "vkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1",
+    "proposalVkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1"
+   },
+   "prover": "rapidsnark"
+  },
+  "2": {
+   "finalState": "Settled",
+   "path": "normal",
+   "accepted": true,
+   "checkOk": true,
+   "replayEqualsChain": true,
+   "figures": {
+    "F_r": 7311,
+    "F_j": 7311,
+    "LOO_1": 7162,
+    "LOO_2": 7311,
+    "LOO_3": 6652,
+    "BASELINE": 7013
+   },
+   "division": {
+    "B": 1000003,
+    "rho": 5000,
+    "U_fed": 7311,
+    "F_j_binds": false,
+    "l": [
+     149,
+     0,
+     659
+    ],
+    "claims": [
+     149,
+     0,
+     659
+    ],
+    "E": 298,
+    "E_prime": 200,
+    "B_over_rho": 200,
+    "regime": "Talmud division of E'",
+    "awards": [
+     74,
+     0,
+     125
+    ],
+    "award_tokens": [
+     370000,
+     0,
+     625000
+    ],
+    "to_A": 5003
+   },
+   "gas": {
+    "setup": 6556350,
+    "alignment": 120500,
+    "training": 409627,
+    "scoring": 2445452,
+    "settlement": 594810,
+    "test token": 407452,
+    "infrastructure": 9169460
+   },
+   "gasTotal": 10126739,
+   "proveMs": [
+    3378.0302500000007,
+    3015.126125,
+    3038.486875,
+    3099.6247920000005,
+    3117.83575,
+    3044.596625
+   ],
+   "proverPeakRssMB": [
+    876.4375,
+    876.421875,
+    876.4375,
+    876.4375,
+    876.421875,
+    876.421875
+   ],
+   "wallClockS": 250.225,
+   "sizeI": 15965,
+   "conservation": {
+    "deposits": 1003006,
+    "withdrawnTotal": 1003006,
+    "contractBalance": 0,
+    "lockedForever": 0,
+    "conserved": true
+   },
+   "sameRankingAsOffchainSeed": true,
+   "sameTopAsOffchainSeed": true,
+   "machine": {
+    "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+    "cpus": 10,
+    "totalRamMB": 16384,
+    "freeRamMBAtStart": 1580
+   },
+   "chain": {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+    "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ"
+   },
+   "keys": {
+    "setup": "mpc-d14",
+    "verifierContract": "MembersVarVerifierN64D14Mpc",
+    "verifier": "0x9bAaB117304f7D6517048e371025dB8f89a8DbE5",
+    "vkFile": "./results/full/setup/verification_key.json",
+    "vkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1",
+    "proposalVkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1"
+   },
+   "prover": "rapidsnark"
+  },
+  "3": {
+   "finalState": "Settled",
+   "path": "normal",
+   "accepted": true,
+   "checkOk": true,
+   "replayEqualsChain": true,
+   "figures": {
+    "F_r": 6847,
+    "F_j": 6847,
+    "LOO_1": 7162,
+    "LOO_2": 7013,
+    "LOO_3": 5755,
+    "BASELINE": 5873
+   },
+   "division": {
+    "B": 1000003,
+    "rho": 5000,
+    "U_fed": 6847,
+    "F_j_binds": false,
+    "l": [
+     -315,
+     -166,
+     1092
+    ],
+    "claims": [
+     0,
+     0,
+     1092
+    ],
+    "E": 974,
+    "E_prime": 200,
+    "B_over_rho": 200,
+    "regime": "Talmud division of E'",
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "award_tokens": [
+     0,
+     0,
+     1000000
+    ],
+    "to_A": 3
+   },
+   "gas": {
+    "setup": 6556302,
+    "alignment": 120500,
+    "training": 409627,
+    "scoring": 2445488,
+    "settlement": 594122,
+    "test token": 407452,
+    "infrastructure": 9169460
+   },
+   "gasTotal": 10126039,
+   "proveMs": [
+    3073.9060830000003,
+    3122.686167,
+    3091.2871670000004,
+    3099.864959,
+    3110.0141249999997,
+    3071.1660420000003
+   ],
+   "proverPeakRssMB": [
+    876.4375,
+    876.4375,
+    876.453125,
+    876.453125,
+    876.46875,
+    876.421875
+   ],
+   "wallClockS": 247.079,
+   "sizeI": 15965,
+   "conservation": {
+    "deposits": 1003006,
+    "withdrawnTotal": 1003006,
+    "contractBalance": 0,
+    "lockedForever": 0,
+    "conserved": true
+   },
+   "sameRankingAsOffchainSeed": false,
+   "sameTopAsOffchainSeed": true,
+   "machine": {
+    "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+    "cpus": 10,
+    "totalRamMB": 16384,
+    "freeRamMBAtStart": 1780
+   },
+   "chain": {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+    "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ"
+   },
+   "keys": {
+    "setup": "mpc-d14",
+    "verifierContract": "MembersVarVerifierN64D14Mpc",
+    "verifier": "0x9bAaB117304f7D6517048e371025dB8f89a8DbE5",
+    "vkFile": "./results/full/setup/verification_key.json",
+    "vkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1",
+    "proposalVkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1"
+   },
+   "prover": "rapidsnark"
+  },
+  "4": {
+   "finalState": "Settled",
+   "path": "normal",
+   "accepted": true,
+   "checkOk": true,
+   "replayEqualsChain": true,
+   "figures": {
+    "F_r": 6398,
+    "F_j": 6398,
+    "LOO_1": 6069,
+    "LOO_2": 6085,
+    "LOO_3": 4955,
+    "BASELINE": 5294
+   },
+   "division": {
+    "B": 1000003,
+    "rho": 5000,
+    "U_fed": 6398,
+    "F_j_binds": false,
+    "l": [
+     329,
+     313,
+     1443
+    ],
+    "claims": [
+     329,
+     313,
+     1443
+    ],
+    "E": 1104,
+    "E_prime": 200,
+    "B_over_rho": 200,
+    "regime": "Talmud division of E'",
+    "awards": [
+     66,
+     66,
+     66
+    ],
+    "award_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "to_A": 10003
+   },
+   "gas": {
+    "setup": 6556350,
+    "alignment": 120500,
+    "training": 409639,
+    "scoring": 2445512,
+    "settlement": 594176,
+    "test token": 407452,
+    "infrastructure": 9169460
+   },
+   "gasTotal": 10126177,
+   "proveMs": [
+    3066.7655000000004,
+    3040.5176659999997,
+    3078.1650000000004,
+    3053.138666,
+    3086.7009999999996,
+    3085.687167
+   ],
+   "proverPeakRssMB": [
+    876.4375,
+    876.453125,
+    876.453125,
+    876.421875,
+    876.421875,
+    876.4375
+   ],
+   "wallClockS": 251.093,
+   "sizeI": 15965,
+   "conservation": {
+    "deposits": 1003006,
+    "withdrawnTotal": 1003006,
+    "contractBalance": 0,
+    "lockedForever": 0,
+    "conserved": true
+   },
+   "sameRankingAsOffchainSeed": true,
+   "sameTopAsOffchainSeed": true,
+   "machine": {
+    "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+    "cpus": 10,
+    "totalRamMB": 16384,
+    "freeRamMBAtStart": 1662
+   },
+   "chain": {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+    "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ"
+   },
+   "keys": {
+    "setup": "mpc-d14",
+    "verifierContract": "MembersVarVerifierN64D14Mpc",
+    "verifier": "0x9bAaB117304f7D6517048e371025dB8f89a8DbE5",
+    "vkFile": "./results/full/setup/verification_key.json",
+    "vkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1",
+    "proposalVkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1"
+   },
+   "prover": "rapidsnark"
+  },
+  "5": {
+   "finalState": "Settled",
+   "path": "normal",
+   "accepted": true,
+   "checkOk": true,
+   "replayEqualsChain": true,
+   "figures": {
+    "F_r": 7437,
+    "F_j": 7555,
+    "LOO_1": 7262,
+    "LOO_2": 6903,
+    "LOO_3": 7142,
+    "BASELINE": 6679
+   },
+   "division": {
+    "B": 1000003,
+    "rho": 5000,
+    "U_fed": 7555,
+    "F_j_binds": true,
+    "l": [
+     293,
+     652,
+     413
+    ],
+    "claims": [
+     293,
+     652,
+     413
+    ],
+    "E": 876,
+    "E_prime": 200,
+    "B_over_rho": 200,
+    "regime": "Talmud division of E'",
+    "awards": [
+     66,
+     66,
+     66
+    ],
+    "award_tokens": [
+     330000,
+     330000,
+     330000
+    ],
+    "to_A": 10003
+   },
+   "gas": {
+    "setup": 6556338,
+    "alignment": 120500,
+    "training": 409627,
+    "scoring": 2445476,
+    "settlement": 594363,
+    "test token": 407452,
+    "infrastructure": 9169460
+   },
+   "gasTotal": 10126304,
+   "proveMs": [
+    3390.2931249999997,
+    3068.224542,
+    3148.7593750000005,
+    3150.22675,
+    3145.6627500000004,
+    3111.556667
+   ],
+   "proverPeakRssMB": [
+    876.4375,
+    876.4375,
+    876.421875,
+    876.4375,
+    876.453125,
+    876.453125
+   ],
+   "wallClockS": 254.141,
+   "sizeI": 15965,
+   "conservation": {
+    "deposits": 1003006,
+    "withdrawnTotal": 1003006,
+    "contractBalance": 0,
+    "lockedForever": 0,
+    "conserved": true
+   },
+   "sameRankingAsOffchainSeed": false,
+   "sameTopAsOffchainSeed": false,
+   "machine": {
+    "host": "MacBook Air (Apple M4, 10 cores, 16 GB), macOS 27.0.1",
+    "cpus": 10,
+    "totalRamMB": 16384,
+    "freeRamMBAtStart": 1506
+   },
+   "chain": {
+    "clientVersion": "besu/v26.8.1/osx-aarch_64/openjdk-java-25",
+    "genesisBlockHash": "0x8ea2774d9b7a5120a4147fa4f6d5c13e1e55aebe8ae20db27334994a26f2aafb",
+    "launch": "native (chain/scripts/native-besu.sh): Besu 26.8.1 on OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS); docker-compose's node flags, host/ports/paths differ"
+   },
+   "keys": {
+    "setup": "mpc-d14",
+    "verifierContract": "MembersVarVerifierN64D14Mpc",
+    "verifier": "0x9bAaB117304f7D6517048e371025dB8f89a8DbE5",
+    "vkFile": "./results/full/setup/verification_key.json",
+    "vkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1",
+    "proposalVkHash": "0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1"
+   },
+   "prover": "rapidsnark"
+  }
+ },
+ "costComparison": {
+  "sources": {
+   "electricity": "results/full/runs-wait10s/run-<k>/run.json (the thesis's Chapter 5 series)",
+   "loan_v1": "results/mci_loan/onchain/run-<k>/run.json"
+  },
+  "rows": [
+   {
+    "quantity": "gas: setup",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 6556338,
+    "loan_v2_sd": 20.784609690826528,
+    "electricity_runs": 5,
+    "electricity_mean": 6556386,
+    "electricity_sd": 18.973665961010276,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 6556347.6,
+    "loan_v1_sd": 10.039920318408907
+   },
+   {
+    "quantity": "gas: alignment",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 120500,
+    "loan_v2_sd": 0.0,
+    "electricity_runs": 5,
+    "electricity_mean": 120488,
+    "electricity_sd": 0.0,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 120500,
+    "loan_v1_sd": 0.0
+   },
+   {
+    "quantity": "gas: training",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 409629.4,
+    "loan_v2_sd": 5.366563145999495,
+    "electricity_runs": 5,
+    "electricity_mean": 409629.4,
+    "electricity_sd": 5.366563145999495,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 409629.4,
+    "loan_v1_sd": 10.039920318408907
+   },
+   {
+    "quantity": "gas: scoring",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 2445480.8,
+    "loan_v2_sd": 21.79908254950194,
+    "electricity_runs": 5,
+    "electricity_mean": 2445495.6,
+    "electricity_sd": 40.55613393803704,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 2445481.2,
+    "loan_v1_sd": 47.40464112299554
+   },
+   {
+    "quantity": "gas: settlement",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 594357,
+    "loan_v2_sd": 271.60633276858624,
+    "electricity_runs": 5,
+    "electricity_mean": 594101.4,
+    "electricity_sd": 864.6888457705465,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 594060.8,
+    "loan_v1_sd": 876.1136912524538
+   },
+   {
+    "quantity": "gas: total",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 10126305.2,
+    "loan_v2_sd": 263.1258254143823,
+    "electricity_runs": 5,
+    "electricity_mean": 10126100.4,
+    "electricity_sd": 827.4948942440673,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 10126019,
+    "loan_v1_sd": 900.613124487979
+   },
+   {
+    "quantity": "proof time per figure (ms, rapidsnark)",
+    "loan_v2_runs": 30,
+    "loan_v2_mean": 3113.6753250666666,
+    "loan_v2_sd": 99.92389674347518,
+    "electricity_runs": 30,
+    "electricity_mean": 3155.5668263,
+    "electricity_sd": 107.36312255286879,
+    "loan_v1_runs": 30,
+    "loan_v1_mean": 3130.7024972,
+    "loan_v1_sd": 94.14527750226097
+   },
+   {
+    "quantity": "prover peak memory per figure (MB)",
+    "loan_v2_runs": 30,
+    "loan_v2_mean": 876.4395833333333,
+    "loan_v2_sd": 0.015206315800675885,
+    "electricity_runs": 30,
+    "electricity_mean": 876.4484375,
+    "electricity_sd": 0.01543527050074065,
+    "loan_v1_runs": 30,
+    "loan_v1_mean": 876.4385416666667,
+    "loan_v1_sd": 0.012264300824451579
+   },
+   {
+    "quantity": "run wall clock (s)",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 250.666,
+    "loan_v2_sd": 2.516688300127763,
+    "electricity_runs": 5,
+    "electricity_mean": 245.2906,
+    "electricity_sd": 3.3176850814988446,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 251.6796,
+    "loan_v1_sd": 1.0622663507802568
+   },
+   {
+    "quantity": "|I| (aligned rows)",
+    "loan_v2_runs": 5,
+    "loan_v2_mean": 15965,
+    "loan_v2_sd": 0.0,
+    "electricity_runs": 5,
+    "electricity_mean": 14244,
+    "electricity_sd": 0.0,
+    "loan_v1_runs": 5,
+    "loan_v1_mean": 15965,
+    "loan_v1_sd": 0.0
+   }
+  ]
+ },
+ "allAccepted": true,
+ "allChecksOk": true,
+ "allReplaysEqual": true,
+ "allConserved": true,
+ "runsDone": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ]
+}

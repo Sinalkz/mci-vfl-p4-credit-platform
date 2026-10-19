@@ -1,0 +1,13 @@
+condition,sigma_scale,passive,clip,sigma,sigma_over_C,eps_per_release_analytic,eps_total_21_releases,delta_total
+"LDP off (clipping only, σ = 0)",0.0000,1 Bank,4,0,0.0000,,,
+"LDP off (clipping only, σ = 0)",0.0000,2 E-commerce company,4,0,0.0000,,,
+"LDP off (clipping only, σ = 0)",0.0000,3 Credit bureau,3,0,0.0000,,,
+LDP on (protocol σ),1.0000,1 Bank,4,0.0500,0.0125,13481.3956,283109.3083,2.1000e-04
+LDP on (protocol σ),1.0000,2 E-commerce company,4,0.1000,0.0250,3540.2171,74344.5581,2.1000e-04
+LDP on (protocol σ),1.0000,3 Credit bureau,3,0.0500,0.0167,7710.8043,161926.8898,2.1000e-04
+weaker noise (σ × 0.5),0.5000,1 Bank,4,0.0250,0.0063,52563.7717,1103839.2049,2.1000e-04
+weaker noise (σ × 0.5),0.5000,2 E-commerce company,4,0.0500,0.0125,13481.3956,283109.3083,2.1000e-04
+weaker noise (σ × 0.5),0.5000,3 Credit bureau,3,0.0250,0.0083,29822.5826,626274.2341,2.1000e-04
+stronger noise (σ × 4),4.0000,1 Bank,4,0.2000,0.0500,969.6456,20362.5574,2.1000e-04
+stronger noise (σ × 4),4.0000,2 E-commerce company,4,0.4000,0.1000,284.3918,5972.2288,2.1000e-04
+stronger noise (σ × 4),4.0000,3 Credit bureau,3,0.2000,0.0667,577.0120,12117.2514,2.1000e-04

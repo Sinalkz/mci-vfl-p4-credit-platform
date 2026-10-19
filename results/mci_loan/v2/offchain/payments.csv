@@ -1,0 +1,41 @@
+seed,member_index,member,l,claim,tokens,pool_B,regime
+1,1,Bank,124,124,310000,1000003,cea
+1,2,E-commerce company,100,100,250000,1000003,cea
+1,3,Credit bureau,439,439,440000,1000003,cea
+1,0,MCI,,,3,1000003,cea
+2,1,Bank,94,94,235000,1000003,cea
+2,2,E-commerce company,68,68,170000,1000003,cea
+2,3,Credit bureau,632,632,595000,1000003,cea
+2,0,MCI,,,3,1000003,cea
+3,1,Bank,23,23,55000,1000003,cea
+3,2,E-commerce company,19,19,45000,1000003,cea
+3,3,Credit bureau,384,384,895000,1000003,cea
+3,0,MCI,,,5003,1000003,cea
+4,1,Bank,112,112,280000,1000003,cea
+4,2,E-commerce company,10,10,25000,1000003,cea
+4,3,Credit bureau,407,407,695000,1000003,cea
+4,0,MCI,,,3,1000003,cea
+5,1,Bank,93,93,230000,1000003,cea
+5,2,E-commerce company,87,87,215000,1000003,cea
+5,3,Credit bureau,392,392,550000,1000003,cea
+5,0,MCI,,,5003,1000003,cea
+6,1,Bank,101,101,250000,1000003,cea
+6,2,E-commerce company,110,110,275000,1000003,cea
+6,3,Credit bureau,386,386,470000,1000003,cea
+6,0,MCI,,,5003,1000003,cea
+7,1,Bank,33,33,80000,1000003,cea
+7,2,E-commerce company,-17,0,0,1000003,cea
+7,3,Credit bureau,679,679,915000,1000003,cea
+7,0,MCI,,,5003,1000003,cea
+8,1,Bank,108,108,270000,1000003,cea
+8,2,E-commerce company,80,80,200000,1000003,cea
+8,3,Credit bureau,532,532,530000,1000003,cea
+8,0,MCI,,,3,1000003,cea
+9,1,Bank,61,61,150000,1000003,cea
+9,2,E-commerce company,36,36,90000,1000003,cea
+9,3,Credit bureau,478,478,755000,1000003,cea
+9,0,MCI,,,5003,1000003,cea
+10,1,Bank,14,14,35000,1000003,cea
+10,2,E-commerce company,63,63,155000,1000003,cea
+10,3,Credit bureau,395,395,805000,1000003,cea
+10,0,MCI,,,5003,1000003,cea

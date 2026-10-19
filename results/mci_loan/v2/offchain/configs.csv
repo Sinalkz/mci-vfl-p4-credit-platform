@@ -1,0 +1,7 @@
+config,seed_1,seed_2,seed_3,seed_4,seed_5,seed_6,seed_7,seed_8,seed_9,seed_10
+"C1a (protocol baseline, U_A: MCI alone)",5981,5837,6011,6078,5960,5978,5842,5865,5939,5910
+C1b (MCI trained alone),5948,6010,5968,6072,5930,6052,5652,5898,5987,6042
+"C2 U_fed = max(F_r, F_j)",6888,6826,6667,6843,6792,6836,6790,6831,6697,6739
+C2 F_r (retrained FULL),6867,6826,6651,6843,6792,6836,6757,6831,6697,6739
+C2 F_j (jointly trained FULL),6888,6796,6667,6784,6782,6834,6790,6793,6666,6717
+"C4a-f32 (centralized, float32 transport)",6888,6796,6667,6784,6782,6834,6790,6793,6666,6717

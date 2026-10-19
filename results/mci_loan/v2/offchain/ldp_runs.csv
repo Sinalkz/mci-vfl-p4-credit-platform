@@ -1,0 +1,41 @@
+condition,sigma_scale,seed,F_r,F_j,U_fed,F_j_binds,LOO_1,LOO_2,LOO_3,BASELINE,l_1,l_2,l_3,E,ranking
+"LDP off (clipping only, σ = 0)",0.0000,1,6863,6861,6863,False,6730,6788,6461,5999,133,75,402,864,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,2,6760,6743,6760,False,6732,6634,6250,5976,28,126,510,784,Credit bureau > E-commerce company > Bank
+"LDP off (clipping only, σ = 0)",0.0000,3,6698,6670,6698,False,6647,6680,6252,5994,51,18,446,704,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,4,6810,6787,6810,False,6737,6823,6455,6063,73,-13,355,747,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,5,6834,6782,6834,False,6734,6687,6392,5940,100,147,442,894,Credit bureau > E-commerce company > Bank
+"LDP off (clipping only, σ = 0)",0.0000,6,6725,6726,6726,True,6617,6660,6461,6050,109,66,265,676,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,7,6764,6761,6764,False,6722,6797,6130,5789,42,-33,634,975,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,8,6835,6833,6835,False,6716,6759,6330,5812,119,76,505,1023,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,9,6703,6683,6703,False,6647,6660,6237,5908,56,43,466,795,Credit bureau > Bank > E-commerce company
+"LDP off (clipping only, σ = 0)",0.0000,10,6759,6712,6759,False,6698,6682,6357,5901,61,77,402,858,Credit bureau > E-commerce company > Bank
+LDP on (protocol σ),1.0000,1,6878,6849,6878,False,6780,6809,6353,5962,98,69,525,916,Credit bureau > Bank > E-commerce company
+LDP on (protocol σ),1.0000,2,6775,6774,6775,False,6715,6692,6237,5933,60,83,538,842,Credit bureau > E-commerce company > Bank
+LDP on (protocol σ),1.0000,3,6716,6696,6716,False,6671,6658,6312,5959,45,58,404,757,Credit bureau > E-commerce company > Bank
+LDP on (protocol σ),1.0000,4,6849,6824,6849,False,6733,6793,6448,6053,116,56,401,796,Credit bureau > Bank > E-commerce company
+LDP on (protocol σ),1.0000,5,6767,6767,6767,False,6641,6694,6434,5905,126,73,333,862,Credit bureau > Bank > E-commerce company
+LDP on (protocol σ),1.0000,6,6719,6706,6719,False,6648,6729,6484,6030,71,-10,235,689,Credit bureau > Bank > E-commerce company
+LDP on (protocol σ),1.0000,7,6772,6761,6772,False,6734,6791,6146,5782,38,-19,626,990,Credit bureau > Bank > E-commerce company
+LDP on (protocol σ),1.0000,8,6781,6823,6823,True,6768,6767,6307,5880,55,56,516,943,Credit bureau > E-commerce company > Bank
+LDP on (protocol σ),1.0000,9,6705,6696,6705,False,6639,6624,6246,5913,66,81,459,792,Credit bureau > E-commerce company > Bank
+LDP on (protocol σ),1.0000,10,6756,6709,6756,False,6684,6689,6340,5927,72,67,416,829,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,1,6870,6867,6870,False,6760,6776,6404,5997,110,94,466,873,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,2,6884,6877,6884,False,6773,6728,6256,5895,111,156,628,989,Credit bureau > E-commerce company > Bank
+weaker noise (σ × 0.5),0.5000,3,6705,6678,6705,False,6694,6617,6302,5944,11,88,403,761,Credit bureau > E-commerce company > Bank
+weaker noise (σ × 0.5),0.5000,4,6832,6817,6832,False,6793,6817,6446,6053,39,15,386,779,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,5,6812,6766,6812,False,6679,6703,6418,5871,133,109,394,941,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,6,6741,6715,6741,False,6676,6734,6490,6032,65,7,251,709,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,7,6771,6770,6771,False,6751,6791,6150,5787,20,-20,621,984,Credit bureau > Bank > E-commerce company
+weaker noise (σ × 0.5),0.5000,8,6748,6824,6824,True,6753,6730,6334,5884,71,94,490,940,Credit bureau > E-commerce company > Bank
+weaker noise (σ × 0.5),0.5000,9,6688,6672,6688,False,6656,6620,6249,5936,32,68,439,752,Credit bureau > E-commerce company > Bank
+weaker noise (σ × 0.5),0.5000,10,6765,6738,6765,False,6705,6723,6326,5930,60,42,439,835,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,1,6800,6752,6800,False,6701,6680,6240,5967,99,120,560,833,Credit bureau > E-commerce company > Bank
+stronger noise (σ × 4),4.0000,2,6723,6720,6723,False,6732,6692,6214,5883,-9,31,509,840,Credit bureau > E-commerce company > Bank
+stronger noise (σ × 4),4.0000,3,6690,6689,6690,False,6682,6695,6312,5986,8,-5,378,704,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,4,6714,6699,6714,False,6628,6668,6477,6095,86,46,237,619,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,5,6601,6591,6601,False,6618,6674,6484,5952,-17,-73,117,649,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,6,6701,6668,6701,False,6583,6644,6419,6042,118,57,282,659,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,7,6639,6606,6639,False,6564,6616,6185,5884,75,23,454,755,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,8,6702,6725,6725,True,6622,6700,6252,5929,103,25,473,796,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,9,6718,6653,6718,False,6489,6595,6162,5958,229,123,556,760,Credit bureau > Bank > E-commerce company
+stronger noise (σ × 4),4.0000,10,6719,6614,6719,False,6641,6665,6302,5952,78,54,417,767,Credit bureau > Bank > E-commerce company

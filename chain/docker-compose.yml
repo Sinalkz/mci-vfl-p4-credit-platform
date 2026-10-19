@@ -1,0 +1,75 @@
+# Four-validator Hyperledger Besu network, QBFT consensus, one validator per member,
+# connected as a full mesh of static peers.
+# Generate keys and genesis first:  bash chain/scripts/generate.sh
+# Then:                             docker compose -f chain/docker-compose.yml up -d
+# JSON-RPC on the host: power 8545, mci 8546, digikala 8547, maker 8548.
+name: thesis-poc-besu
+
+x-besu: &besu
+  image: hyperledger/besu:${BESU_VERSION:-26.8.1}
+  entrypoint: ["/opt/besu/bin/besu"]
+  restart: "no"
+  environment:
+    - BESU_OPTS=-Xmx1g
+
+x-besu-args: &besu-args
+  - --genesis-file=/config/genesis.json
+  - --node-private-key-file=/config/node/key
+  - --data-path=/opt/besu/data
+  - --p2p-port=30303
+  - --rpc-http-enabled
+  - --rpc-http-host=0.0.0.0
+  - --rpc-http-port=8545
+  - --rpc-http-api=ETH,NET,WEB3,QBFT,ADMIN,TXPOOL
+  - --rpc-http-cors-origins=*
+  - --host-allowlist=*
+  - --min-gas-price=0
+  # Full mesh: each node dials the other three from its static-nodes.json
+  # (written by chain/scripts/generate.sh); no discovery, no bootnode.
+  - --static-nodes-file=/config/node/static-nodes.json
+  - --discovery-enabled=false
+  - --logging=INFO
+
+services:
+  power:
+    <<: *besu
+    command: *besu-args
+    volumes:
+      - ./data/genesis.json:/config/genesis.json:ro
+      - ./data/power:/config/node:ro
+    ports: ["8545:8545"]
+    networks: { besu: { ipv4_address: 172.28.0.11 } }
+
+  mci:
+    <<: *besu
+    command: *besu-args
+    volumes:
+      - ./data/genesis.json:/config/genesis.json:ro
+      - ./data/mci:/config/node:ro
+    ports: ["8546:8545"]
+    networks: { besu: { ipv4_address: 172.28.0.12 } }
+
+  digikala:
+    <<: *besu
+    command: *besu-args
+    volumes:
+      - ./data/genesis.json:/config/genesis.json:ro
+      - ./data/digikala:/config/node:ro
+    ports: ["8547:8545"]
+    networks: { besu: { ipv4_address: 172.28.0.13 } }
+
+  maker:
+    <<: *besu
+    command: *besu-args
+    volumes:
+      - ./data/genesis.json:/config/genesis.json:ro
+      - ./data/maker:/config/node:ro
+    ports: ["8548:8545"]
+    networks: { besu: { ipv4_address: 172.28.0.14 } }
+
+networks:
+  besu:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16

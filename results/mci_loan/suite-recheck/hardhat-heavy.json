@@ -1,0 +1,41 @@
+{
+  "label": "server (Xeon E7-8880 v3, 20 vCPU, shared)",
+  "commit": "8c4c752be9bd8868fbd534e0543ea4eb6f26236a",
+  "branch": "mci-loan-demo",
+  "tag_thesis_draft_09": "thesis-draft-09^{commit}",
+  "tracked_changes_at_start": [],
+  "machine": {
+    "OS": "Linux 5.15.0-191-generic",
+    "CPU": "Intel(R) Xeon(R) CPU E7-8880 v3 @ 2.30GHz (20 logical CPUs)",
+    "RAM": "58.9 GB"
+  },
+  "free_ram_gb_at_start": 35.37,
+  "tools": {
+    "Node.js": "v24.16.0",
+    "Python": "3.12.12",
+    "Hardhat": "3.17.0",
+    "@nomicfoundation/hardhat-mocha": "3.1.0",
+    "mocha": "11.8.0",
+    "snarkjs (circuits/)": "0.7.6",
+    "solc": {
+      "configured": "0.8.28",
+      "build-info solcLongVersion": "0.8.28+commit.7893614a"
+    }
+  },
+  "started": "2026-10-19T15:02:55+00:00",
+  "part": "heavy",
+  "command": "npx hardhat test mocha test/M3Scoring.test.ts",
+  "cwd": "contracts/",
+  "files": [
+    "test/M3Scoring.test.ts"
+  ],
+  "finished": "2026-10-19T15:12:21+00:00",
+  "wall_seconds": 566.2,
+  "free_ram_gb_at_end": 35.43,
+  "exit_code": 0,
+  "mocha": {
+    "passing": 16,
+    "failing": 0,
+    "pending": 0
+  }
+}

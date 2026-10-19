@@ -1,0 +1,1952 @@
+{
+ "source": "py/m4_vectors.py (py/settlement_reference.py)",
+ "cases": [
+  {
+   "name": "E3 figures, normal",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 3,
+    "owedP": [
+     1001,
+     1001,
+     1001001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "E3 figures, objection by p1 after p2 acknowledged",
+   "path": "objection",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    true,
+    false
+   ],
+   "objector": 0,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 0,
+    "owedP": [
+     1002,
+     1002,
+     1001002
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "E3 figures, backup, p3 silent",
+   "path": "backup",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 3,
+    "owedP": [
+     1001,
+     1001,
+     1001001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "E = 0 (U_fed below U_A)",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 2000,
+    "Fj": 1900,
+    "loo": [
+     1800,
+     1700,
+     1600
+    ],
+    "base": 2500
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 0,
+    "Eprime": 0,
+    "l": [
+     200,
+     300,
+     400
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1000003,
+    "owedP": [
+     1001,
+     1001,
+     1001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "every l = 0",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 4000,
+    "Fj": 3900,
+    "loo": [
+     4000,
+     4100,
+     4200
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1000,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1000003,
+    "owedP": [
+     1001,
+     1001,
+     1001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "E' capped by floor(B/rho), B not a multiple of rho",
+   "path": "normal",
+   "B": 12345,
+   "rho": 100,
+   "Dp": 77,
+   "figures": {
+    "Fr": 4000,
+    "Fj": 3000,
+    "loo": [
+     3500,
+     3700,
+     3900
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1000,
+    "Eprime": 123,
+    "l": [
+     500,
+     300,
+     100
+    ],
+    "a": [
+     41,
+     41,
+     41
+    ],
+    "awards": [
+     41,
+     41,
+     41
+    ],
+    "owedA": 45,
+    "owedP": [
+     4177,
+     4177,
+     4177
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "large B: E' = E",
+   "path": "normal",
+   "B": 1000000000,
+   "rho": 1000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 4500,
+    "Fj": 4600,
+    "loo": [
+     4400,
+     4300,
+     4200
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1600,
+    "Eprime": 1600,
+    "l": [
+     200,
+     300,
+     400
+    ],
+    "a": [
+     200,
+     300,
+     400
+    ],
+    "awards": [
+     200,
+     300,
+     400
+    ],
+    "owedA": 999100000,
+    "owedP": [
+     201001,
+     301001,
+     401001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "p3 left, p1 equivocated: normal",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    true
+   ],
+   "eqv": [
+    true,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1000003,
+    "owedP": [
+     0,
+     3003,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "p3 left, p1 equivocated: objection by p2",
+   "path": "objection",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    true
+   ],
+   "eqv": [
+    true,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": 1,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 0,
+    "owedP": [
+     500002,
+     503004,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "p3 left, p1 equivocated: backup, only the equivocator responds",
+   "path": "backup",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    true
+   ],
+   "eqv": [
+    true,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    false,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1000003,
+    "owedP": [
+     0,
+     3003,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "only an equivocator remains: forfeits locked",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    true,
+    true,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    true
+   ],
+   "acks": [
+    false,
+    false,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 3,
+    "owedP": [
+     0,
+     0,
+     1000000
+    ],
+    "locked": 3003
+   }
+  },
+  {
+   "name": "backup: sum rho*l = B exactly (p3 silent)",
+   "path": "backup",
+   "B": 300000,
+   "rho": 1000,
+   "Dp": 11,
+   "figures": {
+    "Fr": 4000,
+    "Fj": 3900,
+    "loo": [
+     3900,
+     3800,
+     3700
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1000,
+    "Eprime": 300,
+    "l": [
+     100,
+     200,
+     300
+    ],
+    "a": [
+     50,
+     100,
+     150
+    ],
+    "awards": [
+     50,
+     100,
+     150
+    ],
+    "owedA": 0,
+    "owedP": [
+     50011,
+     100011,
+     150011
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "backup: B short, Talmud on floor(B/rho) (p3 silent)",
+   "path": "backup",
+   "B": 150500,
+   "rho": 1000,
+   "Dp": 11,
+   "figures": {
+    "Fr": 4000,
+    "Fj": 3900,
+    "loo": [
+     3900,
+     3800,
+     3700
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1000,
+    "Eprime": 150,
+    "l": [
+     100,
+     200,
+     300
+    ],
+    "a": [
+     50,
+     50,
+     50
+    ],
+    "awards": [
+     50,
+     50,
+     50
+    ],
+    "owedA": 500,
+    "owedP": [
+     50011,
+     50011,
+     50011
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "backup: no responders",
+   "path": "backup",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 3,
+    "owedP": [
+     1001,
+     1001,
+     1001001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "backup: equivocator responds, gets no D_p",
+   "path": "backup",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    true,
+    false
+   ],
+   "acks": [
+    false,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 3,
+    "owedP": [
+     1502,
+     0,
+     1001501
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "ties in the claims",
+   "path": "normal",
+   "B": 1000003,
+   "rho": 2000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 5000,
+    "Fj": 4000,
+    "loo": [
+     4800,
+     4800,
+     4800
+    ],
+    "base": 4000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 1000,
+    "Eprime": 500,
+    "l": [
+     200,
+     200,
+     200
+    ],
+    "a": [
+     166,
+     166,
+     166
+    ],
+    "awards": [
+     166,
+     166,
+     166
+    ],
+    "owedA": 4003,
+    "owedP": [
+     333001,
+     333001,
+     333001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "claims in decreasing proposal order",
+   "path": "normal",
+   "B": 100000000,
+   "rho": 1000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 5000,
+    "Fj": 4000,
+    "loo": [
+     4100,
+     4500,
+     4900
+    ],
+    "base": 3000
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 2000,
+    "Eprime": 2000,
+    "l": [
+     900,
+     500,
+     100
+    ],
+    "a": [
+     900,
+     500,
+     100
+    ],
+    "awards": [
+     900,
+     500,
+     100
+    ],
+    "owedA": 98500000,
+    "owedP": [
+     901001,
+     501001,
+     101001
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "objection with every other passive acknowledged",
+   "path": "objection",
+   "B": 1000003,
+   "rho": 5000,
+   "Dp": 1001,
+   "figures": {
+    "Fr": 3364,
+    "Fj": 2998,
+    "loo": [
+     3365,
+     3571,
+     3005
+    ],
+    "base": 2096
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    false,
+    true
+   ],
+   "objector": 1,
+   "expected": {
+    "E": 1268,
+    "Eprime": 200,
+    "l": [
+     0,
+     0,
+     359
+    ],
+    "a": [
+     0,
+     0,
+     200
+    ],
+    "awards": [
+     0,
+     0,
+     200
+    ],
+    "owedA": 0,
+    "owedP": [
+     1002,
+     1002,
+     1001002
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 0",
+   "path": "normal",
+   "B": 3538373,
+   "rho": 5000,
+   "Dp": 2244,
+   "figures": {
+    "Fr": 8042,
+    "Fj": 9609,
+    "loo": [
+     7226,
+     3931,
+     41
+    ],
+    "base": 4559
+   },
+   "left": [
+    true,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    true
+   ],
+   "acks": [
+    false,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 5050,
+    "Eprime": 707,
+    "l": [
+     0,
+     5678,
+     9568
+    ],
+    "a": [
+     0,
+     353,
+     353
+    ],
+    "awards": [
+     0,
+     353,
+     353
+    ],
+    "owedA": 8373,
+    "owedP": [
+     0,
+     1771732,
+     1765000
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 1",
+   "path": "objection",
+   "B": 2119844,
+   "rho": 100,
+   "Dp": 1461,
+   "figures": {
+    "Fr": 6166,
+    "Fj": 8414,
+    "loo": [
+     1250,
+     5577,
+     1469
+    ],
+    "base": 3254
+   },
+   "left": [
+    false,
+    true,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": 0,
+   "expected": {
+    "E": 5160,
+    "Eprime": 5160,
+    "l": [
+     7164,
+     0,
+     6945
+    ],
+    "a": [
+     2580,
+     0,
+     2580
+    ],
+    "awards": [
+     2580,
+     0,
+     2580
+    ],
+    "owedA": 0,
+    "owedP": [
+     1062114,
+     0,
+     1062113
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 2",
+   "path": "backup",
+   "B": 770714,
+   "rho": 1000,
+   "Dp": 2400,
+   "figures": {
+    "Fr": 9084,
+    "Fj": 8166,
+    "loo": [
+     1907,
+     6970,
+     8296
+    ],
+    "base": 3458
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    false,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 5626,
+    "Eprime": 770,
+    "l": [
+     7177,
+     2114,
+     788
+    ],
+    "a": [
+     256,
+     256,
+     256
+    ],
+    "awards": [
+     256,
+     256,
+     256
+    ],
+    "owedA": 2714,
+    "owedP": [
+     258400,
+     258400,
+     258400
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 3",
+   "path": "normal",
+   "B": 4837780,
+   "rho": 7,
+   "Dp": 529,
+   "figures": {
+    "Fr": 800,
+    "Fj": 8572,
+    "loo": [
+     1680,
+     7035,
+     7701
+    ],
+    "base": 207
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 8365,
+    "Eprime": 8365,
+    "l": [
+     6892,
+     1537,
+     871
+    ],
+    "a": [
+     6580,
+     1225,
+     559
+    ],
+    "awards": [
+     6580,
+     1225,
+     559
+    ],
+    "owedA": 4779232,
+    "owedP": [
+     46589,
+     9104,
+     4442
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 4",
+   "path": "objection",
+   "B": 3382894,
+   "rho": 100,
+   "Dp": 2246,
+   "figures": {
+    "Fr": 8223,
+    "Fj": 7846,
+    "loo": [
+     6585,
+     7095,
+     3318
+    ],
+    "base": 4585
+   },
+   "left": [
+    true,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    true,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": 2,
+   "expected": {
+    "E": 3638,
+    "Eprime": 3638,
+    "l": [
+     0,
+     1128,
+     4905
+    ],
+    "a": [
+     0,
+     564,
+     3074
+    ],
+    "awards": [
+     0,
+     564,
+     3074
+    ],
+    "owedA": 0,
+    "owedP": [
+     0,
+     1565947,
+     1823685
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 5",
+   "path": "backup",
+   "B": 1686359,
+   "rho": 100,
+   "Dp": 2838,
+   "figures": {
+    "Fr": 7955,
+    "Fj": 7645,
+    "loo": [
+     8376,
+     8145,
+     7114
+    ],
+    "base": 2948
+   },
+   "left": [
+    false,
+    false,
+    true
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    false,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 5007,
+    "Eprime": 5007,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1686359,
+    "owedP": [
+     4257,
+     4257,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 6",
+   "path": "normal",
+   "B": 1545524,
+   "rho": 1000,
+   "Dp": 2982,
+   "figures": {
+    "Fr": 7850,
+    "Fj": 1053,
+    "loo": [
+     4365,
+     8166,
+     6064
+    ],
+    "base": 3710
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    true
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 4140,
+    "Eprime": 1545,
+    "l": [
+     3485,
+     0,
+     1786
+    ],
+    "a": [
+     772,
+     0,
+     772
+    ],
+    "awards": [
+     772,
+     0,
+     772
+    ],
+    "owedA": 1524,
+    "owedP": [
+     776473,
+     4473,
+     772000
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 7",
+   "path": "objection",
+   "B": 1677585,
+   "rho": 7,
+   "Dp": 495,
+   "figures": {
+    "Fr": 731,
+    "Fj": 8953,
+    "loo": [
+     4399,
+     5853,
+     2535
+    ],
+    "base": 4998
+   },
+   "left": [
+    true,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    true
+   ],
+   "acks": [
+    false,
+    false,
+    true
+   ],
+   "objector": 1,
+   "expected": {
+    "E": 3955,
+    "Eprime": 3955,
+    "l": [
+     0,
+     3100,
+     6418
+    ],
+    "a": [
+     0,
+     1550,
+     2405
+    ],
+    "awards": [
+     0,
+     1550,
+     2405
+    ],
+    "owedA": 0,
+    "owedP": [
+     0,
+     837285,
+     841785
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 8",
+   "path": "backup",
+   "B": 1880052,
+   "rho": 1000,
+   "Dp": 2409,
+   "figures": {
+    "Fr": 2149,
+    "Fj": 9799,
+    "loo": [
+     8269,
+     4762,
+     1383
+    ],
+    "base": 4471
+   },
+   "left": [
+    true,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 5328,
+    "Eprime": 1880,
+    "l": [
+     0,
+     5037,
+     8416
+    ],
+    "a": [
+     0,
+     940,
+     940
+    ],
+    "awards": [
+     0,
+     940,
+     940
+    ],
+    "owedA": 52,
+    "owedP": [
+     0,
+     943614,
+     943613
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 9",
+   "path": "normal",
+   "B": 3466434,
+   "rho": 1000,
+   "Dp": 609,
+   "figures": {
+    "Fr": 8520,
+    "Fj": 3222,
+    "loo": [
+     6160,
+     231,
+     1738
+    ],
+    "base": 4159
+   },
+   "left": [
+    false,
+    true,
+    true
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    true,
+    false,
+    false
+   ],
+   "objector": null,
+   "expected": {
+    "E": 4361,
+    "Eprime": 3466,
+    "l": [
+     2360,
+     0,
+     0
+    ],
+    "a": [
+     2360,
+     0,
+     0
+    ],
+    "awards": [
+     2360,
+     0,
+     0
+    ],
+    "owedA": 1106434,
+    "owedP": [
+     2361827,
+     0,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 10",
+   "path": "objection",
+   "B": 2557383,
+   "rho": 1000,
+   "Dp": 1336,
+   "figures": {
+    "Fr": 1988,
+    "Fj": 8152,
+    "loo": [
+     7644,
+     9365,
+     2797
+    ],
+    "base": 2685
+   },
+   "left": [
+    false,
+    true,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": 2,
+   "expected": {
+    "E": 5467,
+    "Eprime": 2557,
+    "l": [
+     508,
+     0,
+     5355
+    ],
+    "a": [
+     254,
+     0,
+     2303
+    ],
+    "awards": [
+     254,
+     0,
+     2303
+    ],
+    "owedA": 0,
+    "owedP": [
+     256196,
+     0,
+     2305195
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 11",
+   "path": "backup",
+   "B": 296493,
+   "rho": 7,
+   "Dp": 2652,
+   "figures": {
+    "Fr": 2840,
+    "Fj": 741,
+    "loo": [
+     8925,
+     789,
+     7402
+    ],
+    "base": 3269
+   },
+   "left": [
+    true,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 0,
+    "Eprime": 0,
+    "l": [
+     0,
+     2051,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 296493,
+    "owedP": [
+     0,
+     3978,
+     3978
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 12",
+   "path": "normal",
+   "B": 1355454,
+   "rho": 7,
+   "Dp": 1598,
+   "figures": {
+    "Fr": 4469,
+    "Fj": 6969,
+    "loo": [
+     8732,
+     6784,
+     1288
+    ],
+    "base": 1128
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    true,
+    false
+   ],
+   "acks": [
+    true,
+    true,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 5841,
+    "Eprime": 5841,
+    "l": [
+     0,
+     185,
+     5681
+    ],
+    "a": [
+     0,
+     172,
+     5668
+    ],
+    "awards": [
+     0,
+     172,
+     5668
+    ],
+    "owedA": 1314574,
+    "owedP": [
+     2397,
+     1204,
+     42073
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 13",
+   "path": "objection",
+   "B": 3933355,
+   "rho": 7,
+   "Dp": 1335,
+   "figures": {
+    "Fr": 8508,
+    "Fj": 7897,
+    "loo": [
+     7284,
+     1967,
+     8638
+    ],
+    "base": 2356
+   },
+   "left": [
+    false,
+    true,
+    true
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    false
+   ],
+   "objector": 0,
+   "expected": {
+    "E": 6152,
+    "Eprime": 6152,
+    "l": [
+     1224,
+     0,
+     0
+    ],
+    "a": [
+     1224,
+     0,
+     0
+    ],
+    "awards": [
+     1224,
+     0,
+     0
+    ],
+    "owedA": 0,
+    "owedP": [
+     3937360,
+     0,
+     0
+    ],
+    "locked": 0
+   }
+  },
+  {
+   "name": "random 14",
+   "path": "backup",
+   "B": 1540513,
+   "rho": 1,
+   "Dp": 1442,
+   "figures": {
+    "Fr": 2568,
+    "Fj": 5762,
+    "loo": [
+     9207,
+     9377,
+     8820
+    ],
+    "base": 5491
+   },
+   "left": [
+    false,
+    false,
+    false
+   ],
+   "eqv": [
+    false,
+    false,
+    false
+   ],
+   "acks": [
+    false,
+    false,
+    true
+   ],
+   "objector": null,
+   "expected": {
+    "E": 271,
+    "Eprime": 271,
+    "l": [
+     0,
+     0,
+     0
+    ],
+    "a": [
+     0,
+     0,
+     0
+    ],
+    "awards": [
+     0,
+     0,
+     0
+    ],
+    "owedA": 1540513,
+    "owedP": [
+     1442,
+     1442,
+     1442
+    ],
+    "locked": 0
+   }
+  }
+ ]
+}

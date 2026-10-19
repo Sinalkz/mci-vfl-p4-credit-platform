@@ -1,0 +1,157 @@
+{
+ "what": "multi-party Groth16 phase 2 for the scoring circuit (n = 3, N = 64, maxDepth 14)",
+ "phase1": {
+  "file": "./circuits/ptau/ppot_0080_20.ptau",
+  "power": 20,
+  "source": "PSE Perpetual Powers of Tau, 80 contributions, truncated to 2^20 (pse-trusted-setup-ppot.s3.eu-central-1.amazonaws.com/pot28_0080/ppot_0080_20.ptau); fetched by scripts/fetch-ptau.mjs (the Hermez files answer HTTP 403 from this network)",
+  "blake2b512": "117b49e5570b4490b9377962c295e369506116e1db6ee035a7a28bcd83011366297bc486ca8df6cb62f247e2fd0f52d44c892ea4f033393457fbb264a59c75ac",
+  "bytes": 1208052882
+ },
+ "circuit": {
+  "r1cs": "./circuits/build/members-var-N64-D14/main.r1cs",
+  "sha256": "319a7c7e29a58ac2153cff8b369c738fedc1f6623618de9281c35fd1f1920400",
+  "N": 64,
+  "maxDepth": 14,
+  "compileSeconds": 34.658140167000006,
+  "nonLinearConstraints": 1020525,
+  "linearConstraints": 0,
+  "publicInputs": 10,
+  "privateInputs": 5145,
+  "wires": 1022384,
+  "r1csConstraints": 1020525,
+  "r1csSha256": "319a7c7e29a58ac2153cff8b369c738fedc1f6623618de9281c35fd1f1920400",
+  "outputs": [
+   "--r1cs",
+   "--wasm",
+   "--sym"
+  ],
+  "circomVersion": "circom compiler 2.2.3"
+ },
+ "fit": {
+  "nConstraints": 1020525,
+  "nPublic": 10,
+  "rows": 1020536,
+  "cirPower": 20,
+  "domain": 1048576,
+  "ptauPower": 20,
+  "fits": true,
+  "marginRows": 28040,
+  "rule": "snarkjs 0.7.6 src/zkey_new.js: log2(nConstraints + nPubInputs + nOutputs) + 1 <= ptau power"
+ },
+ "members": [
+  "power",
+  "mci",
+  "digikala",
+  "maker"
+ ],
+ "steps": [
+  {
+   "id": "1-setup",
+   "step": "setup",
+   "member": null,
+   "wallS": 444.708040292,
+   "peakRssMB": 7101.078125,
+   "availMBBefore": 10401,
+   "availMBLowest": 4999,
+   "outputMB": 564.3303375244141,
+   "contributionHash": null
+  },
+  {
+   "id": "2-contribute-power",
+   "step": "contribute",
+   "member": "power",
+   "wallS": 77.529299834,
+   "peakRssMB": 620.125,
+   "availMBBefore": 12195,
+   "availMBLowest": 11603,
+   "outputMB": 564.3307180404663,
+   "contributionHash": "bad3453cc78ced8bc355ef60067f30c835ebe577aec29a3266ed57a3cde55dfac3a9962050e660d581505a9d8be553a309aa5d79194d7594af2aa309d7fa10e4"
+  },
+  {
+   "id": "3-contribute-mci",
+   "step": "contribute",
+   "member": "mci",
+   "wallS": 76.44226458400004,
+   "peakRssMB": 643.296875,
+   "availMBBefore": 12195,
+   "availMBLowest": 11626,
+   "outputMB": 564.3310966491699,
+   "contributionHash": "8bc02af904ddf8cc66d500782ea65982671c22f24a2df618279087fb5fe31ebeb1ee0c2212b53d1cd472240018435d4f4226527562c33140d5797edd96b87b9e"
+  },
+  {
+   "id": "4-contribute-digikala",
+   "step": "contribute",
+   "member": "digikala",
+   "wallS": 78.86535370900005,
+   "peakRssMB": 618.765625,
+   "availMBBefore": 12253,
+   "availMBLowest": 11645,
+   "outputMB": 564.3314800262451,
+   "contributionHash": "096afd0360680c55df245226f571485792df8c355ed45de1fa1fde24703fcf99f4f57a3db82d7e8a4c664ad0548e5995ff07267a29ad7d37961151ec2b701049"
+  },
+  {
+   "id": "5-contribute-maker",
+   "step": "contribute",
+   "member": "maker",
+   "wallS": 78.625757583,
+   "peakRssMB": 620.34375,
+   "availMBBefore": 12188,
+   "availMBLowest": 11538,
+   "outputMB": 564.3318605422974,
+   "contributionHash": "394e33f2f27e4ddcfab677f2dbcdb679264a8d193a8b29a426fe2c5d357d9292e159a054f7098cbfffa301f51baab3263c9d831443a13cf34d376f8e02a13e30"
+  },
+  {
+   "id": "6-verify",
+   "step": "verify",
+   "member": null,
+   "wallS": 485.55551370899985,
+   "peakRssMB": 7635.875,
+   "availMBBefore": 12135,
+   "availMBLowest": 4824,
+   "outputMB": null,
+   "contributionHash": null
+  },
+  {
+   "id": "7-export",
+   "step": "export",
+   "member": null,
+   "wallS": 0.5527740829999093,
+   "peakRssMB": 224.125,
+   "availMBBefore": 11512,
+   "availMBLowest": 11350,
+   "outputMB": null,
+   "contributionHash": null
+  }
+ ],
+ "verified": true,
+ "verifyTranscript": [
+  "Circuit hash: \n\t\td873c3ad b1886a98 ddc961ab c6ed09aa\n\t\tb8cbf8f5 012b494c d181606f 8d2bffb8\n\t\tf97d9692 0260cc9c 1a6f13af acd97023\n\t\t50a619ce 2832c825 f47306fe 9d8dfd07",
+  "Circuit Hash: \n\t\td873c3ad b1886a98 ddc961ab c6ed09aa\n\t\tb8cbf8f5 012b494c d181606f 8d2bffb8\n\t\tf97d9692 0260cc9c 1a6f13af acd97023\n\t\t50a619ce 2832c825 f47306fe 9d8dfd07",
+  "contribution #4 maker:\n\t\t394e33f2 f27e4ddc fab677f2 dbcdb679\n\t\t264a8d19 3a8b29a4 26fe2c5d 357d9292\n\t\te159a054 f7098cbf ffa301f5 1baab326\n\t\t3c9d8314 43a13cf3 4d376f8e 02a13e30",
+  "contribution #3 digikala:\n\t\t096afd03 60680c55 df245226 f5714857\n\t\t92df8c35 5ed45de1 fa1fde24 703fcf99\n\t\tf4f57a3d b82d7e8a 4c664ad0 548e5995\n\t\tff07267a 29ad7d37 961151ec 2b701049",
+  "contribution #2 mci:\n\t\t8bc02af9 04ddf8cc 66d50078 2ea65982\n\t\t671c22f2 4a2df618 279087fb 5fe31ebe\n\t\tb1ee0c22 12b53d1c d4722400 18435d4f\n\t\t42265275 62c33140 d5797edd 96b87b9e",
+  "contribution #1 power:\n\t\tbad3453c c78ced8b c355ef60 067f30c8\n\t\t35ebe577 aec29a32 66ed57a3 cde55dfa\n\t\tc3a99620 50e660d5 81505a9d 8be553a3\n\t\t09aa5d79 194d7594 af2aa309 d7fa10e4",
+  "ZKey Ok!"
+ ],
+ "finalZkey": {
+  "file": "./circuits/build/members-var-N64-D14-mpc/main_0004.zkey",
+  "sha256": "526e4521de805ac35ba0dc229d302b1a6dfcc1323b6ca726ec5a1cf64a60c6b4",
+  "bytes": 591744845
+ },
+ "verificationKey": {
+  "file": "./results/full/setup/verification_key.json",
+  "sha256": "ff0e301209884cf214d65f6d7886239ebbf85e7fa78d2ca8934710d667109de1"
+ },
+ "verifierContract": "MembersVarVerifierN64D14Mpc",
+ "machine": {
+  "platform": "darwin 25.6.0",
+  "cpu": "Apple M4",
+  "cores": 10,
+  "totalRamMB": 16384
+ },
+ "tools": {
+  "node": "v24.16.0",
+  "snarkjs": "0.7.6"
+ },
+ "note": "all four contributions ran on one machine, one after another, each in its own process with its own entropy; in a real deployment each member contributes on its own machine and destroys its entropy"
+}

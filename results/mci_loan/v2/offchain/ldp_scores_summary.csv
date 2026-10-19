@@ -1,0 +1,145 @@
+condition,model,quantity,n,mean,sd,ci95_lo,ci95_hi,min,max
+"LDP off (clipping only, σ = 0)",BASELINE,auc,10,0.6396,0.0030,0.6374,0.6418,0.6331,0.6437
+"LDP off (clipping only, σ = 0)",BASELINE,default_rate_among_approved,10,0.0534,0.0055,0.0495,0.0574,0.0461,0.0606
+"LDP off (clipping only, σ = 0)",BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"LDP off (clipping only, σ = 0)",FULL,auc,10,0.7490,0.0048,0.7456,0.7525,0.7379,0.7540
+"LDP off (clipping only, σ = 0)",FULL,default_rate_among_approved,10,0.0345,0.0082,0.0287,0.0404,0.0244,0.0458
+"LDP off (clipping only, σ = 0)",FULL,extra_per_10000,10,2509.8435,677.0679,2025.4983,2994.1887,1518.6103,3397.6248
+"LDP off (clipping only, σ = 0)",FULL_J,auc,10,0.7491,0.0050,0.7455,0.7526,0.7372,0.7538
+"LDP off (clipping only, σ = 0)",FULL_J,default_rate_among_approved,10,0.0347,0.0080,0.0290,0.0404,0.0245,0.0462
+"LDP off (clipping only, σ = 0)",FULL_J,extra_per_10000,10,2478.7159,679.0229,1992.9722,2964.4596,1567.1900,3373.5878
+"LDP off (clipping only, σ = 0)",LOO_1,auc,10,0.7382,0.0056,0.7342,0.7422,0.7233,0.7441
+"LDP off (clipping only, σ = 0)",LOO_1,default_rate_among_approved,10,0.0362,0.0078,0.0307,0.0418,0.0259,0.0464
+"LDP off (clipping only, σ = 0)",LOO_1,extra_per_10000,10,2382.2333,673.8543,1900.1869,2864.2796,1414.1777,3331.2702
+"LDP off (clipping only, σ = 0)",LOO_2,auc,10,0.7406,0.0048,0.7372,0.7440,0.7315,0.7464
+"LDP off (clipping only, σ = 0)",LOO_2,default_rate_among_approved,10,0.0362,0.0079,0.0306,0.0419,0.0262,0.0469
+"LDP off (clipping only, σ = 0)",LOO_2,extra_per_10000,10,2351.4596,609.3683,1915.5439,2787.3754,1432.4583,3282.6905
+"LDP off (clipping only, σ = 0)",LOO_3,auc,10,0.6959,0.0034,0.6935,0.6984,0.6918,0.7045
+"LDP off (clipping only, σ = 0)",LOO_3,default_rate_among_approved,10,0.0441,0.0067,0.0394,0.0489,0.0352,0.0531
+"LDP off (clipping only, σ = 0)",LOO_3,extra_per_10000,10,1576.6893,362.9863,1317.0245,1836.3541,991.7019,2021.4456
+LDP on (protocol σ),BASELINE,auc,10,0.6400,0.0029,0.6380,0.6420,0.6345,0.6435
+LDP on (protocol σ),BASELINE,default_rate_among_approved,10,0.0538,0.0054,0.0499,0.0576,0.0466,0.0605
+LDP on (protocol σ),BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+LDP on (protocol σ),FULL,auc,10,0.7484,0.0043,0.7453,0.7514,0.7384,0.7534
+LDP on (protocol σ),FULL,default_rate_among_approved,10,0.0348,0.0081,0.0290,0.0406,0.0248,0.0460
+LDP on (protocol σ),FULL,extra_per_10000,10,2497.4826,696.6642,1999.1190,2995.8461,1555.6771,3375.1046
+LDP on (protocol σ),FULL_J,auc,10,0.7483,0.0045,0.7451,0.7515,0.7373,0.7532
+LDP on (protocol σ),FULL_J,default_rate_among_approved,10,0.0348,0.0081,0.0290,0.0406,0.0247,0.0458
+LDP on (protocol σ),FULL_J,extra_per_10000,10,2482.3836,681.6330,1994.7727,2969.9945,1567.6956,3308.7499
+LDP on (protocol σ),LOO_1,auc,10,0.7375,0.0048,0.7341,0.7409,0.7254,0.7440
+LDP on (protocol σ),LOO_1,default_rate_among_approved,10,0.0361,0.0081,0.0304,0.0419,0.0262,0.0467
+LDP on (protocol σ),LOO_1,extra_per_10000,10,2389.7788,700.0249,1889.0112,2890.5464,1464.7797,3344.8054
+LDP on (protocol σ),LOO_2,auc,10,0.7398,0.0045,0.7366,0.7429,0.7310,0.7467
+LDP on (protocol σ),LOO_2,default_rate_among_approved,10,0.0364,0.0080,0.0307,0.0421,0.0271,0.0470
+LDP on (protocol σ),LOO_2,extra_per_10000,10,2348.1885,619.9391,1904.7108,2791.6662,1538.4077,3296.2257
+LDP on (protocol σ),LOO_3,auc,10,0.6948,0.0042,0.6919,0.6978,0.6899,0.7036
+LDP on (protocol σ),LOO_3,default_rate_among_approved,10,0.0440,0.0069,0.0390,0.0489,0.0353,0.0531
+LDP on (protocol σ),LOO_3,extra_per_10000,10,1579.4975,456.4684,1252.9596,1906.0353,949.8898,2152.7538
+weaker noise (σ × 0.5),BASELINE,auc,10,0.6398,0.0027,0.6379,0.6417,0.6344,0.6433
+weaker noise (σ × 0.5),BASELINE,default_rate_among_approved,10,0.0539,0.0053,0.0501,0.0577,0.0471,0.0612
+weaker noise (σ × 0.5),BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+weaker noise (σ × 0.5),FULL,auc,10,0.7489,0.0039,0.7461,0.7516,0.7402,0.7537
+weaker noise (σ × 0.5),FULL,default_rate_among_approved,10,0.0348,0.0083,0.0289,0.0407,0.0247,0.0471
+weaker noise (σ × 0.5),FULL,extra_per_10000,10,2510.6329,677.8587,2025.7220,2995.5438,1496.0900,3196.7695
+weaker noise (σ × 0.5),FULL_J,auc,10,0.7489,0.0043,0.7458,0.7519,0.7385,0.7534
+weaker noise (σ × 0.5),FULL_J,default_rate_among_approved,10,0.0349,0.0083,0.0289,0.0409,0.0244,0.0474
+weaker noise (σ × 0.5),FULL_J,extra_per_10000,10,2499.4623,710.6040,1991.1268,3007.7978,1459.0233,3249.6684
+weaker noise (σ × 0.5),LOO_1,auc,10,0.7380,0.0042,0.7350,0.7410,0.7269,0.7433
+weaker noise (σ × 0.5),LOO_1,default_rate_among_approved,10,0.0359,0.0084,0.0299,0.0420,0.0255,0.0482
+weaker noise (σ × 0.5),LOO_1,extra_per_10000,10,2381.1441,655.2932,1912.3756,2849.9126,1355.0962,3183.3137
+weaker noise (σ × 0.5),LOO_2,auc,10,0.7403,0.0041,0.7373,0.7432,0.7328,0.7467
+weaker noise (σ × 0.5),LOO_2,default_rate_among_approved,10,0.0364,0.0080,0.0307,0.0421,0.0265,0.0476
+weaker noise (σ × 0.5),LOO_2,extra_per_10000,10,2373.5090,601.4388,1943.2656,2803.7524,1508.1086,3201.5943
+weaker noise (σ × 0.5),LOO_3,auc,10,0.6952,0.0042,0.6922,0.6982,0.6906,0.7045
+weaker noise (σ × 0.5),LOO_3,default_rate_among_approved,10,0.0443,0.0067,0.0395,0.0491,0.0359,0.0531
+weaker noise (σ × 0.5),LOO_3,extra_per_10000,10,1621.2200,429.0009,1314.3312,1928.1087,974.9381,2101.1406
+stronger noise (σ × 4),BASELINE,auc,10,0.6426,0.0027,0.6407,0.6445,0.6368,0.6454
+stronger noise (σ × 4),BASELINE,default_rate_among_approved,10,0.0531,0.0054,0.0492,0.0569,0.0455,0.0595
+stronger noise (σ × 4),BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+stronger noise (σ × 4),FULL,auc,10,0.7363,0.0053,0.7326,0.7401,0.7288,0.7448
+stronger noise (σ × 4),FULL,default_rate_among_approved,10,0.0361,0.0074,0.0308,0.0414,0.0279,0.0468
+stronger noise (σ × 4),FULL,extra_per_10000,10,2274.3583,534.9600,1891.6710,2657.0457,1567.1900,3200.6987
+stronger noise (σ × 4),FULL_J,auc,10,0.7361,0.0053,0.7323,0.7399,0.7292,0.7445
+stronger noise (σ × 4),FULL_J,default_rate_among_approved,10,0.0361,0.0078,0.0305,0.0417,0.0277,0.0467
+stronger noise (σ × 4),FULL_J,extra_per_10000,10,2289.9319,559.1433,1889.9449,2689.9189,1572.9465,3230.9978
+stronger noise (σ × 4),LOO_1,auc,10,0.7226,0.0084,0.7166,0.7286,0.7130,0.7353
+stronger noise (σ × 4),LOO_1,default_rate_among_approved,10,0.0385,0.0072,0.0333,0.0436,0.0314,0.0486
+stronger noise (σ × 4),LOO_1,extra_per_10000,10,2116.7213,586.1008,1697.4501,2535.9926,1407.4101,3194.4366
+stronger noise (σ × 4),LOO_2,auc,10,0.7276,0.0057,0.7235,0.7317,0.7205,0.7351
+stronger noise (σ × 4),LOO_2,default_rate_among_approved,10,0.0378,0.0065,0.0331,0.0424,0.0307,0.0462
+stronger noise (σ × 4),LOO_2,extra_per_10000,10,2179.1476,588.1326,1758.4229,2599.8724,1535.8797,3140.1004
+stronger noise (σ × 4),LOO_3,auc,10,0.6933,0.0039,0.6906,0.6961,0.6865,0.6998
+stronger noise (σ × 4),LOO_3,default_rate_among_approved,10,0.0444,0.0061,0.0400,0.0488,0.0362,0.0527
+stronger noise (σ × 4),LOO_3,extra_per_10000,10,1557.2769,424.9263,1253.3030,1861.2509,1003.7204,2188.3038
+ε = 1 per release,BASELINE,auc,10,0.6278,0.0118,0.6194,0.6363,0.6000,0.6416
+ε = 1 per release,BASELINE,default_rate_among_approved,10,0.0551,0.0052,0.0514,0.0588,0.0454,0.0625
+ε = 1 per release,BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+ε = 1 per release,FULL,auc,10,0.6044,0.0217,0.5888,0.6199,0.5608,0.6271
+ε = 1 per release,FULL,default_rate_among_approved,10,0.0598,0.0046,0.0565,0.0631,0.0501,0.0652
+ε = 1 per release,FULL,extra_per_10000,10,-1800.8052,1559.7871,-2916.6097,-685.0007,-4362.0611,18.2806
+ε = 1 per release,FULL_J,auc,10,0.5895,0.0367,0.5632,0.6158,0.5239,0.6227
+ε = 1 per release,FULL_J,default_rate_among_approved,10,0.0633,0.0083,0.0573,0.0693,0.0489,0.0766
+ε = 1 per release,FULL_J,extra_per_10000,10,-2408.7123,2049.7036,-3874.9819,-942.4427,-5948.9690,24.5426
+ε = 1 per release,LOO_1,auc,10,0.6063,0.0218,0.5907,0.6219,0.5545,0.6244
+ε = 1 per release,LOO_1,default_rate_among_approved,10,0.0596,0.0037,0.0569,0.0622,0.0538,0.0649
+ε = 1 per release,LOO_1,extra_per_10000,10,-1920.5275,1349.1985,-2885.6860,-955.3691,-4059.0700,-220.3782
+ε = 1 per release,LOO_2,auc,10,0.6061,0.0218,0.5905,0.6216,0.5618,0.6278
+ε = 1 per release,LOO_2,default_rate_among_approved,10,0.0597,0.0058,0.0555,0.0638,0.0486,0.0668
+ε = 1 per release,LOO_2,extra_per_10000,10,-1654.0275,1284.9421,-2573.2197,-734.8353,-4119.6682,-615.4729
+ε = 1 per release,LOO_3,auc,10,0.6050,0.0194,0.5911,0.6188,0.5574,0.6222
+ε = 1 per release,LOO_3,default_rate_among_approved,10,0.0599,0.0054,0.0561,0.0637,0.0485,0.0671
+ε = 1 per release,LOO_3,extra_per_10000,10,-1876.7552,1471.7701,-2929.5961,-823.9144,-4628.9967,-128.4697
+ε = 4 per release,BASELINE,auc,10,0.6424,0.0029,0.6404,0.6445,0.6369,0.6461
+ε = 4 per release,BASELINE,default_rate_among_approved,10,0.0524,0.0059,0.0481,0.0566,0.0452,0.0599
+ε = 4 per release,BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+ε = 4 per release,FULL,auc,10,0.6324,0.0059,0.6281,0.6366,0.6232,0.6397
+ε = 4 per release,FULL,default_rate_among_approved,10,0.0547,0.0062,0.0503,0.0591,0.0473,0.0632
+ε = 4 per release,FULL,extra_per_10000,10,-625.8692,500.2837,-983.7506,-267.9877,-1479.0951,214.1161
+ε = 4 per release,FULL_J,auc,10,0.6341,0.0103,0.6268,0.6415,0.6063,0.6428
+ε = 4 per release,FULL_J,default_rate_among_approved,10,0.0550,0.0053,0.0512,0.0588,0.0470,0.0630
+ε = 4 per release,FULL_J,extra_per_10000,10,-631.9991,528.0639,-1009.7532,-254.2449,-1720.9824,-109.6835
+ε = 4 per release,LOO_1,auc,10,0.6333,0.0080,0.6275,0.6390,0.6167,0.6441
+ε = 4 per release,LOO_1,default_rate_among_approved,10,0.0544,0.0058,0.0502,0.0585,0.0463,0.0623
+ε = 4 per release,LOO_1,extra_per_10000,10,-656.7634,634.7506,-1110.8367,-202.6902,-1901.7659,110.1891
+ε = 4 per release,LOO_2,auc,10,0.6353,0.0039,0.6326,0.6381,0.6310,0.6431
+ε = 4 per release,LOO_2,default_rate_among_approved,10,0.0541,0.0060,0.0497,0.0584,0.0456,0.0621
+ε = 4 per release,LOO_2,extra_per_10000,10,-468.9400,495.1924,-823.1793,-114.7007,-1455.0580,323.7997
+ε = 4 per release,LOO_3,auc,10,0.6330,0.0043,0.6299,0.6361,0.6237,0.6382
+ε = 4 per release,LOO_3,default_rate_among_approved,10,0.0547,0.0050,0.0511,0.0583,0.0489,0.0620
+ε = 4 per release,LOO_3,extra_per_10000,10,-840.8802,966.0216,-1531.9304,-149.8300,-3332.7869,177.5550
+ε = 16 per release,BASELINE,auc,10,0.6450,0.0035,0.6425,0.6476,0.6374,0.6488
+ε = 16 per release,BASELINE,default_rate_among_approved,10,0.0531,0.0055,0.0492,0.0571,0.0456,0.0599
+ε = 16 per release,BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+ε = 16 per release,FULL,auc,10,0.6876,0.0065,0.6829,0.6922,0.6757,0.6991
+ε = 16 per release,FULL,default_rate_among_approved,10,0.0455,0.0060,0.0412,0.0499,0.0366,0.0551
+ε = 16 per release,FULL,extra_per_10000,10,1303.7950,468.7052,968.5036,1639.0865,476.8120,1913.9000
+ε = 16 per release,FULL_J,auc,10,0.6901,0.0063,0.6856,0.6946,0.6808,0.7024
+ε = 16 per release,FULL_J,default_rate_among_approved,10,0.0448,0.0055,0.0409,0.0488,0.0362,0.0529
+ε = 16 per release,FULL_J,extra_per_10000,10,1488.5691,503.0576,1128.7034,1848.4348,580.7390,2213.2365
+ε = 16 per release,LOO_1,auc,10,0.6861,0.0067,0.6813,0.6908,0.6742,0.6947
+ε = 16 per release,LOO_1,default_rate_among_approved,10,0.0454,0.0064,0.0408,0.0500,0.0363,0.0547
+ε = 16 per release,LOO_1,extra_per_10000,10,1369.5040,348.1095,1120.4815,1618.5265,678.4040,1840.7777
+ε = 16 per release,LOO_2,auc,10,0.6866,0.0072,0.6814,0.6917,0.6748,0.6974
+ε = 16 per release,LOO_2,default_rate_among_approved,10,0.0453,0.0062,0.0409,0.0497,0.0370,0.0538
+ε = 16 per release,LOO_2,extra_per_10000,10,1321.0955,481.4627,976.6778,1665.5132,646.2776,1901.0653
+ε = 16 per release,LOO_3,auc,10,0.6519,0.0088,0.6456,0.6582,0.6394,0.6652
+ε = 16 per release,LOO_3,default_rate_among_approved,10,0.0517,0.0063,0.0472,0.0562,0.0421,0.0617
+ε = 16 per release,LOO_3,extra_per_10000,10,194.7933,524.8634,-180.6713,570.2580,-458.0258,1025.1140
+ε = 64 per release,BASELINE,auc,10,0.6445,0.0031,0.6423,0.6467,0.6394,0.6495
+ε = 64 per release,BASELINE,default_rate_among_approved,10,0.0528,0.0053,0.0490,0.0566,0.0458,0.0605
+ε = 64 per release,BASELINE,extra_per_10000,10,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+ε = 64 per release,FULL,auc,10,0.7194,0.0045,0.7162,0.7227,0.7137,0.7263
+ε = 64 per release,FULL,default_rate_among_approved,10,0.0397,0.0065,0.0351,0.0444,0.0320,0.0488
+ε = 64 per release,FULL,extra_per_10000,10,2134.9709,505.0733,1773.6632,2496.2785,1296.2098,2780.6352
+ε = 64 per release,FULL_J,auc,10,0.7185,0.0054,0.7147,0.7224,0.7105,0.7258
+ε = 64 per release,FULL_J,default_rate_among_approved,10,0.0397,0.0067,0.0349,0.0445,0.0311,0.0487
+ε = 64 per release,FULL_J,extra_per_10000,10,2114.8622,525.2271,1739.1374,2490.5870,1259.1430,2961.9243
+ε = 64 per release,LOO_1,auc,10,0.7114,0.0051,0.7077,0.7150,0.7013,0.7206
+ε = 64 per release,LOO_1,default_rate_among_approved,10,0.0405,0.0062,0.0361,0.0449,0.0330,0.0484
+ε = 64 per release,LOO_1,extra_per_10000,10,2019.0563,484.8847,1672.1907,2365.9220,1253.3866,2618.1323
+ε = 64 per release,LOO_2,auc,10,0.7115,0.0055,0.7076,0.7154,0.7027,0.7186
+ε = 64 per release,LOO_2,default_rate_among_approved,10,0.0407,0.0058,0.0365,0.0448,0.0327,0.0487
+ε = 64 per release,LOO_2,extra_per_10000,10,2024.6106,608.4424,1589.3571,2459.8641,1167.7401,2973.9428
+ε = 64 per release,LOO_3,auc,10,0.6799,0.0058,0.6758,0.6840,0.6701,0.6874
+ε = 64 per release,LOO_3,default_rate_among_approved,10,0.0470,0.0056,0.0430,0.0509,0.0402,0.0546
+ε = 64 per release,LOO_3,extra_per_10000,10,1189.3742,325.0554,956.8435,1421.9048,587.0011,1674.9307

@@ -1,0 +1,26 @@
+run,party,member,credited_tokens,withdrawn_tokens,owed_at_end
+1,A,MCI,5003,5003,0
+1,p1,Bank,1001,1001,0
+1,p2,E-commerce company,436001,436001,0
+1,p3,Credit bureau,561001,561001,0
+1,arbiter,arbiter,0,0,0
+2,A,MCI,5003,5003,0
+2,p1,Bank,371001,371001,0
+2,p2,E-commerce company,1001,1001,0
+2,p3,Credit bureau,626001,626001,0
+2,arbiter,arbiter,0,0,0
+3,A,MCI,3,3,0
+3,p1,Bank,1001,1001,0
+3,p2,E-commerce company,1001,1001,0
+3,p3,Credit bureau,1001001,1001001,0
+3,arbiter,arbiter,0,0,0
+4,A,MCI,10003,10003,0
+4,p1,Bank,331001,331001,0
+4,p2,E-commerce company,331001,331001,0
+4,p3,Credit bureau,331001,331001,0
+4,arbiter,arbiter,0,0,0
+5,A,MCI,10003,10003,0
+5,p1,Bank,331001,331001,0
+5,p2,E-commerce company,331001,331001,0
+5,p3,Credit bureau,331001,331001,0
+5,arbiter,arbiter,0,0,0

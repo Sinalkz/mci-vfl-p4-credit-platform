@@ -1,0 +1,6 @@
+run,final_state,settlement_path,figures_accepted,every_proof_accepted,F_F_r,F_F_j,F_LOO_1,F_LOO_2,F_LOO_3,F_BASELINE,U_fed,l_1,l_2,l_3,E,E_prime,award_1_tokens,award_2_tokens,award_3_tokens,to_A,settlement_check_ok,replay_equals_chain,size_I,wall_clock_s,deposits_tokens,withdrawn_tokens,contract_balance_end,tokens_conserved,network_check_ok
+1,Settled,normal,6/6,yes,7437,7437,7460,7262,7013,7229,7437,-23,175,424,208,200,0,435000,560000,5003,yes,yes,15965,250.8,1003006,1003006,0,yes,yes
+2,Settled,normal,6/6,yes,7311,7311,7162,7311,6652,7013,7311,149,0,659,298,200,370000,0,625000,5003,yes,yes,15965,250.2,1003006,1003006,0,yes,yes
+3,Settled,normal,6/6,yes,6847,6847,7162,7013,5755,5873,6847,-315,-166,1092,974,200,0,0,1000000,3,yes,yes,15965,247.1,1003006,1003006,0,yes,yes
+4,Settled,normal,6/6,yes,6398,6398,6069,6085,4955,5294,6398,329,313,1443,1104,200,330000,330000,330000,10003,yes,yes,15965,251.1,1003006,1003006,0,yes,yes
+5,Settled,normal,6/6,yes,7437,7555,7262,6903,7142,6679,7555,293,652,413,876,200,330000,330000,330000,10003,yes,yes,15965,254.1,1003006,1003006,0,yes,yes

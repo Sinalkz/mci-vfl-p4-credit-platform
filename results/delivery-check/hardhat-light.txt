@@ -1,0 +1,254 @@
+No contracts to compile
+
+Running Mocha tests
+
+
+  chainIdentity (M4, the E3 run's chain record)
+    ✔ C01 records each node's client version and genesis block hash, and the genesis file's SHA-256
+    ✔ C02 throws when the nodes report different genesis blocks
+    ✔ C03 throws when the nodes run different client versions
+
+  DATA1 thesis-code options
+    ✔ D01 no override: the M3 config file and hash are unchanged
+    ✔ D02 VFL_MODEL_CONFIG with a per-passive fi.in gives each passive its own width (253ms)
+    ✔ D139a scoreFigures: F_r (FULL) is retrained, F_j (FULL_J) is the jointly trained fusion model; LOO and BASELINE retrained (106ms)
+    ✔ D139b the Federation ABI: commitFA(C_fA, gammaG), gammaG, uFed, submitJointScore(F, proof); TrainingEnded carries gammaG
+
+  DATA1 harness
+    ✔ D03 sessionPairs: A and passive exchange sealed messages in order (136ms)
+    ✔ D04 writeConfig changes only the seeds and widths
+    - D04b loadPrepared: 15,965 rows in DOEID order, A int16 rows of 8, each passive's width from the manifest, disjoint split [skipped: the thesis's RECS data is absent; missing data/recs/prepared/manifest.json]
+    ✔ D13s --seeds: a range or a list; the default 1-5 keeps the old file names, any other set gets its own tag
+
+  DATA1 centralized reference and equivalence
+    ✔ D05 split training (M3 code, no noise) equals centralized training with float32 transport, bit for bit (1326ms)
+    ✔ D06 pure float64 centralized training differs from the split run only by float32 transport rounding (729ms)
+    ✔ D06b noise: two runs with the default CSPRNG differ; two with the same seeded source are identical (2570ms)
+    ✔ D06c trainCentral aOnly (C1b) keeps every passive slot at zero: no passive model, and its fusion never sees them
+
+  DATA1 evaluation
+    ✔ D07 n64Positions draws with replacement exactly like the protocol and fOn equals macroF1 on those rows
+    ✔ D07b saturation counts int16-clipped embedding entries per passive
+    ✔ D07c predictInt with a null slot equals forwardInt with that slot zero
+
+  DATA1 E3 scenario and proposal switches
+    - D08 recsScenario: |X_A| = 1,020, each passive holds 90% of A plus 400 others, |I| in [910, 918], deterministic [skipped: the thesis's RECS data is absent; missing data/recs/prepared/manifest.json]
+    ✔ D09 defaultProposal takes classBoundaries and keeps [100..400] by default
+
+  DATA1 run-config guards (review finding 2)
+    ✔ D10 assertFiWidth: a passive row whose width differs from fi.in is refused
+    ✔ D11 checkRunConfig: e3 needs VFL_MODEL_CONFIG with the data's widths; i6-i9 refuse an override
+
+  Q17 follow-up: centralized leave-one-out reference
+    ✔ D12 trainCentral exclude: the excluded passive has no model and a zero slot; [] = f32, [1,2,3] = aOnly (69ms)
+
+  M1 Federation: setup phase and seed reveal
+    ✔ U01 factory happy path: run holds B, every proposal field readable, state Setup (46ms)
+    ✔ U28 M4 (D129): finalWait is stored and returned by proposal(); 0 is accepted, the contract never enforces it (58ms)
+    ✔ U29 M4 (D128): emptyRoot() is the all-zero-leaf Poseidon root at the run's maxDepth, for every maxDepth 1..20 (817ms)
+    ✔ U30 M4: the EIP-712 digest of a final-round message equals ethers' TypedDataEncoder (domain VFLFederation / 1 / chain / run)
+    ✔ U03 create reverts when A has not approved B (none, or B - 1)
+    ✔ U04 ABI: no non-view function beyond section 6 (plus the factory-only activate of section 4); no setter
+    ✔ U05 register rejects: unlisted account, A, wrong arbiterEcho, a key that is not 32 bytes, Dp not approved, a second registration, after the deadline (83ms)
+    ✔ U06 every member-only function called from an unlisted account reverts (74ms)
+    ✔ U07 acceptArbiter rejects: a non-arbiter, a key that is not 32 bytes, a second call, a call after the deadline (61ms)
+    ✔ U08 commitSeed rejects: an unregistered passive, non-members, a second commit, zero, after the deadline (41ms)
+    ✔ U10 after the start: register, acceptArbiter, commitSeed and abortSetup revert (40ms)
+    ✔ U11 deadline passes with one passive unregistered: abortSetup refunds B and Dp; withdraw pays once (65ms)
+    ✔ U12 abortSetup reverts before (and at) the deadline, and after the start (63ms)
+    ✔ U13 commitAlignment rejects: not A, wrong state, gammaA >= BN254_R, sizeI = 0, a second call (67ms)
+    ✔ U13 sizeI cap (D106): sizeI = 2^maxDepth is accepted, 2^maxDepth + 1 reverts (123ms)
+    ✔ U25 commitAlignment reverts after alignmentDeadline and with gammaI = 0; alignmentPeriod = 0 is rejected at creation (95ms)
+    ✔ U26 resolveAlignmentTimeout reverts before (and at) the deadline, and in the wrong state (102ms)
+    ✔ U14 happy reveal, A first then passives in random order: s matches off-chain, s < BN254_R, Training (was Seeded) (157ms)
+    ✔ S7 the S2b index derivation applied to the contract's s gives N indices in [0, sizeI) (58ms)
+    ✔ U15 a passive reveals before A; A reveals before commitAlignment (40ms)
+    ✔ U16 a wrong r reverts (A and a passive) (45ms)
+    ✔ U17 a copied commitment and one made for another instance can never be opened: both end as non-revealers (75ms)
+    ✔ U18 A reveals at alignmentBlock + revealWindow; passives can still reveal up to aRevealBlock + revealWindow (46ms)
+    ✔ U19 a passive reveal at aRevealBlock + revealWindow + 1 reverts (and A's one block late) (83ms)
+    ✔ U20 n = 3, one passive misses: A owed B; revealers owed Dp + Dp/2, remainder to the first in proposal order (45ms)
+    ✔ U21 every passive misses its window: A owed B; nobody owed Dp; n*Dp stays locked (58ms)
+    ✔ U23 resolveRevealFailure reverts before any window expires, and after the seed is fixed (155ms)
+    ✔ U24 conservation (extended in M2 with AlignmentFailed): on every terminal path, owed plus locked equals what the run collected (B + n*Dp once started) (4550ms)
+    U02 each invalid proposal rule makes create revert
+      ✔ U02 n = 2 (< 3) -> PassiveCount
+      ✔ U02 n = 11 (> 10) -> PassiveCount
+      ✔ U02 a passive is the zero address -> InvalidPassive
+      ✔ U02 a passive is listed twice -> InvalidPassive
+      ✔ U02 a passive is the active party -> InvalidPassive
+      ✔ U02 a passive is the arbiter -> InvalidPassive
+      ✔ U02 arbiter is the zero address -> InvalidArbiter
+      ✔ U02 arbiter is the active party -> InvalidArbiter
+      ✔ U02 activeChannelKey is empty -> BadKeyLength
+      ✔ U02 activeChannelKey has 31 bytes -> BadKeyLength
+      ✔ U02 activeChannelKey has 33 bytes -> BadKeyLength
+      ✔ U02 modelConfigHash is zero -> ZeroHash
+      ✔ U02 vkHash is zero -> ZeroHash
+      ✔ U02 maxDepth = 0 -> InvalidMaxDepth
+      ✔ U02 maxDepth = 21 -> InvalidMaxDepth
+      ✔ U02 metricId = 2 -> UnsupportedMetric
+      ✔ U02 metricId = 0 -> UnsupportedMetric
+      ✔ U02 3 class boundaries -> InvalidClassBoundaries
+      ✔ U02 5 class boundaries -> InvalidClassBoundaries
+      ✔ U02 class boundaries with a tie -> InvalidClassBoundaries
+      ✔ U02 class boundaries decreasing -> InvalidClassBoundaries
+      ✔ U02 T = 0 -> ZeroRoundsOrDraws
+      ✔ U02 N = 0 -> ZeroRoundsOrDraws
+      ✔ U02 verifier has no code -> NoCode
+      ✔ U02 token has no code -> NoCode
+      ✔ U02 setupPeriod = 0 -> ZeroPeriod
+      ✔ U02 revealWindow = 0 -> ZeroPeriod
+      ✔ U02 deltaR = 0 -> ZeroPeriod
+      ✔ U02 deltaA = 0 -> ZeroPeriod
+      ✔ U02 scoringPeriod = 0 (M3) -> ZeroPeriod
+      ✔ U02 K = 0 -> ZeroK
+      ✔ U02 B = 0 -> ZeroAmount
+      ✔ U02 rho = 0 -> ZeroAmount
+      ✔ U02 Dp = 0 -> ZeroAmount
+      ✔ U02 Dc = 0 -> ZeroAmount
+      ✔ U02 factory: activeParty is not the caller -> NotActiveParty
+    U09 the run starts exactly on the last setup action
+      ✔ U09 last action is acceptArbiter
+      ✔ U09 last action is commitSeed (by a passive, and by A) (75ms)
+    U27 resolveAlignmentTimeout after the deadline credits exactly as D105; state AlignmentFailed
+      ✔ U27 B >= n*Dp: each passive owed 2*Dp; A owed B - n*Dp (43ms)
+      ✔ U27 B < n*Dp: c = floor(B/n), remainder to passive index 1; A owed 0 (41ms)
+    U22 A misses its window [D105, updated]: each passive owed Dp + c; A owed the rest of B
+      ✔ U22 B >= n*Dp: c = Dp; A owed B - n*Dp (46ms)
+      ✔ U22 B = n*Dp (boundary): c = Dp; A owed 0 (48ms)
+      ✔ U22 B < n*Dp: c = floor(B/n), remainder to passive index 1; A owed 0 (44ms)
+
+  Task 5 LDP configurations
+    - L01 variantConfig at T = 20 is the E1 config byte for byte; another T changes only T [skipped: the thesis's RECS data is absent; missing results/data1/configs/e1-s1.json, results/data1/configs/e1-s5.json]
+    - L02 stratifiedSubsample: the class shares, round(frac N) rows, nested across fractions, seeded, in trainPos order [skipped: the thesis's RECS data is absent; missing data/recs/prepared/manifest.json]
+    ✔ L03 shadowPassive: the run is unchanged; the uncapped matrix gives the sent int16 matrix and exceeds it where it saturates (2283ms)
+
+  M2 alignment protocol (A + 3 passives off-chain, commitments on-chain)
+[p1] gamma_I check PASS: local 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+[p2] gamma_I check PASS: local 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+[p3] gamma_I check PASS: local 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+    ✔ A01 each passive's recomputed gamma_I equals the on-chain value (29157ms)
+[p1] gamma_I check PASS: local 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+[p2] gamma_I check FAIL: local 0x3375b9e2a85674f8c1ff6122d6ef20e0e2307c80b3cdd12ca9b5bb10d5505512, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+[p3] gamma_I check PASS: local 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f, on-chain 0x7df496acdd2b5c2de3d0934e3861535a1d9e10503688ea6363923ca8d70aa37f
+    ✔ A02 A sends one passive a modified I: that passive's check fails against the chain (30585ms)
+    ✔ A03 gamma_A equals the M1b varTrees root for the same rows and maxDepth (28508ms)
+    ✔ A04 I^ev from on-chain s and sizeI equals sampleIndices and the M1b circuit's input rows (29631ms)
+    ✔ A05 a received ID that is not the passive's own: the passive stops with an error (29584ms)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+WARNING |X_A| = 1200 exceeds 2^maxDepth = 1024: if |I| turns out larger than 1024, commitAlignment reverts (SizeAboveCap) and A pays the alignment-timeout compensation
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+WARNING |X_A| = 1200 exceeds 2^maxDepth = 1024: if |I| turns out larger than 1024, commitAlignment reverts (SizeAboveCap) and A pays the alignment-timeout compensation
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ✔ Q5 the proposal helper refuses 2^maxDepth < |X_A| (warns instead only when asked)
+    ✔ A12 M4: each passive holds A's AlignedSet signature over the hash of the exact list it received, bound to its address (29404ms)
+    ✔ A13 M4: a list signed by another key, or a signature over another hash, is refused (ProtocolError sig) (57966ms)
+
+  M2 secure channel (A <-> passive, keys from the chain, through the relay process)
+    ✔ C01 round trip in both directions, 100 messages each: all decrypt, in order (335ms)
+    ✔ C02 the relay offers its own public key in the hello: no effect; a side forced to use it fails the first tag check (548ms)
+    ✔ C03 the relay flips one bit in a ciphertext: rejected (269ms)
+    ✔ C04 replay, reorder and drop are rejected; a message is accepted only when its counter is next (821ms)
+    ✔ C05 the same members and keys under two different contract instances: different channel keys (70ms)
+    ✔ C06 the two directions use different keys, and both sides derive the same pair
+    ✔ C07 a dropped frame is recovered by retransmission; so is a dropped ack; the sender gives up after its retries (4254ms)
+    ✔ C08 a tampered frame is recovered by retransmission; a tampered ack too; a replayed old frame is still rejected (1586ms)
+
+  M2 PSI (ristretto255, RFC 9380 hash-to-group; 3 passives over TCP)
+    ✔ P01 random sets incl. empty, full and partial overlaps: the PSI result equals the plaintext intersection (13482ms)
+    ✔ P02 no raw ID, decimal string, keccak256 or sha256 of an ID appears on the wire (nor in any PSI message) (29017ms)
+    ✔ P03 outputs: A learns each pairwise intersection; each passive learns only I (29043ms)
+    ✔ P04 two runs with the same inputs: the blinded values are unrelated (56606ms)
+    ✔ P05 the lists A and each passive send are in neither input order nor sorted order (29181ms)
+    ✔ P06 the PSI scalars are not the channel keys (nor each other, across pairs and runs) (56473ms)
+
+  M3 model and data
+    ✔ M01 scenario: |X_A| = 1,020 <= 2^10, |I| = 1,000, 5 tiers with the high ones rare
+    ✔ M02 modelConfigHash is keccak256 of the configuration file; T, batch size and wait time are in it
+    ✔ M03 the JS fixed-point forward pass and F equal the Python oracle for every mask (1203ms)
+
+  M3 reconciliation (equivocation, resend requests, objections, arbiter relay)
+    ✔ R01 a passive signs root X and registers root Y: proveEquivocation succeeds, Dp is forfeited, gamma becomes X (324ms)
+    ✔ R02 proveEquivocation with equal roots, with a forged signature, after the window: revert (310ms)
+    ✔ R03 fileNonReceipt without a prior request, not from A, after the window: revert; with a request, Dc is escrowed (322ms)
+    ✔ R04 the relay path: sealed box to the arbiter, checked against gamma, resealed to A; certifyDelivery with gamma; another root or a non-arbiter reverts (628ms)
+    ✔ R05 relay timeout: the member is counted as left and its Dp forfeited (322ms)
+    ✔ R06 finalizeReconciliation while an objection is open, or before the window ends: revert (305ms)
+    ✔ R07 M4 (D130): certifyDelivery credits the arbiter D_c; the escrow is back to 0; A gets nothing back (307ms)
+    ✔ R08 M4 (D130, Q7 a): a relay timeout credits the arbiter D_c too; the escrow is back to 0 (317ms)
+
+  M3 training (split model over the M2 sessions; commitFinal, commitFA)
+    ✔ T01 a full training run of T rounds completes; each passive's gamma_i equals the root A recomputes from h_i (30585ms)
+    ✔ T02 the relay drops one passive's embedding for one batch: A zero-fills that batch and training completes (32706ms)
+    ✔ T03 a passive stops after round 1 and never calls commitFinal: counted as left at commitFA, Dp in forfeitedToPool (29874ms)
+    ✔ T04 the EIP-712 signature verifies on-chain; it fails under another contract instance, another chainId, another marker (157ms)
+    ✔ T05 commitFinal after commitFA, commitFA by a non-A account, commitFA twice: revert; commitFinal twice, by A, or a zero / non-field root: revert (77ms)
+    ✔ T06 M4 (D129): with commitFinal before the final message, every gamma is on-chain when A holds all final messages; commitFA at once leaves no one out (30736ms)
+    ✔ T07 M4 (D129): waitForFinalCommits returns at once when every passive committed, else after the proposal's finalWait blocks (91ms)
+
+  M4 settlement
+    ✔ M01 settlementDivision equals the Python reference on all 33 vector cases (10650ms)
+    ✔ M02 settlementDivision reverts before Scored (308ms)
+    ✔ M03 normal path: every remaining passive acknowledges; the last one settles; payouts equal the reference (4662ms)
+    ✔ M04 acknowledge reverts: outsider, A, arbiter, a left passive, twice, before Scored, after the window, after Settled (948ms)
+    ✔ M05 an equivocator gets its award but no D_p and no share of the forfeits; a passive who left gets nothing (340ms)
+    ✔ M06 an upheld objection settles at once: rewards, deposits and forfeits as normal, B - rho*sum(a) to the remaining passives, A nothing (2684ms)
+    ✔ M07 a baseless objection reverts: h = gamma_I, another signer, a signature for another passive or another run, outside the window, a left passive, an outsider, after acknowledging (649ms)
+    ✔ M08 D142: settleBackup after K*deltaA pays exactly the normal path (rho*a_i, D_p unless forfeited, forfeits to non-equivocators, the rest of B to A); path 3 recorded (3727ms)
+    ✔ M12 conservation on every M4 terminal path (normal, objection, backup with and without responders) x left / equivocation / relay objection: owed + locked = deposits = balance; withdrawals pay exactly (8894ms)
+      Federation runtime: 23927 bytes
+    ✔ M13 Federation's runtime code fits EIP-170 (24,576 bytes)
+    ✔ M09 settleBackup reverts before Scored and after a normal settlement (627ms)
+    ✔ M15 the backup path settles with a huge rho (no overflow); payouts equal the reference (D142: as normal)
+    ✔ M16 D141: every passive left: settleBackup after K*deltaA pays as the normal path, A gets B, the three D_p are locked (330ms)
+    ✔ M17 D142: a coalition (A, p1, p2) that keeps p3 silent gains nothing: settleBackup pays every party exactly what the normal path pays (660ms)
+    ✔ M18 D142: a passive that goes offline: after the window A is paid exactly the normal amount, the others theirs, nothing locked (335ms)
+    ✔ M14 a settling acknowledge costs more than an early acknowledge's estimate + 100k, and less than party-m3's ACK_GAS_FLOOR on every normal-path vector (4605ms)
+
+  M1b sizeI-public scoring verifier (N = 64, maxDepth = 10)
+    ✔ accepts the proof for sizeI = 1000, and rejects it under another sizeI or F
+    ✔ accepts the proof for sizeI = 700, and rejects it under another sizeI or F
+    ✔ both proofs share the seed and the roots' depth, but not the roots (different aligned sets)
+
+  party settlement decisions (M4)
+    ✔ W01 the wait after scoring ends at Scored or Settled (A), and also at ScoringFailed (passives)
+    ✔ W02 a passive responds only while the run is Scored and it has not left
+
+  S3 Reconciliation
+    ✔ computes the same EIP-712 hash as ethers' TypedDataEncoder
+    ✔ registers a commitment once, only for passive parties, and binds it
+    ✔ (1) proves a valid equivocation: records it, forfeits D_p, binds the signed root
+    ✔ (2) rejects a forged signature (wrong key, or corrupted bytes)
+    ✔ (3) rejects a signature made for another run (replay), round or chain
+    ✔ (4) rejects when the signed root equals the registered one (no equivocation)
+    ✔ (5) rejects a caller other than the active party
+    ✔ rejects a proof against a party that never registered, and a second proof
+    ✔ accepts gamma_i and C_fA only inside the commit window (block heights)
+    ✔ accepts gamma_A only from the active party, once, by the table deadline
+    ✔ rejects commitments that are not BN254 field elements, and a bad schedule
+
+  S2b Scoring (N = 64, |I| = 1,000)
+    ✔ rejects figures while the commit window is still open
+    ✔ accepts all five figures of a run with one verifier, all against the registered C_fA (90ms)
+    ✔ rejects a proof made with a different bottom model (C_fA) (40ms)
+    ✔ rejects a wrong F, a mask the proof was not made for, a disallowed mask, a repeat and a non-active caller (49ms)
+    ✔ uses the binding commitment: after an equivocation proof, the signed root counts (38ms)
+    ✔ refuses to score while a run-level commitment is missing
+
+  S4 TalmudDivision
+    ✔ matches the exact reference on all 124 division cases (90ms)
+    ✔ covers all three regimes, with at least 100 random cases
+    ✔ satisfies every property on every contract output (203ms)
+    ✔ reproduces the Aumann-Maschler (1985) table, floored
+    ✔ matches the reference on budget-capped cases (D56/D65)
+    ✔ returns an empty award vector for no claimants
+    ✔ rejects claims that are not in non-decreasing order, at the first offending index
+    ✔ accepts equal neighbours (non-decreasing, not strictly increasing)
+
+
+  179 passing (11m)
+  4 pending
+
+

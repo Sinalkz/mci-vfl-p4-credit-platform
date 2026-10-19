@@ -1,0 +1,41 @@
+condition,seed,full_test_ranking,same_as_LDP_off_full_test,N64_share_same_as_own_full_test,N64_share_same_as_LDP_off_same_draw
+"LDP off (clipping only, σ = 0)",1,Credit bureau > Bank > E-commerce company,True,0.3110,1.0000
+"LDP off (clipping only, σ = 0)",2,Credit bureau > E-commerce company > Bank,True,0.3650,1.0000
+"LDP off (clipping only, σ = 0)",3,Credit bureau > Bank > E-commerce company,True,0.3650,1.0000
+"LDP off (clipping only, σ = 0)",4,Credit bureau > Bank > E-commerce company,True,0.3470,1.0000
+"LDP off (clipping only, σ = 0)",5,Credit bureau > E-commerce company > Bank,True,0.3110,1.0000
+"LDP off (clipping only, σ = 0)",6,Credit bureau > Bank > E-commerce company,True,0.2890,1.0000
+"LDP off (clipping only, σ = 0)",7,Credit bureau > Bank > E-commerce company,True,0.4580,1.0000
+"LDP off (clipping only, σ = 0)",8,Credit bureau > Bank > E-commerce company,True,0.3530,1.0000
+"LDP off (clipping only, σ = 0)",9,Credit bureau > Bank > E-commerce company,True,0.3370,1.0000
+"LDP off (clipping only, σ = 0)",10,Credit bureau > E-commerce company > Bank,True,0.2920,1.0000
+LDP on (protocol σ),1,Credit bureau > Bank > E-commerce company,True,0.3410,0.6350
+LDP on (protocol σ),2,Credit bureau > E-commerce company > Bank,True,0.3300,0.5240
+LDP on (protocol σ),3,Credit bureau > E-commerce company > Bank,False,0.2700,0.5710
+LDP on (protocol σ),4,Credit bureau > Bank > E-commerce company,True,0.3280,0.6080
+LDP on (protocol σ),5,Credit bureau > Bank > E-commerce company,False,0.2720,0.6100
+LDP on (protocol σ),6,Credit bureau > Bank > E-commerce company,True,0.3120,0.5900
+LDP on (protocol σ),7,Credit bureau > Bank > E-commerce company,True,0.4300,0.7340
+LDP on (protocol σ),8,Credit bureau > E-commerce company > Bank,False,0.3020,0.5160
+LDP on (protocol σ),9,Credit bureau > E-commerce company > Bank,False,0.3280,0.6460
+LDP on (protocol σ),10,Credit bureau > Bank > E-commerce company,False,0.3150,0.6520
+weaker noise (σ × 0.5),1,Credit bureau > Bank > E-commerce company,True,0.3090,0.7650
+weaker noise (σ × 0.5),2,Credit bureau > E-commerce company > Bank,True,0.3360,0.4920
+weaker noise (σ × 0.5),3,Credit bureau > E-commerce company > Bank,False,0.3030,0.5580
+weaker noise (σ × 0.5),4,Credit bureau > Bank > E-commerce company,True,0.3050,0.7010
+weaker noise (σ × 0.5),5,Credit bureau > Bank > E-commerce company,False,0.2910,0.6220
+weaker noise (σ × 0.5),6,Credit bureau > Bank > E-commerce company,True,0.2940,0.6120
+weaker noise (σ × 0.5),7,Credit bureau > Bank > E-commerce company,True,0.4230,0.8010
+weaker noise (σ × 0.5),8,Credit bureau > E-commerce company > Bank,False,0.3170,0.5140
+weaker noise (σ × 0.5),9,Credit bureau > E-commerce company > Bank,False,0.3320,0.7440
+weaker noise (σ × 0.5),10,Credit bureau > Bank > E-commerce company,False,0.3410,0.7390
+stronger noise (σ × 4),1,Credit bureau > E-commerce company > Bank,False,0.3420,0.4080
+stronger noise (σ × 4),2,Credit bureau > E-commerce company > Bank,True,0.3520,0.4390
+stronger noise (σ × 4),3,Credit bureau > Bank > E-commerce company,True,0.3430,0.4710
+stronger noise (σ × 4),4,Credit bureau > Bank > E-commerce company,True,0.2600,0.3340
+stronger noise (σ × 4),5,Credit bureau > Bank > E-commerce company,False,0.2810,0.3710
+stronger noise (σ × 4),6,Credit bureau > Bank > E-commerce company,True,0.2720,0.4590
+stronger noise (σ × 4),7,Credit bureau > Bank > E-commerce company,True,0.3650,0.4250
+stronger noise (σ × 4),8,Credit bureau > Bank > E-commerce company,True,0.3650,0.3920
+stronger noise (σ × 4),9,Credit bureau > Bank > E-commerce company,True,0.3610,0.4010
+stronger noise (σ × 4),10,Credit bureau > Bank > E-commerce company,False,0.3450,0.4020

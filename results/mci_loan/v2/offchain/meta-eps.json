@@ -1,0 +1,19 @@
+{
+ "set": "eps",
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "commit": "632f4bd",
+ "prepared": "data/mci_loan/v2/prepared",
+ "clean": true,
+ "started": "2026-10-19T11:03:29.577Z"
+}

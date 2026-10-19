@@ -1,0 +1,14 @@
+pytest==9.*
+numpy==2.5.*
+scikit-learn==1.9.*
+# figures/F2-2.py; 3.11 shapes text itself and would reverse the reshaped Persian labels
+matplotlib==3.10.*
+arabic-reshaper==3.0.*
+python-bidi==0.6.*
+# MCI loan instance, Step 2: the Home Credit download (>= 1.8.0 reads the new token format)
+kaggle==2.2.*
+# MCI loan instance, Step 3: per-applicant aggregates of the Home Credit tables (scenarios/mci_loan/)
+pandas==3.0.*
+pyarrow==26.0.*
+# MCI loan instance, Step 6: the Persian dashboard (dashboard/app.py); 1.66 adds only new packages to this venv
+streamlit==1.66.*

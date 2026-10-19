@@ -1,0 +1,405 @@
+{
+ "what": "the full-data alignment (PSI with 3 passives in parallel, build I, gamma_A at depth 14, signed I to each), measured to declare the alignment period (contracts/offchain/full/bench-psi-full.mjs)",
+ "scenario": {
+  "name": "mci-loan",
+  "seed": 20267005,
+  "limit": null
+ },
+ "machine": {
+  "cpu": "Apple M4",
+  "threads": 10,
+  "totalRamMB": 16384,
+  "os": "darwin 27.0.0",
+  "node": "v24.16.0"
+ },
+ "reps": [
+  {
+   "rep": 1,
+   "freeRamMBAtStart": 1738,
+   "wallMs": 87233,
+   "A": {
+    "side": "A",
+    "buildScenarioMs": 43.789417000000014,
+    "arrivalsMs": [
+     0.0008750000000077307,
+     0.22633400000000847,
+     61.739417
+    ],
+    "aSetSize": 15965,
+    "psiMs": 85503.296334,
+    "buildIMs": 7.04933299998811,
+    "gammaAMs": 939.5487920000014,
+    "sendIMs": 36.1744580000086,
+    "alignmentMs": 86486.068917,
+    "sizeI": 15965,
+    "IEqualsScenario": true,
+    "gammaI": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f",
+    "gammaA": "0x164dbe30ee4f6c3256379c2d4b7ec32fc55375ce9bc843a418cb2f30fb372bcd",
+    "pairs": [
+     {
+      "passive": "0xb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 7.84499999999997,
+       "blindMs": 32228.571834,
+       "waitMs": 21474.933415999996,
+       "finishMs": 29630.607375000007,
+       "computeMs": 61859.17920900001
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     },
+     {
+      "passive": "0xb2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 37.93562499999996,
+       "blindMs": 32198.466709,
+       "waitMs": 21594.040999999997,
+       "finishMs": 30519.4845,
+       "computeMs": 62717.951209
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     },
+     {
+      "passive": "0xb3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 41.986459000000025,
+       "blindMs": 32142.6875,
+       "waitMs": 22273.208333,
+       "finishMs": 30983.643791999995,
+       "computeMs": 63126.331291999995
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     }
+    ],
+    "peakRssMB": 385
+   },
+   "passives": [
+    {
+     "side": "p1",
+     "buildScenarioMs": 54.183291999999994,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 86479.65925,
+     "timings": {
+      "waitAMs": 31428.914417,
+      "computeMs": 22282.57825,
+      "waitIMs": 32754.727082999998
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 278.578125
+    },
+    {
+     "side": "p2",
+     "buildScenarioMs": 53.53204200000002,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 86491.309833,
+     "timings": {
+      "waitAMs": 31428.942958,
+      "computeMs": 22401.7285,
+      "waitIMs": 32646.860875
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 272.640625
+    },
+    {
+     "side": "p3",
+     "buildScenarioMs": 51.497208,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 86500.863584,
+     "timings": {
+      "waitAMs": 32245.171833,
+      "computeMs": 22273.530125,
+      "waitIMs": 31968.994958999996
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 271.875
+    }
+   ],
+   "correct": true
+  },
+  {
+   "rep": 2,
+   "freeRamMBAtStart": 1808,
+   "wallMs": 88248,
+   "A": {
+    "side": "A",
+    "buildScenarioMs": 49.322125,
+    "arrivalsMs": [
+     0.0016669999999976426,
+     0.5123330000000124,
+     60.32658299999997
+    ],
+    "aSetSize": 15965,
+    "psiMs": 86477.550917,
+    "buildIMs": 7.159874999997555,
+    "gammaAMs": 944.4082909999997,
+    "sendIMs": 36.1847090000083,
+    "alignmentMs": 87465.303792,
+    "sizeI": 15965,
+    "IEqualsScenario": true,
+    "gammaI": "0xc7d9a56e339f7160193d9b0e0bcd704815b9e2658bbe1c43d617f0db8a702d8f",
+    "gammaA": "0x164dbe30ee4f6c3256379c2d4b7ec32fc55375ce9bc843a418cb2f30fb372bcd",
+    "pairs": [
+     {
+      "passive": "0xb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 4.8932080000000155,
+       "blindMs": 31810.205707999998,
+       "waitMs": 22565.840750000003,
+       "finishMs": 28531.194124999995,
+       "computeMs": 60341.39983299999
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     },
+     {
+      "passive": "0xb3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 60.72737500000005,
+       "blindMs": 32565.273375,
+       "waitMs": 22666.248541,
+       "finishMs": 30033.298874999993,
+       "computeMs": 62598.57225
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     },
+     {
+      "passive": "0xb2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+      "pairwise": 15965,
+      "pSetSize": 17231,
+      "timings": {
+       "helloMs": 68.20904200000007,
+       "blindMs": 32507.546250000003,
+       "waitMs": 23326.33825,
+       "finishMs": 30515.095125,
+       "computeMs": 63022.64137500001
+      },
+      "bytesOut": 638852,
+      "bytesIn": 1062521,
+      "session": {
+       "sent": 3,
+       "delivered": 2,
+       "retransmitted": 0,
+       "acksSent": 2,
+       "acksReceived": 3,
+       "duplicates": 0,
+       "droppedTag": 0,
+       "droppedFuture": 0,
+       "droppedFormat": 0,
+       "droppedAck": 0
+      }
+     }
+    ],
+    "peakRssMB": 391.65625
+   },
+   "passives": [
+    {
+     "side": "p1",
+     "buildScenarioMs": 54.587582999999995,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 87459.28525,
+     "timings": {
+      "waitAMs": 31009.948833,
+      "computeMs": 23372.372584,
+      "waitIMs": 33063.658749999995
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 273.421875
+    },
+    {
+     "side": "p2",
+     "buildScenarioMs": 56.507667,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 87478.29725,
+     "timings": {
+      "waitAMs": 32633.598667000002,
+      "computeMs": 23326.612457999996,
+      "waitIMs": 31505.390000000007
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 281.5
+    },
+    {
+     "side": "p3",
+     "buildScenarioMs": 52.85566700000001,
+     "pSetSize": 17231,
+     "received": 15965,
+     "ms": 87471.065708,
+     "timings": {
+      "waitAMs": 31824.565583,
+      "computeMs": 23468.655625000003,
+      "waitIMs": 32164.09587499999
+     },
+     "bytesOut": 1062521,
+     "bytesIn": 638852,
+     "session": {
+      "sent": 2,
+      "delivered": 3,
+      "retransmitted": 0,
+      "acksSent": 3,
+      "acksReceived": 2,
+      "duplicates": 0,
+      "droppedTag": 0,
+      "droppedFuture": 0,
+      "droppedFormat": 0,
+      "droppedAck": 0
+     },
+     "peakRssMB": 279.59375
+    }
+   ],
+   "correct": true
+  }
+ ],
+ "slowestAlignmentS": 87.465303792,
+ "blockSeconds": 2,
+ "alignmentPeriod": {
+  "blocks": 90,
+  "seconds": 180,
+  "rule": "ceil(2 x slowest alignment / block time), rounded up to a multiple of 10 blocks, at least the default 60",
+  "default": 60,
+  "ratioToSlowest": 2.05795889565599
+ },
+ "note": "no chain and no Besu during the measurement; the factor 2 is the margin for the run's concurrent load and the transactions (commitAlignment) that also fall in the window"
+}

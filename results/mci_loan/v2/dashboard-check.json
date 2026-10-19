@@ -1,0 +1,98 @@
+{
+ "what": "the v2 dashboard's pages rendered headless, with the naming check (dashboard/check_pages.py)",
+ "streamlit": "1.66.0",
+ "onchainResults": true,
+ "pages": {
+  "app": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 2,
+   "dataframes": 1,
+   "titles": [
+    "کنسرسیوم"
+   ]
+  },
+  "consortium": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 2,
+   "dataframes": 1,
+   "titles": [
+    "کنسرسیوم"
+   ]
+  },
+  "alone": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 4,
+   "dataframes": 1,
+   "titles": [
+    "همراه اول به‌تنهایی و با شرکا"
+   ]
+  },
+  "tiers": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 1,
+   "dataframes": 3,
+   "titles": [
+    "سطوح اعتبار"
+   ]
+  },
+  "payments": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 2,
+   "dataframes": 1,
+   "titles": [
+    "پرداخت همراه اول به شرکا"
+   ]
+  },
+  "settlement": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 1,
+   "dataframes": 2,
+   "titles": [
+    "تسویه"
+   ]
+  },
+  "audit": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 0,
+   "dataframes": 3,
+   "titles": [
+    "ردپای حسابرسی"
+   ]
+  },
+  "cost": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 2,
+   "dataframes": 1,
+   "titles": [
+    "هزینه"
+   ]
+  },
+  "privacy": {
+   "ok": true,
+   "exceptions": [],
+   "forbiddenNames": [],
+   "images": 1,
+   "dataframes": 1,
+   "titles": [
+    "مبادلهٔ حریم خصوصی و کارایی"
+   ]
+  }
+ },
+ "allOk": true
+}

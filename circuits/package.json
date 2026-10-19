@@ -1,0 +1,12 @@
+{
+  "name": "thesis-poc-circuits",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Circom 2 circuits and Groth16 (snarkjs) pipeline for the thesis PoC spike",
+  "dependencies": {
+    "circomlib": "2.0.5",
+    "circomlibjs": "0.1.7",
+    "snarkjs": "0.7.6"
+  }
+}

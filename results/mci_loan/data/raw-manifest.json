@@ -1,0 +1,91 @@
+{
+ "what": "the raw Home Credit Default Risk files (Kaggle competition home-credit-default-risk)",
+ "script": "scenarios/mci_loan/data_manifest.py",
+ "recorded": "2026-10-18T22:11:35+03:30",
+ "archive": {
+  "file": "data/raw/home-credit-default-risk.zip",
+  "bytes": 721616255,
+  "sha256": "4e7a243b13f6e3d40f682a9a0cfd59c70910ca6c5a4289f71ca1f25efbd8e3de"
+ },
+ "csvDir": "data/raw/home-credit",
+ "rowRule": "records after the header line (csv.reader, bytes decoded as latin-1)",
+ "files": [
+  {
+   "file": "HomeCredit_columns_description.csv",
+   "bytes": 37383,
+   "columns": 5,
+   "rows": 219,
+   "sha256": "eef7665398228a80f7367c9258220c5fbe1038f3f54094244f354d54e2d4fb03"
+  },
+  {
+   "file": "POS_CASH_balance.csv",
+   "bytes": 392703158,
+   "columns": 8,
+   "rows": 10001358,
+   "sha256": "0e13bc573ffa8fc29b3f00d975e557143193a405d675b0e4694b06fbdffcb0cd"
+  },
+  {
+   "file": "application_test.csv",
+   "bytes": 26567651,
+   "columns": 121,
+   "rows": 48744,
+   "sha256": "a36161331d839150a67b6216d4de066f543a3b01a34061507d40e76612e0dec8"
+  },
+  {
+   "file": "application_train.csv",
+   "bytes": 166133370,
+   "columns": 122,
+   "rows": 307511,
+   "sha256": "52e96b895b1112e1c853f670e58372719c8441c5ed1c57ac2f7fad559d784f5f"
+  },
+  {
+   "file": "bureau.csv",
+   "bytes": 170016717,
+   "columns": 17,
+   "rows": 1716428,
+   "sha256": "9d799143423f280720cf51c1bfbbab2a0422da8ff2763335bb30bf43155494f7"
+  },
+  {
+   "file": "bureau_balance.csv",
+   "bytes": 375592889,
+   "columns": 3,
+   "rows": 27299925,
+   "sha256": "33e09f06174c26f0be6b8b7398886c69e7bf0abbb29b4122f7841ffe545729a9"
+  },
+  {
+   "file": "credit_card_balance.csv",
+   "bytes": 424582605,
+   "columns": 23,
+   "rows": 3840312,
+   "sha256": "a9cdc48900d55131c90f3128b991859aeb94ca1326fb5f4d1624b9fd03782247"
+  },
+  {
+   "file": "installments_payments.csv",
+   "bytes": 723118349,
+   "columns": 8,
+   "rows": 13605401,
+   "sha256": "428c2e2496e4d6d697ee8270e98497e5213c41be16d882eed1bc95b133726797"
+  },
+  {
+   "file": "previous_application.csv",
+   "bytes": 404973293,
+   "columns": 37,
+   "rows": 1670214,
+   "sha256": "5046cd657ee04df2eaa6dc8308ae86be6b3b1763674a3f63574886a2f2896505"
+  },
+  {
+   "file": "sample_submission.csv",
+   "bytes": 536202,
+   "columns": 2,
+   "rows": 48744,
+   "sha256": "95258f8383ad9da4921120d695a12f2321ed7d0963507636f9f38ce0025633cb"
+  }
+ ],
+ "tools": {
+  "kaggle": "Kaggle CLI 2.2.4"
+ },
+ "machine": {
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.5"
+ }
+}

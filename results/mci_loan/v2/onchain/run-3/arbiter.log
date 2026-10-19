@@ -1,0 +1,3 @@
+[arbiter] wait for A's run 6027 ms
+[arbiter] acceptArbiter 1972 ms
+[arbiter] serve the relay until the run ends 231865 ms

@@ -1,0 +1,166 @@
+{
+ "what": "the MCI loan instance v2's five on-chain runs, fixed before run 1 (scenarios/mci_loan/v2/onchain_plan2.py)",
+ "preregistration": "docs/mci/v2/02-preregistration.md section 10 (tag mci-prereg-v2)",
+ "members": [
+  {
+   "slot": "power",
+   "role": "active",
+   "index": 0,
+   "process": "A",
+   "owner": "mci",
+   "name": "MCI",
+   "nameFa": "همراه اول"
+  },
+  {
+   "slot": "mci",
+   "role": "passive",
+   "index": 1,
+   "process": "p1",
+   "owner": "bank",
+   "name": "Bank",
+   "nameFa": "بانک"
+  },
+  {
+   "slot": "digikala",
+   "role": "passive",
+   "index": 2,
+   "process": "p2",
+   "owner": "ecommerce",
+   "name": "E-commerce company",
+   "nameFa": "شرکت تجارت الکترونیک"
+  },
+  {
+   "slot": "maker",
+   "role": "passive",
+   "index": 3,
+   "process": "p3",
+   "owner": "bureau",
+   "name": "Credit bureau",
+   "nameFa": "شرکت اعتبارسنجی"
+  }
+ ],
+ "alignmentBenchmark": {
+  "file": "results/mci_loan/v2/onchain/psi-bench.json",
+  "slowestAlignmentS": 87.465303792,
+  "rule": "ceil(2 x slowest alignment / block time), rounded up to a multiple of 10 blocks, at least the default 60",
+  "machine": {
+   "cpu": "Apple M4",
+   "threads": 10,
+   "totalRamMB": 16384,
+   "os": "darwin 27.0.0",
+   "node": "v24.16.0"
+  }
+ },
+ "runs": [
+  {
+   "run": 1,
+   "modelConfig": "results/mci_loan/v2/configs/loan2-s1-wait10s.json",
+   "modelConfigSha256": "d1fd6bdb3c6c6350cffe13ce682b64a22e6791b800f11962b100d20c909b4b58",
+   "modelConfigHash": "0x25d4338b0918b6d1a97eebd50bdd07c405aa754b1a8df7da1c18562573b4fead",
+   "offchainConfig": "results/mci_loan/v2/configs/loan2-s1.json",
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   },
+   "runSeed": 1,
+   "scenarioSeed": 20267005,
+   "prepared": "data/mci_loan/v2/prepared",
+   "setup": "mpc-d14",
+   "prover": "rapidsnark",
+   "alignmentPeriodBlocks": 90,
+   "compareWith": "results/mci_loan/v2/offchain/runs/c2-s1.json (off-chain seed 1, the same model seeds)",
+   "outDir": "results/mci_loan/v2/onchain/run-1",
+   "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 1 90"
+  },
+  {
+   "run": 2,
+   "modelConfig": "results/mci_loan/v2/configs/loan2-s2-wait10s.json",
+   "modelConfigSha256": "fc3ba4b66897f8d1b32af7d6b329b6b98912211b1c171d75ea93d0aca8dcdf19",
+   "modelConfigHash": "0x107cc0cf05ba20816c771eb2c91b3f7f6a8c1fbfe90feee63299524357961b0c",
+   "offchainConfig": "results/mci_loan/v2/configs/loan2-s2.json",
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   },
+   "runSeed": 2,
+   "scenarioSeed": 20267005,
+   "prepared": "data/mci_loan/v2/prepared",
+   "setup": "mpc-d14",
+   "prover": "rapidsnark",
+   "alignmentPeriodBlocks": 90,
+   "compareWith": "results/mci_loan/v2/offchain/runs/c2-s2.json (off-chain seed 2, the same model seeds)",
+   "outDir": "results/mci_loan/v2/onchain/run-2",
+   "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 2 90"
+  },
+  {
+   "run": 3,
+   "modelConfig": "results/mci_loan/v2/configs/loan2-s3-wait10s.json",
+   "modelConfigSha256": "89fa4c89fe272d0f8a431a77db72fdbfd2bf78106b96c4b6cbed2265b4503256",
+   "modelConfigHash": "0x237856ce6b5a07cf5a1af65b3f2e643bd77ba9a284410dabfe3376ef3d6df76b",
+   "offchainConfig": "results/mci_loan/v2/configs/loan2-s3.json",
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   },
+   "runSeed": 3,
+   "scenarioSeed": 20267005,
+   "prepared": "data/mci_loan/v2/prepared",
+   "setup": "mpc-d14",
+   "prover": "rapidsnark",
+   "alignmentPeriodBlocks": 90,
+   "compareWith": "results/mci_loan/v2/offchain/runs/c2-s3.json (off-chain seed 3, the same model seeds)",
+   "outDir": "results/mci_loan/v2/onchain/run-3",
+   "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 3 90"
+  },
+  {
+   "run": 4,
+   "modelConfig": "results/mci_loan/v2/configs/loan2-s4-wait10s.json",
+   "modelConfigSha256": "1aca3d323ac82219747530ddbfdb2eabf62cd46179bea98f5f70b8987790c4a8",
+   "modelConfigHash": "0x9bcbd722a3367281a848e281b9f2c319cdaaedbe338ccba2f457ea683f60a92e",
+   "offchainConfig": "results/mci_loan/v2/configs/loan2-s4.json",
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   },
+   "runSeed": 4,
+   "scenarioSeed": 20267005,
+   "prepared": "data/mci_loan/v2/prepared",
+   "setup": "mpc-d14",
+   "prover": "rapidsnark",
+   "alignmentPeriodBlocks": 90,
+   "compareWith": "results/mci_loan/v2/offchain/runs/c2-s4.json (off-chain seed 4, the same model seeds)",
+   "outDir": "results/mci_loan/v2/onchain/run-4",
+   "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 4 90"
+  },
+  {
+   "run": 5,
+   "modelConfig": "results/mci_loan/v2/configs/loan2-s5-wait10s.json",
+   "modelConfigSha256": "77d4d964c5ce72a3e303ce34d90d46663a342219b32432bb0068ce4a7b6e39f3",
+   "modelConfigHash": "0x3b5a79a24b6650f8d31a73f51de9a74d4d181a1d4b92fa9451bac15a242b6a7e",
+   "offchainConfig": "results/mci_loan/v2/configs/loan2-s5.json",
+   "change": {
+    "perBatchWaitMs": [
+     2000,
+     10000
+    ]
+   },
+   "runSeed": 5,
+   "scenarioSeed": 20267005,
+   "prepared": "data/mci_loan/v2/prepared",
+   "setup": "mpc-d14",
+   "prover": "rapidsnark",
+   "alignmentPeriodBlocks": 90,
+   "compareWith": "results/mci_loan/v2/offchain/runs/c2-s5.json (off-chain seed 5, the same model seeds)",
+   "outDir": "results/mci_loan/v2/onchain/run-5",
+   "command": "caffeinate -ims bash scenarios/mci_loan/v2/onchain/mac-runs-v2.sh run 5 90"
+  }
+ ]
+}

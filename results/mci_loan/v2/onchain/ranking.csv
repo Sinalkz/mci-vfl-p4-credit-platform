@@ -1,0 +1,6 @@
+run,onchain_ranking,offchain_seed_k_ranking,same,same_top,l_1_onchain,l_2_onchain,l_3_onchain,l_1_offchain,l_2_offchain,l_3_offchain
+1,Credit bureau > E-commerce company > Bank,Credit bureau > Bank > E-commerce company,no,True,-23,175,424,124,100,439
+2,Credit bureau > Bank > E-commerce company,Credit bureau > Bank > E-commerce company,yes,True,149,0,659,94,68,632
+3,Credit bureau > E-commerce company > Bank,Credit bureau > Bank > E-commerce company,no,True,-315,-166,1092,23,19,384
+4,Credit bureau > Bank > E-commerce company,Credit bureau > Bank > E-commerce company,yes,True,329,313,1443,112,10,407
+5,E-commerce company > Credit bureau > Bank,Credit bureau > Bank > E-commerce company,no,False,293,652,413,93,87,392
