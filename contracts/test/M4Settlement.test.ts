@@ -1,4 +1,4 @@
-// M4 settlement (claude-code-M4-settlement.md; plan docs/superpowers/plans/2026-09-30-m4-settlement.md).
+// M4 settlement (M4 settlement spec and plan).
 // Expected values come from py/settlement_reference.py through test/vectors/m4_settlement.json (py/m4_vectors.py).
 import { expect } from "chai";
 import { readFileSync } from "node:fs";

@@ -1,4 +1,4 @@
-// M3 §4: reconciliation tests R01..R06 (claude-code-M3-training-scoring.md §6).
+// M3 §4: reconciliation tests R01..R06 (M3 training and scoring spec §6).
 import { expect } from "chai";
 import { network } from "hardhat";
 

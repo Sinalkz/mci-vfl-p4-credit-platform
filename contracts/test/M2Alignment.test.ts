@@ -1,4 +1,4 @@
-// M2 §5.3-§5.5: protocol tests A01..A05 (claude-code-M2-alignment.md §7): the off-chain
+// M2 §5.3-§5.5: protocol tests A01..A05 (M2 alignment spec §7): the off-chain
 // alignment over TCP, then commitAlignment on the in-process chain, the passives' gamma_I
 // check, the reveals and the evaluation rows.
 import { expect } from "chai";

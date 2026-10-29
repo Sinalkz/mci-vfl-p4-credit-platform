@@ -1,4 +1,4 @@
-// M3 §5: scoring tests S01..S07 (claude-code-M3-training-scoring.md §6), updated for D139 (DATA1; D137 + D139,
+// M3 §5: scoring tests S01..S07 (M3 training and scoring spec §6), updated for D139 (DATA1; D137 + D139,
 // which supersede D118): FULL is scored twice, each with its own proof. F_r = the retrained FULL (submitScore, kind
 // FULL, its own C_model); F_j = the fusion model trained jointly during split training, committed at commitFA as
 // gammaG (submitJointScore, kind FULL_JOINT, no C_model). The contract sets U_fed = max(F_r, F_j). LOO and BASELINE

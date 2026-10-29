@@ -1,4 +1,4 @@
-"""M4 settlement rules (claude-code-M4-settlement.md), an independent reference for Federation.sol's settlement.
+"""M4 settlement rules (M4 settlement spec), an independent reference for Federation.sol's settlement.
 
 Division after Scored: E = max(0, U_fed - U_A); l_i = max(0, U_fed - F_LOO_i), 0 for a passive who left;
 E' = min(E, floor(B / rho)); a = talmud(E', l), floored in performance units; payment rho * a_i.

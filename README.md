@@ -1,5 +1,12 @@
 # MCI credit instance: vertical federated learning with verifiable reward settlement
 
+| MCI-VFL series | Repository | Scope |
+|:--|:--|:--|
+| Phase 1/4 | [mci-vfl-p1-bi-platform](https://github.com/Sinalkz/mci-vfl-p1-bi-platform) | Blockchain-based VFL platform for business intelligence |
+| Phase 2/4 | [mci-vfl-p2-loan-simulation](https://github.com/Sinalkz/mci-vfl-p2-loan-simulation) | VFL loan-eligibility simulation (telecom + bank) |
+| Phase 3/4 | [mci-vfl-p3-fabric-chaincode](https://github.com/Sinalkz/mci-vfl-p3-fabric-chaincode) | Hyperledger Fabric audit chaincode |
+| **Phase 4/4** | **[mci-vfl-p4-credit-platform](https://github.com/Sinalkz/mci-vfl-p4-credit-platform)** | **Blockchain-coordinated VFL credit platform** |
+
 This repository is the **MCI credit instance** of an MSc thesis architecture: blockchain-based vertical federated
 learning (VFL) whose reward settlement is verified on-chain. It is the code, the aggregated results and the documents of
 the instance's second version (v2), in which **MCI is the lender**:
@@ -136,7 +143,7 @@ The proving keys are not included: each is hundreds of MB, and the phase-1 file 
 - the development key's verification key (`results/m1b/verification_key.json`);
 - the verification key of the thesis's maxDepth 10 multi-party key (`results/mpc/setup/verification_key.json`). `contracts/offchain/proposal.mjs` hashes it by default; tests `D09` and `Q5` read it.
 
-**The delivered on-chain runs used the thesis ceremony's key.** That key comes from a multi-party Groth16 setup for the maxDepth 14 circuit, with contributors labelled `power`, `mci`, `digikala` and `maker` (slot names). Its records:
+**The delivered on-chain runs used the thesis ceremony's key.** That key comes from a multi-party Groth16 setup for the maxDepth 14 circuit, with four contributors labelled by the member slots (in v2: MCI, Bank, E-commerce company and Credit bureau). Its records:
 - **vkHash** (keccak256 of the verification key file), recorded by every run: `0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1` (`results/mci_loan/v2/onchain/run-<k>/run.json`, `keys`);
 - **the key file's SHA-256:** `ff0e301209884cf214d65f6d7886239ebbf85e7fa78d2ca8934710d667109de1` (`ceremony.json`).
 

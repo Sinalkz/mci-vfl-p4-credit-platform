@@ -1,4 +1,4 @@
-// M2 §5.1: secure channel tests C01..C06 (claude-code-M2-alignment.md §7), and C07..C08
+// M2 §5.1: secure channel tests C01..C06 (M2 alignment spec §7), and C07..C08
 // for the retransmission layer (offchain/session.mjs, answer to QUESTIONS-M2 Q2).
 // The channel keys are read from the contract; messages pass through the relay process
 // (offchain/relay.mjs), which drops, modifies, replays, reorders or substitutes them.

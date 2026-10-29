@@ -1,6 +1,6 @@
 // M1/M2: federation contract, setup, alignment and seed reveal. Test IDs U01..U24 are
-// the ones in claude-code-M1-setup.md section 9, U25..U27 (and the extended U24) those in
-// claude-code-M2-alignment.md section 7; the thesis cites them.
+// the ones in the M1 setup spec, section 9, U25..U27 (and the extended U24) those in
+// the M2 alignment spec, section 7; the thesis cites them.
 import { expect } from "chai";
 import { TypedDataEncoder } from "ethers";
 // @ts-ignore -- plain ESM module
@@ -220,7 +220,7 @@ describe("M1 Federation: setup phase and seed reveal", function () {
       "fileNonReceipt", "finalizeReconciliation", "objectAlignment", "proveEquivocation", "register", "requestResend", "resolveAlignmentTimeout",
       "resolveRelayTimeout", "resolveRevealFailure", "resolveScoringTimeout", "revealSeed", "settleBackup", "submitJointScore", "submitScore",
       "withdraw",
-    ]); // M4 added acknowledge, objectAlignment, settleBackup // DATA1 D139 added submitJointScore // M3 added commitFinal .. resolveScoringTimeout (claude-code-M3-training-scoring.md §3.4, §4, §5.2)
+    ]); // M4 added acknowledge, objectAlignment, settleBackup // DATA1 D139 added submitJointScore // M3 added commitFinal .. resolveScoringTimeout (M3 training and scoring spec §3.4, §4, §5.2)
     expect(nonView(factory)).to.deep.equal(["create"]);
     const all = fedIface.interface.fragments.filter((f: any) => f.type === "function").map((f: any) => f.name);
     const adminLike = /^(set[A-Z_]|update|change|pause|unpause|upgrade|transferOwnership|renounceOwnership|owner$)/;

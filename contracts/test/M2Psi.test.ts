@@ -1,4 +1,4 @@
-// M2 §5.2: PSI tests P01..P06 (claude-code-M2-alignment.md §7). A and three passives run the
+// M2 §5.2: PSI tests P01..P06 (M2 alignment spec §7). A and three passives run the
 // real protocol over TCP in this process; keys come from a run on the in-process chain.
 import { expect } from "chai";
 import { createHash } from "node:crypto";

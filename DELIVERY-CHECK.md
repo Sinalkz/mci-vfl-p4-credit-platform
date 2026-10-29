@@ -97,7 +97,7 @@ gitleaks was not available, so the scan used grep over the tracked files:
 | 64-hex strings in `results/` and `docs/` | 2,854: transaction hashes, commitments, SHA-256 values of files, proof and verification-key elements (long decimal numbers also match the pattern) |
 | IP addresses | `127.0.0.1` (local JSON-RPC); `0.0.0.0` (listen on all interfaces: `chain/docker-compose.yml`, the Streamlit notes); `172.28.0.11`–`.14` and `172.28.0.0/16` (Docker's internal bridge network in `chain/docker-compose.yml` and `generate.sh`); `25.0.4.1` (a version string, not an address) |
 | User paths (`C:\Users\…`, `/Users/…`, `/home/…`, the source machines' tool folders), host names | none (replaced; DELIVERY-NOTES.md, section 2). The new check records carry only the machine labels `laptop` and `server` |
-| The old real company name | in 29 files, only as the slot identifier `digikala` in code and records, or as the pattern the naming check and `comparison2.py` look for; no prose use (DELIVERY-NOTES.md, section 3) |
+| The old real company name | in 27 files, only as the E-commerce company's slot identifier in code and records, or as the pattern the naming check and `comparison2.py` look for; no prose use (DELIVERY-NOTES.md, section 3) |
 
 The 64-hex strings outside `results/` and `docs/` are:
 - verifier constants (`contracts/contracts/verifiers/*.sol`);

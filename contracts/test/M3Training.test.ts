@@ -1,4 +1,4 @@
-// M3 §3: training tests T01..T05 (claude-code-M3-training-scoring.md §6).
+// M3 §3: training tests T01..T05 (M3 training and scoring spec §6).
 // T01..T03 run the whole off-chain protocol in this process over TCP (PSI, then training on the
 // same sessions); T04, T05 need only the contract.
 import { expect } from "chai";
