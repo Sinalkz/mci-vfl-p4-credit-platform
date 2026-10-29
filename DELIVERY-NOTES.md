@@ -95,6 +95,10 @@ The documents are kept as they were written, apart from the changes in section 2
 
 Compared with `11decb2`, the following files differ. Everything else is byte-identical to the source.
 
+**Later edits (2026-10, comments and wording only, no change in behaviour):** the series navigation table at the
+top of `README.md`; the spec citations in the header comments of eight `contracts/test/*.test.ts` files and of
+`py/settlement_reference.py`; and the member-slot wording in `README.md`, this file and `DELIVERY-CHECK.md`.
+
 **Code: v1 and thesis inputs are checked when present.** Each change is marked `# delivery:` in the code.
 - `scenarios/mci_loan/v2/common2.py`: adds `redact_manifest()`.
 - `scenarios/mci_loan/v2/prep2.py`: the v1 cohort check runs when v1's manifests are present. The `results/` copies of the manifests are redacted after they are written.

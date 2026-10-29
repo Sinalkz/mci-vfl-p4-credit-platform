@@ -143,7 +143,7 @@ The proving keys are not included: each is hundreds of MB, and the phase-1 file 
 - the development key's verification key (`results/m1b/verification_key.json`);
 - the verification key of the thesis's maxDepth 10 multi-party key (`results/mpc/setup/verification_key.json`). `contracts/offchain/proposal.mjs` hashes it by default; tests `D09` and `Q5` read it.
 
-**The delivered on-chain runs used the thesis ceremony's key.** That key comes from a multi-party Groth16 setup for the maxDepth 14 circuit, with four contributors labelled by the member slots (in v2: MCI, Bank, E-commerce company and Credit bureau). Its records:
+**The delivered on-chain runs used the thesis ceremony's key.** That key comes from a multi-party Groth16 setup for the maxDepth 14 circuit, with four contributors, one per member slot, labelled with the slot identifiers (DELIVERY-NOTES.md, section 3, maps each slot to its v2 member). Its records:
 - **vkHash** (keccak256 of the verification key file), recorded by every run: `0x43a9e64ae50cc7ca36385e354ca8406a662cb96f90f8fa90c5ee87299f8566e1` (`results/mci_loan/v2/onchain/run-<k>/run.json`, `keys`);
 - **the key file's SHA-256:** `ff0e301209884cf214d65f6d7886239ebbf85e7fa78d2ca8934710d667109de1` (`ceremony.json`).
 
